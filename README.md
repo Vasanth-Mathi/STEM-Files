@@ -1,6 +1,6 @@
 # STEM Projects & Resources
 
-I'm Vasanth, a STEM educator. This repository supports my résumé and portfolio by bringing together practical projects, code, activity ideas, prototypes, and learning resources from my work in STEM education.
+I'm Vasanth, a certified STEM Trainer & Educator. This repository supports my résumé and portfolio by bringing together practical projects, code, activity ideas, prototypes, and learning resources from my work in STEM education.
 
 ## What is STEM?
 
