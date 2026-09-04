@@ -17,7 +17,6 @@ STEM helps students move beyond theory. Through projects, they develop logical t
 | **Arduino** | Electronics, sensors, motors, automation, robotics, and physical computing projects. |
 | **ESP32 & IoT** | Wireless systems, connected devices, sensor-based monitoring, and IoT applications. |
 | **AI Projects** | AI tools, prompt engineering, automation, responsible AI use, and practical AI-based problem-solving. |
-| **Robotics** | Projects combining coding, electronics, sensors, actuators, and engineering concepts. |
 | **Design Thinking** | Problem identification, ideation, prototyping, testing, feedback, and improvement. |
 | **STEM Resources** | Classroom activities, simulations, coding exercises, project ideas, and reference materials. |
 
