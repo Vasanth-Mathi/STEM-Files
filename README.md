@@ -1,27 +1,34 @@
 # STEM Projects & Resources
 
-I'm Vasanth, a STEM educator. This repository is a growing collection of projects and teaching resources to accompany my résumé and show how I approach practical learning.
+I'm Vasanth, a STEM educator. This repository supports my résumé and portfolio by bringing together practical projects, code, activity ideas, and learning resources from my work in STEM education.
 
 ## What is STEM?
 
-STEM brings together **Science, Technology, Engineering and Mathematics**. It connects classroom concepts with practical tasks: building circuits, writing code, testing ideas and understanding how things work.
+STEM combines **Science, Technology, Engineering, and Mathematics** through practical problem-solving. It connects classroom concepts with building, coding, testing, designing, and improving real solutions.
 
 ## Why STEM?
 
-STEM gives students a reason to use what they learn. Working through a project helps them practise logical thinking, solve problems, learn from mistakes and explain their decisions.
+STEM helps students move beyond theory. Through projects, they develop logical thinking, creativity, computational thinking, collaboration, and the ability to solve real-world problems.
 
 ## Project Areas
 
-| Area | Focus |
+| Area | What you'll find |
 | --- | --- |
-| **Arduino** | Electronics, sensors, motor control and automation. |
-| **ESP32** | Connected devices, wireless control and IoT applications. |
-| **AI Projects** | Exploring AI tools, prompting and checking the accuracy of outputs. |
-| **Design Thinking** | Understanding a need, defining the problem, developing ideas, building prototypes and improving them through testing. |
-| **STEM Resources** | Learning materials, activity ideas and references for classroom use. |
+| **Arduino** | Electronics, sensors, motors, automation, robotics, and physical computing projects. |
+| **ESP32 & IoT** | Wireless systems, connected devices, sensor-based monitoring, and IoT applications. |
+| **AI Projects** | AI tools, prompt engineering, automation, responsible AI use, and practical AI-based problem-solving. |
+| **Robotics** | Projects combining coding, electronics, sensors, actuators, and engineering concepts. |
+| **Design Thinking** | Problem identification, ideation, prototyping, testing, feedback, and improvement. |
+| **STEM Resources** | Classroom activities, simulations, coding exercises, project ideas, and reference materials. |
 
-## Teaching Approach
+## Approach
 
-Start with a question. Build something, test it and improve it. The aim is for students to understand why a solution works and how to make it better.
+My work focuses on **hands-on, project-based learning**. Students are encouraged to understand a problem, build a solution, test it, learn from what fails, and improve the design.
 
-*Project files and supporting materials are being added.*
+This repository will continue to grow with STEM projects, teaching resources, prototypes, and ideas developed for classrooms, workshops, competitions, and student innovation.
+
+---
+
+**Vasanth Mathi**  
+STEM Educational Instructor  
+Robotics • AI • IoT • Design Thinking • Project-Based Learning
