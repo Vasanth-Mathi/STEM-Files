@@ -1,34 +1,52 @@
 # Arduino STEM Projects
 
-A collection of beginner-friendly Arduino projects designed to develop problem-solving, computational thinking, electronics, programming, and engineering skills.
+Arduino is an open-source electronics platform used to build interactive projects by combining simple hardware and software. It is widely used in STEM education because it allows students to connect sensors, motors, lights, displays, and other electronic components, then control them using code.
+
+## How Arduino Works
+
+An Arduino board contains a microcontroller that acts as the brain of the project. It continuously reads inputs, processes them according to the uploaded program, and controls outputs.
+
+```text
+Input Sensors ---> Arduino Microcontroller ---> Program Logic ---> Output Devices
+```
+
+For example:
+
+```text
+Ultrasonic Sensor ---> Arduino ---> Distance Calculation ---> Buzzer / LED
+```
+
+A typical Arduino project works in the following sequence:
+
+1. Sensors or input devices collect information from the environment.
+2. The Arduino reads the input through its digital or analog pins.
+3. The microcontroller processes the input based on the uploaded Arduino program.
+4. The Arduino sends signals to output devices such as LEDs, buzzers, motors, displays, or relays.
+5. This process repeats continuously while the board is powered.
+
+Arduino programs are commonly written in C/C++ using the Arduino IDE and uploaded to the board through USB.
+
+## Common Use Cases
+
+Arduino can be used for:
+
+- Robotics and autonomous vehicles
+- Home automation
+- Smart lighting systems
+- Environmental monitoring
+- Sensor-based projects
+- Internet of Things (IoT) prototypes
+- Agriculture automation
+- Security and alarm systems
+- Industrial prototypes
+- Data collection and measurement
+- Classroom STEM activities
+- Learning electronics, coding, problem-solving, and computational thinking
 
 ## Projects
 
-### 01. Line Follower Robot Using IR Sensors
-An autonomous robot that follows a predefined path using two IR sensors and motor control.
+<!-- Keep this list updated whenever a new project folder is added. -->
 
-- Documentation: [`01-Line-Follower-IR/README.md`](./01-Line-Follower-IR/README.md)
-- Arduino Code: [`01-Line-Follower-IR/line_follower_ir.ino`](./01-Line-Follower-IR/line_follower_ir.ino)
-
-### 02. Obstacle Detector Using Ultrasonic Sensor
-Detects nearby obstacles using an HC-SR04 ultrasonic sensor and provides visual and audio alerts.
-
-- Documentation: [`02-Obstacle-Detector-Ultrasonic/README.md`](./02-Obstacle-Detector-Ultrasonic/README.md)
-- Arduino Code: [`02-Obstacle-Detector-Ultrasonic/obstacle_detector.ino`](./02-Obstacle-Detector-Ultrasonic/obstacle_detector.ino)
-
-### 03. Automatic Streetlight Using LDR
-Automatically controls a light based on the surrounding light intensity using an LDR/photoresistor.
-
-- Documentation: [`03-Automatic-Streetlight-LDR/README.md`](./03-Automatic-Streetlight-LDR/README.md)
-- Arduino Code: [`03-Automatic-Streetlight-LDR/automatic_streetlight.ino`](./03-Automatic-Streetlight-LDR/automatic_streetlight.ino)
-
-## Standard Project Format
-Each project is documented with:
-
-- Title
-- Description
-- Components
-- Circuit Connections using `--->`
-- Arduino Code
-- Working Principle
-- Use Cases
+1. [Line Follower Robot Using IR Sensors](./01-Line-Follower-IR/)
+2. [Obstacle Detector Using Ultrasonic Sensor](./02-Obstacle-Detector-Ultrasonic/)
+3. [Automatic Streetlight Using LDR / Photoresistor](./03-Automatic-Streetlight-LDR/)
