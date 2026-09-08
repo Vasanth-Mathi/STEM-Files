@@ -13,6 +13,7 @@ A simple automatic light that turns ON when it becomes dark and turns OFF when t
 | 10 kΩ Resistor | 1 |
 | 220 Ω Resistor | 1 |
 | Breadboard | 1 |
+| USB Power Bank or 7-12V Arduino Power Supply | 1 |
 | Jumper Wires | As required |
 
 ## Circuit Connections
@@ -25,6 +26,12 @@ A simple automatic light that turns ON when it becomes dark and turns OFF when t
 | A0 | Other side of LDR and one side of 10 kΩ resistor |
 | GND | Other side of 10 kΩ resistor and LED cathode (-) |
 | D9 | 220 Ω resistor ---> LED anode (+) |
+
+### Power Connection
+
+| Power Source | Connect To |
+|---|---|
+| USB Power Bank or 7-12V Arduino Supply | Arduino USB port or DC jack |
 
 ## Code
 See [`automatic_streetlight.ino`](./automatic_streetlight.ino).
