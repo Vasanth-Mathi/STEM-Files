@@ -1,11 +1,7 @@
-# Automatic Streetlight Prototype Using LDR / Photoresistor
+# Automatic Streetlight Using LDR Sensor
 
 ## Description
-This project demonstrates how an automatic streetlight control system works using an Arduino Uno, an LDR (photoresistor), and a single LED as the model streetlight.
-
-The LDR senses the surrounding light level. When the environment becomes dark, Arduino switches the LED ON. When the environment becomes bright again, Arduino switches it OFF.
-
-> This circuit is a **low-power educational prototype**. A real streetlight, mains lamp, or high-power LED must **not** be powered directly from an Arduino pin. Real lighting loads require a properly rated transistor/MOSFET, relay or driver stage, suitable power supply, and appropriate electrical-safety practices.
+A simple automatic light that turns ON when it becomes dark and turns OFF when the surroundings become bright. An LDR sensor measures the light level and the Arduino controls an LED used as a model streetlight.
 
 ## Components
 
@@ -21,45 +17,30 @@ The LDR senses the surrounding light level. When the environment becomes dark, A
 
 ## Circuit Connections
 
-```text
-LDR VOLTAGE DIVIDER
-Arduino 5V ---> LDR
-LDR ---> Arduino A0
-Arduino A0 ---> 10 kΩ Resistor ---> Arduino GND
+### Arduino Connections
 
-MODEL STREETLIGHT LED
-Arduino D9 ---> 220 Ω Resistor ---> LED Anode (+)
-LED Cathode (-) ---> Arduino GND
-```
+| Arduino Pin | Connect To |
+|---|---|
+| 5V | One side of LDR |
+| A0 | Other side of LDR and one side of 10 kΩ resistor |
+| GND | Other side of 10 kΩ resistor and LED cathode (-) |
+| D9 | 220 Ω resistor ---> LED anode (+) |
 
 ## Code
 See [`automatic_streetlight.ino`](./automatic_streetlight.ino).
 
 ## Working Principle
-1. The LDR changes resistance according to the amount of light falling on it.
-2. The LDR and 10 kΩ resistor form a voltage divider.
-3. Arduino reads the divider voltage through analog pin A0.
-4. With the LDR connected toward 5V and the 10 kΩ resistor toward GND, brighter light normally produces a higher analog reading and darkness produces a lower reading.
-5. The program uses two thresholds rather than one. This is called **hysteresis**.
-6. When the reading falls below the ON threshold, the model streetlight turns ON.
-7. Once ON, it stays ON until the reading rises above the higher OFF threshold.
-8. The gap between the two thresholds prevents rapid ON/OFF flickering when the ambient light is close to the switching level.
-9. The threshold values must be calibrated using the actual LDR and the classroom/environment lighting conditions.
+1. The LDR senses the surrounding light level.
+2. Arduino reads the LDR value through pin A0.
+3. When the surroundings become dark, the LED turns ON.
+4. When the surroundings become bright again, the LED turns OFF.
+5. Two threshold values are used so the LED does not rapidly flicker near the switching point.
 
-## Calibration
-
-Open the Arduino Serial Monitor and observe the sensor values in bright and dark conditions. Choose:
-
-- `LIGHT_ON_THRESHOLD` below the normal room-light reading so the LED turns ON when it becomes sufficiently dark.
-- `LIGHT_OFF_THRESHOLD` somewhat higher than the ON threshold so there is a stable switching gap.
-
-The example code starts with values of 350 and 450, but these are starting points only and are not universal LDR values.
+> This project uses a small LED as a model streetlight. Do not connect a real streetlight or high-power lamp directly to an Arduino pin.
 
 ## Use Cases
-- Automatic streetlight demonstrations
-- Garden-lighting prototypes
+- Automatic streetlight models
+- Garden light projects
 - Automatic night lamps
-- Energy-saving lighting concepts
+- Light-sensing experiments
 - Smart-city classroom models
-- Sensor-threshold and analog-input lessons
-- Introduction to automatic control systems
