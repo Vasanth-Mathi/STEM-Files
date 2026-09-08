@@ -49,5 +49,5 @@ Arduino can be used for:
 
 1. [Line Follower Robot Using IR Sensors](./01-Line-Follower-IR/)
 2. [Obstacle Avoiding Robot Using Ultrasonic Sensor](./02-Obstacle-Detector-Ultrasonic/)
-3. [Automatic Streetlight Using LDR / Photoresistor](./03-Automatic-Streetlight-LDR/)
-4. [Obstacle Avoiding Robot with Servo-Mounted Ultrasonic Sensor](./04-Obstacle-Avoider-Servo-Scan/)
+3. [Automatic Streetlight Using LDR Sensor](./03-Automatic-Streetlight-LDR/)
+4. [Obstacle Avoiding Robot Using Ultrasonic Sensor and Servo Motor](./04-Obstacle-Avoider-Servo-Scan/)
