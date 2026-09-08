@@ -1,9 +1,7 @@
-# 4-Wheel Obstacle Avoiding Robot with Servo-Mounted Ultrasonic Sensor
+# Obstacle Avoiding Robot Using Ultrasonic Sensor and Servo Motor
 
 ## Description
-This project builds an autonomous four-wheel obstacle avoiding robot using an Arduino Uno, an HC-SR04 ultrasonic sensor mounted on a hobby servo, four DC geared motors, and **two L298N dual H-bridge motor-driver modules**.
-
-Unlike a basic obstacle avoider that only looks straight ahead, this version can rotate the ultrasonic sensor to look left, centre, and right. When an obstacle is detected in front, the robot stops, reverses slightly, scans both sides, compares the available space, and turns toward the side with the greater measured distance.
+A four-wheel robot that detects obstacles using an HC-SR04 ultrasonic sensor mounted on a servo motor. When an obstacle is detected, the servo turns the sensor left and right. The Arduino compares both distances and turns the robot toward the side with more free space.
 
 ## Components
 
@@ -11,102 +9,76 @@ Unlike a basic obstacle avoider that only looks straight ahead, this version can
 |---|---:|
 | Arduino Uno | 1 |
 | HC-SR04 Ultrasonic Sensor | 1 |
-| Hobby Servo (such as SG90 or equivalent) | 1 |
-| L298N Dual H-Bridge Motor Driver Module | 2 |
-| DC Geared Motor | 4 |
+| Servo Motor | 1 |
+| L298N Motor Driver Module | 2 |
+| 6V DC Geared Motor | 4 |
 | Wheel | 4 |
 | 4-Wheel Robot Chassis | 1 |
-| Suitable Motor Battery Pack | 1 |
-| Regulated 5 V Supply for Servo | 1 |
+| 7.4V Battery Pack | 1 |
+| Regulated 5V Supply for Servo | 1 |
 | Jumper Wires | As required |
-| Servo mounting bracket / sensor holder | 1 |
 
 ## Circuit Connections
 
-```text
-HC-SR04 ULTRASONIC SENSOR
-VCC ---> Arduino 5V
-GND ---> Arduino GND
-TRIG ---> Arduino D2
-ECHO ---> Arduino D3
+### Arduino Connections
 
-SERVO
-Servo Signal ---> Arduino D4
-Servo VCC ---> External Regulated 5V Supply Positive
-Servo GND ---> External Regulated 5V Supply GND
-External Servo Supply GND ---> Arduino GND
+| Arduino Pin | Connect To |
+|---|---|
+| 5V | HC-SR04 VCC |
+| GND | HC-SR04 GND and Servo Supply GND |
+| D2 | HC-SR04 TRIG |
+| D3 | HC-SR04 ECHO |
+| D4 | Servo Signal |
+| D8 | Motor Driver 1 IN1 and Motor Driver 2 IN1 |
+| D9 | Motor Driver 1 IN2 and Motor Driver 2 IN2 |
+| D10 | Motor Driver 1 IN3 and Motor Driver 2 IN3 |
+| D11 | Motor Driver 1 IN4 and Motor Driver 2 IN4 |
 
-SHARED LEFT-SIDE CONTROL
-Arduino D5 (PWM) ---> Driver 1 ENA
-Arduino D5 (PWM) ---> Driver 2 ENA
-Arduino D8 ---> Driver 1 IN1
-Arduino D8 ---> Driver 2 IN1
-Arduino D9 ---> Driver 1 IN2
-Arduino D9 ---> Driver 2 IN2
+### Servo Connections
 
-SHARED RIGHT-SIDE CONTROL
-Arduino D6 (PWM) ---> Driver 1 ENB
-Arduino D6 (PWM) ---> Driver 2 ENB
-Arduino D10 ---> Driver 1 IN3
-Arduino D10 ---> Driver 2 IN3
-Arduino D11 ---> Driver 1 IN4
-Arduino D11 ---> Driver 2 IN4
+| Servo Wire | Connect To |
+|---|---|
+| Signal | Arduino D4 |
+| VCC | Regulated 5V Supply + |
+| GND | Regulated 5V Supply GND and Arduino GND |
 
-MOTOR DRIVER 1 - FRONT MOTORS
-Driver 1 OUT1 ---> Front Left Motor Terminal 1
-Driver 1 OUT2 ---> Front Left Motor Terminal 2
-Driver 1 OUT3 ---> Front Right Motor Terminal 1
-Driver 1 OUT4 ---> Front Right Motor Terminal 2
+### Motor Connections
 
-MOTOR DRIVER 2 - REAR MOTORS
-Driver 2 OUT1 ---> Rear Left Motor Terminal 1
-Driver 2 OUT2 ---> Rear Left Motor Terminal 2
-Driver 2 OUT3 ---> Rear Right Motor Terminal 1
-Driver 2 OUT4 ---> Rear Right Motor Terminal 2
+| Motor | Connect To |
+|---|---|
+| Front Left Motor | Motor Driver 1 OUT1 and OUT2 |
+| Front Right Motor | Motor Driver 1 OUT3 and OUT4 |
+| Rear Left Motor | Motor Driver 2 OUT1 and OUT2 |
+| Rear Right Motor | Motor Driver 2 OUT3 and OUT4 |
 
-MOTOR POWER
-Motor Battery Positive ---> Driver 1 Motor Supply / Vs
-Motor Battery Positive ---> Driver 2 Motor Supply / Vs
-Motor Battery Negative ---> Driver 1 GND
-Motor Battery Negative ---> Driver 2 GND
-Arduino GND ---> Driver 1 GND
-Arduino GND ---> Driver 2 GND
-```
+### Power Connections
 
-### Important Power and Wiring Notes
-- Do **not** power the four DC motors from the Arduino 5V pin.
-- Power the servo from a suitable regulated 5 V supply rather than relying on the Arduino 5 V rail during robot operation.
-- Arduino GND, both L298N grounds, motor-battery negative, and servo-supply ground must all be connected together as a common reference.
-- Do not connect the regulated 5 V outputs from two L298N modules together.
-- Remove the ENA and ENB jumper caps from both L298N modules when Arduino D5 and D6 are used for PWM speed control.
-- Mount the HC-SR04 firmly on the servo so the sensor points approximately straight ahead when the servo is at the centre angle.
-- Servo mounting direction differs between chassis designs. If the programmed left and right scan angles are physically reversed, swap the `LEFT_ANGLE` and `RIGHT_ANGLE` values in the code.
-- Before placing the robot on the floor, lift the chassis and verify that all four wheels rotate in the intended direction.
+| From | Connect To |
+|---|---|
+| Battery + | Arduino VIN, Motor Driver 1 Motor Power, Motor Driver 2 Motor Power |
+| Battery - | Arduino GND, Motor Driver 1 GND, Motor Driver 2 GND |
+| Regulated 5V + | Servo VCC |
+| Regulated 5V GND | Servo GND and Arduino GND |
+
+Keep the **ENA and ENB jumpers fitted** on both L298N modules.
 
 ## Code
 See [`obstacle_avoider_servo_scan.ino`](./obstacle_avoider_servo_scan.ino).
 
 ## Working Principle
-1. The ultrasonic sensor normally faces forward at the servo centre position.
-2. Arduino repeatedly measures the distance directly in front of the robot.
-3. If the path is clear, all four motors move forward.
-4. When an obstacle is detected within the configured stopping distance, the robot stops.
-5. It reverses briefly to create turning space and stops again.
-6. The servo turns the HC-SR04 toward the left and Arduino measures the available distance.
-7. The servo then turns the HC-SR04 toward the right and measures again.
-8. The sensor returns to the centre position.
-9. If both side readings are valid, Arduino compares them and pivots toward the side with more free space.
-10. If only one side returns a valid measurement, the robot turns toward that side.
-11. If neither side returns a valid ultrasonic measurement, the robot remains stopped rather than assuming an unsafe path is clear.
-12. The process repeats continuously.
+1. The ultrasonic sensor looks straight ahead and measures distance.
+2. If the path is clear, the robot moves forward.
+3. If an obstacle is detected, the robot stops and moves backward slightly.
+4. The servo turns the ultrasonic sensor to the left and measures the distance.
+5. The servo turns the sensor to the right and measures again.
+6. Arduino compares both readings.
+7. The robot turns toward the side with more free space.
+8. If no valid distance is measured, the robot stops for safety.
 
 ## Use Cases
-- Autonomous mobile robots
-- Directional obstacle avoidance
-- Sensor-scanning demonstrations
-- Robotics navigation lessons
-- STEM robotics projects
-- Warehouse robot concepts
-- Delivery robot prototypes
-- Introduction to decision-making algorithms
-- Servo and ultrasonic sensor integration
+- Obstacle avoiding robots
+- Autonomous navigation projects
+- Servo motor experiments
+- Ultrasonic sensor projects
+- Robotics workshops
+- STEM projects
