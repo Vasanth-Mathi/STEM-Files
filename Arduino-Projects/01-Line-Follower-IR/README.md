@@ -1,9 +1,7 @@
-# 4-Wheel Line Follower Robot Using IR Sensors
+# Line Follower Robot Using IR Sensors
 
 ## Description
-This project builds an autonomous four-wheel line follower robot using an Arduino Uno, two IR sensors, four DC geared motors, and **two L298N dual H-bridge motor-driver modules**.
-
-Each DC motor is connected to its own H-bridge channel. Motor Driver 1 controls the two front motors and Motor Driver 2 controls the two rear motors. The Arduino sends the same left-side control signals to the front-left and rear-left channels, and the same right-side control signals to the front-right and rear-right channels. This keeps all four wheels coordinated while avoiding two motors being connected in parallel to one driver channel.
+A four-wheel robot that follows a black line using two IR sensors. The Arduino checks the left and right IR sensors and turns the robot whenever it moves away from the line.
 
 ## Components
 
@@ -11,90 +9,61 @@ Each DC motor is connected to its own H-bridge channel. Motor Driver 1 controls 
 |---|---:|
 | Arduino Uno | 1 |
 | IR Sensor Module | 2 |
-| L298N Dual H-Bridge Motor Driver Module | 2 |
-| DC Geared Motor | 4 |
+| L298N Motor Driver Module | 2 |
+| 6V DC Geared Motor | 4 |
 | Wheel | 4 |
 | 4-Wheel Robot Chassis | 1 |
-| Suitable Motor Battery Pack | 1 |
+| 7.4V Battery Pack | 1 |
 | Jumper Wires | As required |
 
 ## Circuit Connections
 
-```text
-IR SENSORS
-Left IR VCC ---> Arduino 5V
-Left IR GND ---> Arduino GND
-Left IR OUT ---> Arduino D2
+### Arduino Connections
 
-Right IR VCC ---> Arduino 5V
-Right IR GND ---> Arduino GND
-Right IR OUT ---> Arduino D3
+| Arduino Pin | Connect To |
+|---|---|
+| 5V | Left IR VCC and Right IR VCC |
+| GND | Left IR GND and Right IR GND |
+| D2 | Left IR OUT |
+| D3 | Right IR OUT |
+| D8 | Motor Driver 1 IN1 and Motor Driver 2 IN1 |
+| D9 | Motor Driver 1 IN2 and Motor Driver 2 IN2 |
+| D10 | Motor Driver 1 IN3 and Motor Driver 2 IN3 |
+| D11 | Motor Driver 1 IN4 and Motor Driver 2 IN4 |
 
-SHARED LEFT-SIDE CONTROL
-Arduino D5 (PWM) ---> Driver 1 ENA
-Arduino D5 (PWM) ---> Driver 2 ENA
-Arduino D8 ---> Driver 1 IN1
-Arduino D8 ---> Driver 2 IN1
-Arduino D9 ---> Driver 1 IN2
-Arduino D9 ---> Driver 2 IN2
+### Motor Connections
 
-SHARED RIGHT-SIDE CONTROL
-Arduino D6 (PWM) ---> Driver 1 ENB
-Arduino D6 (PWM) ---> Driver 2 ENB
-Arduino D10 ---> Driver 1 IN3
-Arduino D10 ---> Driver 2 IN3
-Arduino D11 ---> Driver 1 IN4
-Arduino D11 ---> Driver 2 IN4
+| Motor | Connect To |
+|---|---|
+| Front Left Motor | Motor Driver 1 OUT1 and OUT2 |
+| Front Right Motor | Motor Driver 1 OUT3 and OUT4 |
+| Rear Left Motor | Motor Driver 2 OUT1 and OUT2 |
+| Rear Right Motor | Motor Driver 2 OUT3 and OUT4 |
 
-MOTOR DRIVER 1 - FRONT MOTORS
-Driver 1 OUT1 ---> Front Left Motor Terminal 1
-Driver 1 OUT2 ---> Front Left Motor Terminal 2
-Driver 1 OUT3 ---> Front Right Motor Terminal 1
-Driver 1 OUT4 ---> Front Right Motor Terminal 2
+### Power Connections
 
-MOTOR DRIVER 2 - REAR MOTORS
-Driver 2 OUT1 ---> Rear Left Motor Terminal 1
-Driver 2 OUT2 ---> Rear Left Motor Terminal 2
-Driver 2 OUT3 ---> Rear Right Motor Terminal 1
-Driver 2 OUT4 ---> Rear Right Motor Terminal 2
+| From | Connect To |
+|---|---|
+| Battery + | Arduino VIN, Motor Driver 1 Motor Power, Motor Driver 2 Motor Power |
+| Battery - | Arduino GND, Motor Driver 1 GND, Motor Driver 2 GND |
 
-MOTOR POWER
-Motor Battery Positive ---> Driver 1 Motor Supply / Vs
-Motor Battery Positive ---> Driver 2 Motor Supply / Vs
-Motor Battery Negative ---> Driver 1 GND
-Motor Battery Negative ---> Driver 2 GND
-Arduino GND ---> Driver 1 GND
-Arduino GND ---> Driver 2 GND
-```
-
-### Important Power Notes
-- Do **not** power the four motors from the Arduino 5V pin.
-- The Arduino, both motor drivers, and the motor battery must share a common ground.
-- L298N breakout boards differ in their onboard 5V regulator and `5V-EN` jumper arrangement. Follow the markings/instructions for the exact module being used. Do not tie two module 5V regulator outputs together.
-- Remove the ENA/ENB jumper caps if PWM speed control is being supplied from Arduino D5 and D6.
-- Before autonomous testing, raise the chassis so the wheels are free and verify that all four motors rotate in the intended forward direction. If one motor runs backward, reverse that motor's two output wires.
+Keep the **ENA and ENB jumpers fitted** on both L298N modules. The motors are controlled at full speed in this beginner version.
 
 ## Code
 See [`line_follower_ir.ino`](./line_follower_ir.ino).
 
 ## Working Principle
-The two IR sensors are mounted at the front of the chassis so that, when the robot is correctly centred, the black line runs between the sensors and both sensors see the lighter floor.
+1. The two IR sensors check the floor in front of the robot.
+2. When both sensors are on the normal floor, the robot moves forward.
+3. If the left sensor detects the black line, the robot turns left.
+4. If the right sensor detects the black line, the robot turns right.
+5. If both sensors detect black, the robot stops.
 
-1. The two IR modules continuously sense the floor.
-2. In this project configuration, the program assumes the sensor output becomes `LOW` when that sensor detects the black line and `HIGH` on the lighter floor.
-3. When neither sensor sees the black line, all four motors move forward.
-4. If the left sensor detects the black line, the robot has drifted toward the right side of the path, so the left-side motors are slowed and the robot steers left.
-5. If the right sensor detects the black line, the right-side motors are slowed and the robot steers right.
-6. If both sensors detect black at the same time, the program stops the robot. This may represent a wide line, junction, or end marker depending on the track design.
-7. Motor Driver 1 controls the front pair and Motor Driver 2 controls the rear pair, while shared Arduino control signals keep the left motors and right motors synchronized.
-
-> IR modules can use different output polarity depending on their comparator circuit and calibration. Verify the sensor output using the Serial Monitor or module indicator LED before running the robot. If the module outputs `HIGH` on black, change `BLACK_STATE` in the code from `LOW` to `HIGH`.
+> The code assumes the IR sensor gives `LOW` on the black line. If your sensor gives `HIGH` on black, change `BLACK_STATE` in the code to `HIGH`.
 
 ## Use Cases
-- Line-following robotics
-- Automated guided vehicle demonstrations
-- Warehouse transport concepts
-- Factory material movement models
-- Autonomous navigation experiments
-- Sensor-feedback lessons
-- STEM robotics competitions
+- Line-following robots
+- Automated guided vehicles
+- Warehouse robot demonstrations
+- Sensor-based navigation lessons
+- STEM robotics activities
