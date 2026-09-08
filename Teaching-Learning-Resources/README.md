@@ -28,5 +28,5 @@ Materials in this section may support teachers in planning lessons, running work
 - Student extension activities
 
 ## Projects
-
+<img width="2172" height="724" alt="ChatGPT Image Sep 8, 2026 at 10_09_18 AM" src="https://github.com/user-attachments/assets/f4cf791c-9c3b-4f83-951b-2899f657ffa4" />
 <!-- Add only project or resource titles here whenever new folders are created. -->
