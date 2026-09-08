@@ -13,7 +13,8 @@ A four-wheel robot that detects obstacles using an HC-SR04 ultrasonic sensor. Wh
 | 6V DC Geared Motor | 4 |
 | Wheel | 4 |
 | 4-Wheel Robot Chassis | 1 |
-| 7.4V Battery Pack | 1 |
+| 7.4V Motor Battery Pack | 1 |
+| USB Power Bank or 7-12V Arduino Power Supply | 1 |
 | Jumper Wires | As required |
 
 ## Circuit Connections
@@ -42,12 +43,16 @@ A four-wheel robot that detects obstacles using an HC-SR04 ultrasonic sensor. Wh
 
 ### Power Connections
 
-| From | Connect To |
+| Power Source | Connect To |
 |---|---|
-| Battery + | Arduino VIN, Motor Driver 1 Motor Power, Motor Driver 2 Motor Power |
-| Battery - | Arduino GND, Motor Driver 1 GND, Motor Driver 2 GND |
+| USB Power Bank or 7-12V Arduino Supply | Arduino USB port or DC jack |
+| Motor Battery + | Motor Driver 1 Motor Power and Motor Driver 2 Motor Power |
+| Motor Battery - | Motor Driver 1 GND and Motor Driver 2 GND |
+| Arduino GND | Motor Driver 1 GND and Motor Driver 2 GND |
 
 Keep the **ENA and ENB jumpers fitted** on both L298N modules.
+
+> The motor battery voltage must match the motors being used. Do not automatically use 12V with 6V motors.
 
 ## Code
 See [`obstacle_detector.ino`](./obstacle_detector.ino).
