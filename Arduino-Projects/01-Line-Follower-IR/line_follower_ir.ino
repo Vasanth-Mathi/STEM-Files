@@ -1,92 +1,102 @@
 /*
   4-Wheel Line Follower Robot Using Two IR Sensors
   Board: Arduino Uno
+  Motors: 4 DC geared motors
+  Motor Drivers: 2 x L298N
 
-  Motor arrangement:
-  - Left front + left rear motors operate together through L298N channel A.
-  - Right front + right rear motors operate together through L298N channel B.
+  Driver 1 controls the front motors.
+  Driver 2 controls the rear motors.
+  Both drivers share the same left/right control signals so that
+  front and rear motors on each side move together.
 */
 
 const int leftIR = 2;
 const int rightIR = 3;
 
-// Left-side motor group
-const int ENA = 5;
-const int IN1 = 8;
-const int IN2 = 9;
+// Shared LEFT-side motor control for both L298N modules
+const int LEFT_EN = 5;   // PWM
+const int LEFT_IN1 = 8;
+const int LEFT_IN2 = 9;
 
-// Right-side motor group
-const int ENB = 6;
-const int IN3 = 10;
-const int IN4 = 11;
+// Shared RIGHT-side motor control for both L298N modules
+const int RIGHT_EN = 6;  // PWM
+const int RIGHT_IN1 = 10;
+const int RIGHT_IN2 = 11;
+
+// Change to HIGH if your IR modules output HIGH on black.
+const int BLACK_STATE = LOW;
 
 const int forwardSpeed = 170;
-const int turnSpeed = 90;
+const int correctionSpeed = 80;
 
 void setup() {
   pinMode(leftIR, INPUT);
   pinMode(rightIR, INPUT);
 
-  pinMode(ENA, OUTPUT);
-  pinMode(IN1, OUTPUT);
-  pinMode(IN2, OUTPUT);
+  pinMode(LEFT_EN, OUTPUT);
+  pinMode(LEFT_IN1, OUTPUT);
+  pinMode(LEFT_IN2, OUTPUT);
 
-  pinMode(ENB, OUTPUT);
-  pinMode(IN3, OUTPUT);
-  pinMode(IN4, OUTPUT);
+  pinMode(RIGHT_EN, OUTPUT);
+  pinMode(RIGHT_IN1, OUTPUT);
+  pinMode(RIGHT_IN2, OUTPUT);
 
   stopRobot();
 }
 
 void loop() {
-  int leftSensor = digitalRead(leftIR);
-  int rightSensor = digitalRead(rightIR);
+  const int leftState = digitalRead(leftIR);
+  const int rightState = digitalRead(rightIR);
 
-  // Assumption: LOW = black line, HIGH = light surface
-  if (leftSensor == LOW && rightSensor == LOW) {
+  const bool leftOnBlack = (leftState == BLACK_STATE);
+  const bool rightOnBlack = (rightState == BLACK_STATE);
+
+  // Sensors are mounted so the line normally runs between them.
+  if (!leftOnBlack && !rightOnBlack) {
     moveForward();
-  } else if (leftSensor == LOW && rightSensor == HIGH) {
-    turnLeft();
-  } else if (leftSensor == HIGH && rightSensor == LOW) {
-    turnRight();
+  } else if (leftOnBlack && !rightOnBlack) {
+    steerLeft();
+  } else if (!leftOnBlack && rightOnBlack) {
+    steerRight();
   } else {
+    // Both sensors on black: stop at a wide line/junction/end marker.
     stopRobot();
   }
 }
 
+void setLeftMotorsForward(int speedValue) {
+  analogWrite(LEFT_EN, constrain(speedValue, 0, 255));
+  digitalWrite(LEFT_IN1, HIGH);
+  digitalWrite(LEFT_IN2, LOW);
+}
+
+void setRightMotorsForward(int speedValue) {
+  analogWrite(RIGHT_EN, constrain(speedValue, 0, 255));
+  digitalWrite(RIGHT_IN1, HIGH);
+  digitalWrite(RIGHT_IN2, LOW);
+}
+
 void moveForward() {
-  setLeftForward(forwardSpeed);
-  setRightForward(forwardSpeed);
+  setLeftMotorsForward(forwardSpeed);
+  setRightMotorsForward(forwardSpeed);
 }
 
-void turnLeft() {
-  setLeftForward(turnSpeed);
-  setRightForward(forwardSpeed);
+void steerLeft() {
+  setLeftMotorsForward(correctionSpeed);
+  setRightMotorsForward(forwardSpeed);
 }
 
-void turnRight() {
-  setLeftForward(forwardSpeed);
-  setRightForward(turnSpeed);
+void steerRight() {
+  setLeftMotorsForward(forwardSpeed);
+  setRightMotorsForward(correctionSpeed);
 }
 
 void stopRobot() {
-  analogWrite(ENA, 0);
-  analogWrite(ENB, 0);
+  analogWrite(LEFT_EN, 0);
+  analogWrite(RIGHT_EN, 0);
 
-  digitalWrite(IN1, LOW);
-  digitalWrite(IN2, LOW);
-  digitalWrite(IN3, LOW);
-  digitalWrite(IN4, LOW);
-}
-
-void setLeftForward(int speedValue) {
-  analogWrite(ENA, speedValue);
-  digitalWrite(IN1, HIGH);
-  digitalWrite(IN2, LOW);
-}
-
-void setRightForward(int speedValue) {
-  analogWrite(ENB, speedValue);
-  digitalWrite(IN3, HIGH);
-  digitalWrite(IN4, LOW);
+  digitalWrite(LEFT_IN1, LOW);
+  digitalWrite(LEFT_IN2, LOW);
+  digitalWrite(RIGHT_IN1, LOW);
+  digitalWrite(RIGHT_IN2, LOW);
 }
