@@ -26,6 +26,18 @@ A typical Arduino project works in the following sequence:
 
 Arduino programs are commonly written in C/C++ using the Arduino IDE and uploaded to the board through USB.
 
+## Standard Power Setup
+
+For the projects in this repository:
+
+- Arduino Uno is powered through its USB port using a power bank, or through the DC jack using a suitable 7-12V supply such as a 9V source.
+- Sensors, small modules, and low-power components normally receive 5V from the Arduino 5V pin.
+- DC motors are not powered from the Arduino.
+- Motor drivers use a separate motor battery.
+- The Arduino GND and motor-driver GND must be connected together in robot projects.
+- The motor-battery voltage must match the motors being used. A 12V battery should only be used when the motors are rated for that supply.
+- Small servos may be powered from Arduino 5V in beginner projects, but servo current can cause resets or jitter. USB power from a capable power bank is preferred for servo-based projects.
+
 ## Common Use Cases
 
 Arduino can be used for:
