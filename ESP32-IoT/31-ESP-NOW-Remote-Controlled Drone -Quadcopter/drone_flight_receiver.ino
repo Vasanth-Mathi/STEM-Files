@@ -1,5 +1,5 @@
 /*
-  Project 31 - ESP32 ESP-NOW Remote Controlled Brushed-Motor Quadcopter
+  Project 31 - ESP32 ESP-NOW Remote-Controlled-Drone - Quadcopter
   ESP32 2: Flight Receiver / Controller
 
   Receives commands from the remote, reads an MPU6050 IMU and mixes four
