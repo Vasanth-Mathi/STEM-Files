@@ -1,51 +1,98 @@
 # ESP32 Wireless Robot Remote Controller Using ESP-NOW
 
 ## Description
-Uses one ESP32 with a joystick as a handheld ESP-NOW transmitter and another ESP32 to control a four-wheel robot.
+
+This project uses one ESP32 as a handheld joystick transmitter and a second ESP32 on a four-wheel robot. The two boards communicate directly using ESP-NOW.
+
+The robot uses **four DC motors and two dual-channel L298N motor-driver modules**, so each motor has its own H-bridge channel. Matching direction inputs are shared between the two drivers.
+
+```text
+Joystick ---> ESP32 1 Remote ~~~ ESP-NOW ~~~> ESP32 2 Robot
+                                              |
+                                              v
+                                      2 × L298N Drivers
+                                              |
+                                              v
+                                         4 DC Motors
+```
 
 ## Components
 
 | Component | Quantity |
-|---|---|
+|---|---:|
 | ESP32 Dev Module | 2 |
 | Dual-Axis Joystick Module | 1 |
-| L298N Motor Driver Module | 2 |
-| 6V DC Geared Motor | 4 |
+| L298N Dual-Channel Motor Driver | 2 |
+| DC Geared Motor | 4 |
 | Wheel | 4 |
-| 4-Wheel Robot Chassis | 1 |
-| Motor Battery Pack | 1 |
+| Four-wheel chassis | 1 |
+| Motor battery matched to motor rating | 1 |
 | Jumper Wires | As required |
 
 ## Circuit Connections
 
-### ESP32 Connections
+### ESP32 1 - Remote Sender
 
-| ESP32 Pin / Connection | Connect To |
+The joystick uses ADC1 pins, which remain available while ESP-NOW is active.
+
+| ESP32 1 Pin | Connect To |
 |---|---|
-| Remote GPIO 34 | Joystick VRx |
-| Remote GPIO 35 | Joystick VRy |
-| Robot GPIO 25 | Driver 1 IN1 and Driver 2 IN1 |
-| Robot GPIO 26 | Driver 1 IN2 and Driver 2 IN2 |
-| Robot GPIO 27 | Driver 1 IN3 and Driver 2 IN3 |
-| Robot GPIO 14 | Driver 1 IN4 and Driver 2 IN4 |
-| Robot GND | Both motor-driver GND pins |
-| Motor Battery + | Both driver motor-power inputs |
-| Motor Battery - | Both driver GND pins |
+| 3.3V | Joystick VCC |
+| GND | Joystick GND |
+| GPIO 34 | Joystick VRx |
+| GPIO 35 | Joystick VRy |
 
-> Keep ENA and ENB jumpers fitted on both L298N modules for this full-speed version.
-> Adjust the joystick threshold values if your joystick does not center near the middle of the ESP32 ADC range.
+### ESP32 2 - Robot Receiver to L298N Drivers
+
+| ESP32 2 Pin | Connect To |
+|---|---|
+| GPIO 25 | Driver 1 IN1 + Driver 2 IN1 |
+| GPIO 26 | Driver 1 IN2 + Driver 2 IN2 |
+| GPIO 27 | Driver 1 IN3 + Driver 2 IN3 |
+| GPIO 14 | Driver 1 IN4 + Driver 2 IN4 |
+| GND | GND of both L298N modules |
+
+Keep **ENA and ENB jumpers fitted** on both modules for this full-speed version.
+
+### Motor Connections
+
+| Driver Output | Motor |
+|---|---|
+| Driver 1 OUT1 / OUT2 | Front-left motor |
+| Driver 1 OUT3 / OUT4 | Front-right motor |
+| Driver 2 OUT1 / OUT2 | Rear-left motor |
+| Driver 2 OUT3 / OUT4 | Rear-right motor |
+
+### Power Connections
+
+| Connection | Connect To |
+|---|---|
+| Motor battery + | Motor-supply input of both L298N modules |
+| Motor battery - | GND of both L298N modules |
+| ESP32 2 GND | Same common GND |
+| ESP32 boards | USB or suitable regulated supply |
+
+Do not power the four motors from the ESP32. The motor-battery voltage must match the motors being used.
 
 ## Code
-See [`espnow_wireless_robot_controller.ino`](./espnow_wireless_robot_controller.ino).
+
+- **ESP32 1 Remote Sender:** [`remote_sender.ino`](./remote_sender.ino)
+- **ESP32 2 Robot Receiver:** [`robot_receiver.ino`](./robot_receiver.ino)
+
+The receiver includes a communication failsafe. If valid packets stop arriving, the robot stops.
 
 ## Working Principle
-1. Set `REMOTE_MODE` to `true` for the joystick ESP32 and enter the robot ESP32 MAC address.
-2. Set `REMOTE_MODE` to `false` on the robot.
-3. Joystick X and Y values are transmitted through ESP-NOW.
-4. The robot interprets the joystick position as forward, backward, left, right, or stop.
+
+1. ESP32 1 reads the joystick X and Y values.
+2. It broadcasts the values using ESP-NOW.
+3. ESP32 2 receives the latest valid packet.
+4. The robot compares the joystick position with a center dead zone.
+5. The motors are commanded forward, backward, left, right, or stop.
+6. If the wireless link is lost, the receiver stops the robot automatically.
 
 ## Use Cases
+
 - Wireless robotics
-- Remote-control design
+- Remote-control systems
 - Joystick interfacing
-- ESP-NOW control systems
+- ESP-NOW control projects

@@ -2,45 +2,43 @@
 
 ## What is ESP32?
 
-ESP32 is a powerful microcontroller platform designed for connected electronics projects. Like Arduino, it can read sensors, process information, and control devices. What makes ESP32 especially useful is that it also includes **built-in Wi-Fi and Bluetooth**, allowing projects to communicate wirelessly with phones, computers, other ESP32 boards, local networks, and Internet of Things (IoT) platforms.
+ESP32 is a microcontroller platform that can read sensors, process information, control electronic devices, and communicate wirelessly. It is especially useful for connected STEM projects because Wi-Fi and Bluetooth are built into the chip.
 
 A simple way to think about ESP32 is:
 
 > **Sense something → Process it → Communicate it → Take action**
 
-For example, an ESP32 can read the temperature from a sensor, send the value to a mobile dashboard through Wi-Fi, and automatically switch on a fan when the temperature becomes high.
+For example, an ESP32 can read temperature from a sensor, send the value to a mobile dashboard through Wi-Fi, and switch on a fan when the temperature becomes high.
 
-Because of these features, ESP32 is useful for learning **electronics, coding, wireless communication, automation, networking, data monitoring, and IoT systems**.
+ESP32 projects help students learn electronics, coding, wireless communication, automation, networking, data monitoring, and IoT system design.
 
 ## Main Parts and Features of an ESP32 Development Board
 
-Different ESP32 development boards may look slightly different, but they usually provide the following important features.
-
 | Part / Feature | What It Does |
 |---|---|
-| ESP32 Microcontroller | Runs the program and processes sensor data |
-| GPIO Pins | Connect sensors, LEDs, relays, displays, motor drivers, and other devices |
-| Analog Inputs | Read changing voltage levels from compatible analog sensors |
-| Wi-Fi | Connects the ESP32 to routers, local networks, web servers, and Internet services |
-| Bluetooth | Allows wireless communication with compatible phones and other devices |
-| BLE | Provides Bluetooth Low Energy communication for low-power wireless applications |
-| USB Port | Used for programming and usually for powering the development board |
-| 3.3V Pin | Provides 3.3V for compatible sensors and modules |
-| 5V / VIN Pin | Available on many development boards for suitable board or module connections |
-| GND Pins | Provide the common electrical ground connection |
-| Reset / EN Button | Restarts the ESP32 program |
+| ESP32 microcontroller | Runs the program and processes data |
+| GPIO pins | Connect sensors, LEDs, relays, motor drivers, displays, and other devices |
+| Analog inputs | Read changing voltage levels from compatible analog sensors |
+| Wi-Fi | Connects to routers, local web pages, Internet services, and IoT platforms |
+| Bluetooth Classic | Supports simple wireless control and serial-style communication |
+| BLE | Provides Bluetooth Low Energy communication |
+| ESP-NOW | Allows direct ESP32-to-ESP32 communication without a normal router |
+| USB port | Used for programming and usually board power |
+| 3.3V pin | Powers compatible low-voltage sensors and modules |
+| GND pins | Provide the common electrical reference |
+| Reset / EN button | Restarts the ESP32 |
 
-> **Important:** ESP32 GPIO pins normally use **3.3V logic**. A 5V signal should not be connected directly to an ESP32 GPIO pin unless the specific board or circuit safely converts the voltage.
+> ESP32 GPIO pins normally use **3.3V logic**. Do not apply a 5V signal directly to a GPIO pin unless the circuit safely converts the voltage.
 
 ## How ESP32 Works
 
-At the basic electronics level, ESP32 works using the same **Input → Process → Output** idea used in Arduino projects.
+At the basic electronics level, ESP32 follows an **Input → Process → Output** cycle.
 
 ```text
 Sensor / Input ---> ESP32 ---> Program Logic ---> Output Device
 ```
 
-But ESP32 can also add wireless communication:
+ESP32 can also add wireless communication:
 
 ```text
 Sensor
@@ -54,57 +52,53 @@ Output Device
 
 ### 1. Input
 
-Sensors and input devices collect information from the environment.
+Sensors and input devices collect information.
 
-Examples:
+Examples include:
 
-- DHT11 measures temperature and humidity
-- Ultrasonic sensor measures distance
-- PIR sensor detects movement
-- Soil-moisture sensor measures moisture level
-- MQ sensor responds to certain gases or smoke
-- Push button gives a user command
+- DHT11 for temperature and humidity
+- Ultrasonic sensor for distance
+- PIR sensor for movement
+- Soil-moisture sensor
+- MQ gas sensor
+- Push button
+- Joystick
+- IMU motion sensor
 
 ### 2. Processing
 
-The ESP32 program reads the input and decides what to do.
-
-For example:
+The ESP32 reads the input and follows the instructions written in the program.
 
 ```text
-If soil is dry     ---> Turn pump ON
-If soil is wet     ---> Turn pump OFF
+If soil is dry ---> Pump ON
+If soil is wet ---> Pump OFF
 ```
-
-The program can also prepare the data for wireless transmission.
 
 ### 3. Communication
 
-The ESP32 can send or receive information using several wireless methods.
+ESP32 can send or receive information using several wireless methods.
 
-| Communication Method | Simple Use |
+| Method | Typical Use |
 |---|---|
 | Wi-Fi | Web servers, Internet access, IoT dashboards, cloud communication |
-| Bluetooth Classic | Simple phone-to-ESP32 control and serial-style communication |
-| BLE | Low-power wireless data exchange with phones and BLE devices |
-| ESP-NOW | Direct ESP32-to-ESP32 communication without a normal Wi-Fi router |
+| Bluetooth Classic | Phone control and serial-style links |
+| BLE | Low-power phone/device communication |
+| ESP-NOW | Direct ESP32-to-ESP32 links, remotes, sensor networks |
 
-### 4. Output or Action
+### 4. Output
 
-After processing information, the ESP32 can control devices such as:
+The ESP32 can control:
 
 - LEDs
 - Buzzers
 - Relays
 - Motors through motor drivers
-- Water pumps through suitable drivers or relays
+- Water pumps through suitable drivers
 - Displays
 - Fans
 - Servos
 
 ### 5. Repeat
-
-The ESP32 continuously repeats this cycle while powered.
 
 ```text
 Sense ---> Process ---> Communicate ---> Act ---> Repeat
@@ -112,222 +106,119 @@ Sense ---> Process ---> Communicate ---> Act ---> Repeat
 
 ## What is IoT?
 
-**IoT** stands for **Internet of Things**. It describes physical devices that can collect data, communicate through a network, and sometimes be monitored or controlled remotely.
-
-A normal electronic project may work only on the device itself. An IoT project can make that information available somewhere else.
-
-For example:
+**IoT** means **Internet of Things**. It describes physical devices that collect information, communicate through a network, and can often be monitored or controlled remotely.
 
 ```text
 Temperature Sensor ---> ESP32 ---> Wi-Fi ---> IoT Platform ---> Mobile Dashboard
 ```
 
-A student can then view the temperature on a phone instead of standing next to the sensor.
+A typical IoT system contains:
 
-An IoT system may contain:
+1. A sensor
+2. A microcontroller such as ESP32
+3. A communication network
+4. A server or IoT platform
+5. A dashboard or app
+6. An actuator when automatic action is required
 
-1. **Sensor** - collects information.
-2. **ESP32** - processes the information.
-3. **Network** - carries the information.
-4. **IoT platform or server** - stores or manages the data.
-5. **Dashboard or app** - shows information to the user.
-6. **Actuator** - performs an action when required.
+## ESP32-to-ESP32 Projects
 
-## How Data Moves in an IoT Project
+Some projects in this folder require **more than one ESP32 board**.
 
-Consider a smart plant-watering system.
+For those projects, the code is intentionally separated by board role. Do not upload one mode-switching sketch and expect students to guess which half belongs where.
 
-```text
-Soil Moisture Sensor
-        |
-        v
-      ESP32
-        |
-        +----> Blynk IoT Dashboard ---> Student sees moisture level
-        |
-        +----> Program checks moisture
-                         |
-                         +---- Dry ---> Pump ON
-                         |
-                         +---- Wet ---> Pump OFF
-```
-
-This project combines **sensing, decision-making, wireless communication, monitoring, and automation**.
-
-## ESP32 Wi-Fi Projects
-
-Wi-Fi allows the ESP32 to communicate through a wireless network.
-
-The ESP32 can work in different ways depending on the project:
-
-- Connect to an existing Wi-Fi router and join the local network.
-- Create its own Wi-Fi access point for nearby devices to connect directly.
-- Host a simple web page that controls LEDs, relays, or other devices.
-- Connect to Internet services such as time servers or IoT platforms.
-
-Example:
+Typical file names are:
 
 ```text
-Phone / Computer ---> Wi-Fi Router ---> ESP32 ---> LED
+sender.ino
+receiver.ino
 ```
 
-or, when the ESP32 creates its own access point:
+or:
 
 ```text
-Phone ---> ESP32 Wi-Fi Access Point ---> Local Control Page
+esp32_1.ino
+esp32_2.ino
 ```
 
-## ESP32 Bluetooth and BLE Projects
-
-Bluetooth allows nearby devices to communicate without using an Internet connection.
-
-### Bluetooth Classic
-
-Bluetooth Classic is useful for projects such as:
-
-- Robot-car control
-- Simple wireless commands
-- Home-appliance control prototypes
-
-### BLE
-
-BLE stands for **Bluetooth Low Energy**. It is designed for efficient wireless communication and is commonly used for sensor information, beacons, and mobile-device communication.
-
-A BLE project may work like this:
+or role-based names such as:
 
 ```text
-Sensor ---> ESP32 BLE ---> Smartphone
+remote_sender.ino
+robot_receiver.ino
 ```
 
-## ESP32-to-ESP32 Communication Using ESP-NOW
+Each multi-board README also contains separate connection tables for each ESP32.
 
-ESP-NOW allows ESP32 boards to communicate directly with each other without requiring a normal Wi-Fi router for the data exchange.
+## How ESP-NOW Works
 
-This is useful when several ESP32 boards are placed in different locations.
-
-Examples include:
-
-- Wireless doorbells
-- Remote controllers
-- Sensor networks
-- Wireless quiz buzzers
-- Robot controllers
-- Agriculture sensor nodes
-
-Different communication arrangements are possible:
+ESP-NOW allows ESP32 boards to exchange small packets directly using the Wi-Fi radio without joining a normal Wi-Fi network.
 
 ```text
-One-to-One
-ESP32 A ---> ESP32 B
-
-One-to-Many
-             ---> ESP32 B
-ESP32 A ----> ESP32 C
-             ---> ESP32 D
-
-Many-to-One
-ESP32 A ---\
-ESP32 B ----> ESP32 Gateway
-ESP32 C ---/
+ESP32 Sender ~~~ ESP-NOW ~~~> ESP32 Receiver
 ```
 
-## Blynk IoT in These Projects
+It can be used for:
 
-Blynk IoT is used in several projects in this repository to create remote dashboards and controls.
+- One-to-one communication
+- Two-way communication
+- One-to-many control
+- Many-to-one sensor networks
+- Remote controls
+- Wireless classroom systems
 
-A typical Blynk project works like this:
+All communicating ESP-NOW boards must use the same Wi-Fi channel.
+
+## ESP-NOW and Wi-Fi Together
+
+An ESP32 can use normal Wi-Fi and ESP-NOW in the same project, but both must operate on the same radio channel.
+
+This is used in the Blynk gateway project:
 
 ```text
-Sensor ---> ESP32 ---> Wi-Fi ---> Blynk IoT ---> Mobile / Web Dashboard
+Sensor ESP32 ---> ESP-NOW ---> Gateway ESP32 ---> Wi-Fi ---> Blynk
 ```
 
-The dashboard can display values such as:
+## Blynk IoT
 
-- Temperature
-- Humidity
-- Soil moisture
-- Water level
-- Air-quality readings
-- Parking-space status
-- Motion alerts
+Blynk allows an ESP32 to send data to dashboards and receive remote-control commands.
 
-It can also send commands back to the ESP32, allowing the user to control compatible devices remotely.
+A Blynk project normally needs:
 
-Students normally need to enter their own **Wi-Fi details and Blynk project credentials** before uploading a Blynk sketch. Private credentials should not be uploaded publicly to GitHub.
+- Blynk Template ID
+- Template Name
+- Auth Token
+- Wi-Fi name
+- Wi-Fi password
+- Correct virtual-pin datastreams
 
-## ESP-NOW with an IoT Gateway
+Do not publish real Wi-Fi passwords or private Blynk tokens in a public repository.
 
-A more advanced system can combine local ESP-NOW communication with Internet-based IoT monitoring.
+## Power and Hardware Rules
 
-```text
-Sensor ESP32 A ---\
-Sensor ESP32 B ----> Gateway ESP32 ---> Wi-Fi ---> Blynk IoT
-Sensor ESP32 C ---/
-```
-
-The sensor nodes communicate locally with the gateway. The gateway then connects to Wi-Fi and sends the collected information to the IoT platform.
-
-This introduces students to the basic idea of a **wireless sensor network and gateway architecture**.
-
-## Power and Voltage Guidelines
-
-For the projects in this repository:
-
-- ESP32 development boards are normally powered through USB for classroom experiments.
-- Sensors and modules must be connected only to a voltage they are designed to use.
-- ESP32 GPIO pins normally operate with 3.3V logic.
-- A module that produces a 5V output signal may require a voltage divider or level-shifting circuit before connecting to an ESP32 GPIO input.
-- Motors, pumps, and other higher-current loads should not be powered directly from ESP32 GPIO pins.
-- Motors and pumps use suitable motor drivers, transistor circuits, or relay modules with an appropriate external power source.
-- Grounds must be connected correctly when separate supplies and control circuits need a common reference.
-
-## Good Practices for Students
-
-- Check whether a sensor uses 3.3V or 5V before connecting it.
-- Never assume that every Arduino module can be connected directly to ESP32 in exactly the same way.
-- Keep Wi-Fi passwords, Blynk tokens, and other private credentials out of public repositories.
-- Write down ESP32 MAC addresses clearly when working with ESP-NOW projects.
-- Test Wi-Fi, sensors, outputs, and dashboards separately before combining them.
-- Calibrate environmental sensors instead of treating one threshold value as correct for every sensor module.
-- Use separate suitable power for motors, pumps, and other high-current devices.
-- Read and understand the communication flow before changing network settings or device addresses.
-
-## What Students Learn
-
-ESP32 and IoT projects help students practise:
-
-- Microcontroller programming
-- Sensors and electronics
-- Wireless communication
-- Wi-Fi networking
-- Bluetooth and BLE
-- ESP32-to-ESP32 communication
-- IoT dashboards and remote monitoring
-- Data collection and interpretation
-- Automation and control systems
-- Debugging and troubleshooting
-- Cybersecurity awareness for passwords and device credentials
-- Computational thinking
-- Engineering design and problem-solving
+- ESP32 GPIO is 3.3V logic.
+- Motors, pumps, and other high-current loads must not be powered directly from GPIO pins.
+- Use a suitable motor driver, MOSFET, transistor, or relay when required.
+- High-current loads should use a separate supply matched to the load.
+- Grounds must normally be connected together when two powered circuits exchange electrical signals.
+- Use ADC1 pins for analog measurements when Wi-Fi operation could interfere with ADC2 on classic ESP32 boards.
+- Check every module's voltage requirement before wiring.
 
 ## Common Use Cases
 
-ESP32 can be used for:
-
 - Smart home automation
 - Wireless sensor monitoring
-- Environmental data collection
 - Smart agriculture
-- Remote device control
-- IoT dashboards
 - Weather monitoring
+- IoT dashboards
+- Bluetooth-controlled robots
+- ESP32-to-ESP32 communication
+- Wireless classroom systems
+- Security and alert systems
 - Energy monitoring
-- Bluetooth-controlled devices
-- Connected security systems
-- Smart classroom prototypes
-- Wireless sensor networks
-- Robotics communication
-- Industrial IoT experiments
+- Data logging
+- Remote-control robotics
+- Feedback-control experiments
 
 ## Projects
 
@@ -361,5 +252,6 @@ ESP32 can be used for:
 28. [ESP32 Blynk IoT Water Quality Monitoring Prototype Using TDS Sensor](./28-Blynk-Water-Quality-TDS-Monitor/)
 29. [ESP32 Multi-Sensor Smart Agriculture System Using Blynk IoT](./29-Blynk-Smart-Agriculture-System/)
 30. [ESP32 ESP-NOW Sensor Network with Blynk IoT Gateway](./30-ESP-NOW-Sensor-Network-Blynk-Gateway/)
+31. [ESP32 ESP-NOW Remote Controlled Brushed-Motor Quadcopter](./31-ESP-NOW-Remote-Controlled-Brushed-Quadcopter/)
 
 <!-- Add only project titles here whenever new project folders are created. -->

@@ -1,15 +1,22 @@
 # ESP32 Wireless Classroom Quiz Buzzer Using ESP-NOW
 
 ## Description
-Lets multiple wireless ESP32 player buttons compete to register the first answer on one host ESP32.
+
+This project uses several ESP32 player units and one ESP32 host. Each player has a push button. The host records the **first valid button packet** and ignores later players until the teacher presses reset.
+
+```text
+Player ESP32 1 ---\
+Player ESP32 2 ----> Host ESP32 ---> Winner LED + Buzzer
+Player ESP32 3 ---/
+```
 
 ## Components
 
 | Component | Quantity |
-|---|---|
+|---|---:|
 | ESP32 Dev Module | 3 or more |
-| Push Button | For each player |
-| LED | 1 |
+| Player Push Button | One per player |
+| Winner LED | 1 |
 | 220 Ω Resistor | 1 |
 | Active Buzzer | 1 |
 | Reset Push Button | 1 |
@@ -17,26 +24,42 @@ Lets multiple wireless ESP32 player buttons compete to register the first answer
 
 ## Circuit Connections
 
-### ESP32 Connections
+### Player ESP32 Boards - Senders
 
-| ESP32 Pin / Connection | Connect To |
+Use the same wiring on each player unit.
+
+| Player ESP32 Pin | Connect To |
 |---|---|
-| Each player GPIO 4 | Player push button to GND |
-| Host GPIO 23 | Winner LED through 220 Ω resistor |
-| Host GPIO 22 | Buzzer signal |
-| Host GPIO 19 | Reset button to GND |
+| GPIO 4 | Player button to GND |
+| GND | Button GND |
+
+### Host ESP32 - Receiver
+
+| Host ESP32 Pin | Connect To |
+|---|---|
+| GPIO 23 | Winner LED through 220 Ω resistor |
+| GPIO 22 | Active buzzer signal |
+| GPIO 19 | Reset push button to GND |
+| GND | LED cathode, buzzer GND, reset-button GND |
 
 ## Code
-See [`espnow_wireless_quiz_buzzer.ino`](./espnow_wireless_quiz_buzzer.ino).
+
+- **Player Sender:** [`player_sender.ino`](./player_sender.ino)
+- **Host Receiver:** [`host_receiver.ino`](./host_receiver.ino)
+
+Upload `player_sender.ino` to every player board and change `PLAYER_ID` so every player has a different number.
 
 ## Working Principle
-1. Set `HOST_MODE` to `false` on player units and assign each a different `PLAYER_ID`.
-2. Enter the host MAC address in every player unit.
-3. The first player button packet received by the host becomes the winner.
-4. The host ignores later presses until its reset button is pressed.
+
+1. A player presses a button.
+2. The player ESP32 sends its `PLAYER_ID`.
+3. The host accepts the first valid packet.
+4. The host lights the winner LED, sounds the buzzer, and prints the player number.
+5. Later packets are ignored until the host reset button is pressed.
 
 ## Use Cases
+
 - Classroom quiz systems
 - Wireless competitions
 - First-response logic
-- ESP-NOW event networks
+- Event-based ESP-NOW networks

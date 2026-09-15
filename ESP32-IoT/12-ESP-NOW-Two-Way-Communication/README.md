@@ -1,12 +1,18 @@
 # ESP32 Two-Way Communication Using ESP-NOW
 
 ## Description
-Lets two ESP32 boards exchange push-button states in both directions and control an LED on the opposite device.
+
+This project uses **two ESP32 boards that both send and receive data**. Each board has one push button and one LED. Pressing the button on ESP32 1 controls the LED on ESP32 2, while pressing the button on ESP32 2 controls the LED on ESP32 1.
+
+```text
+ESP32 1 Button ---> ESP32 1 ~~~> ESP32 2 ---> ESP32 2 LED
+ESP32 2 Button ---> ESP32 2 ~~~> ESP32 1 ---> ESP32 1 LED
+```
 
 ## Components
 
 | Component | Quantity |
-|---|---|
+|---|---:|
 | ESP32 Dev Module | 2 |
 | Push Button | 2 |
 | LED | 2 |
@@ -15,27 +21,44 @@ Lets two ESP32 boards exchange push-button states in both directions and control
 
 ## Circuit Connections
 
-### ESP32 Connections
+### ESP32 1
 
-| ESP32 Pin / Connection | Connect To |
+| ESP32 1 Pin | Connect To |
 |---|---|
-| Each ESP32 GPIO 4 | Push button to GND |
-| Each ESP32 GPIO 23 | LED anode through 220 Ω resistor |
-| Each ESP32 GND | LED cathode and button GND |
+| GPIO 4 | Push button to GND |
+| GPIO 23 | LED anode through 220 Ω resistor |
+| GND | LED cathode and button GND |
 
-> Set a different `DEVICE_ID` on each board and replace `peerMac` with the other ESP32 MAC address.
+### ESP32 2
+
+| ESP32 2 Pin | Connect To |
+|---|---|
+| GPIO 4 | Push button to GND |
+| GPIO 23 | LED anode through 220 Ω resistor |
+| GND | LED cathode and button GND |
+
+The buttons use `INPUT_PULLUP`, so no external pull-up resistor is required.
 
 ## Code
-See [`espnow_two_way_communication.ino`](./espnow_two_way_communication.ino).
+
+Upload the correct sketch to each board:
+
+- **ESP32 1:** [`esp32_1.ino`](./esp32_1.ino)
+- **ESP32 2:** [`esp32_2.ino`](./esp32_2.ino)
+
+Both sketches use the same packet format but different device IDs.
 
 ## Working Principle
-1. Upload the same sketch to both ESP32 boards after changing `DEVICE_ID` and `peerMac`.
-2. Each ESP32 sends its local button state to the other board.
-3. The received button state controls the local LED.
-4. Because both boards send and receive, communication is bidirectional.
+
+1. Each ESP32 reads its own button.
+2. Each board broadcasts its button state using ESP-NOW.
+3. The receiving board ignores packets sent by itself.
+4. The received button state controls the local LED.
+5. Communication therefore works in both directions.
 
 ## Use Cases
+
 - Bidirectional wireless control
+- Interactive classroom models
 - ESP-NOW peer communication
-- Interactive classroom demos
 - Remote input/output experiments
