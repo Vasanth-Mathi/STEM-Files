@@ -322,6 +322,6 @@ These projects help students learn:
 28. [ESP32 Blynk IoT Water Quality Monitoring Prototype Using TDS Sensor](./28-Blynk-Water-Quality-TDS-Monitor/)
 29. [ESP32 Multi-Sensor Smart Agriculture System Using Blynk IoT](./29-Blynk-Smart-Agriculture-System/)
 30. [ESP32 ESP-NOW Sensor Network with Blynk IoT Gateway](./30-ESP-NOW-Sensor-Network-Blynk-Gateway/)
-31. [ESP32 ESP-NOW Remote-Controlled-Drone - Quadcopter](./31-ESP-NOW-Remote-Controlled-Drone%20-Quadcopter/)
+31. [ESP32 ESP-NOW Remote-Controlled Drone](./31-ESP-NOW-Remote-Controlled-Drone/)
 
 <!-- Add only project titles here whenever new project folders are created. -->
