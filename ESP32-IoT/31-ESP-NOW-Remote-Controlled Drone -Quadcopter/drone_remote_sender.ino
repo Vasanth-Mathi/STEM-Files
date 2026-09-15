@@ -1,5 +1,5 @@
 /*
-  Project 31 - ESP32 ESP-NOW Remote Controlled Brushed-Motor Quadcopter
+  Project 31 - ESP32 ESP-NOW Remote-Controlled-Drone - Quadcopter
   ESP32 1: Handheld Remote Sender
 
   Controls throttle, roll, pitch and yaw with two joysticks.
