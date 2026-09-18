@@ -1,32 +1,24 @@
-/*
-  Clap Controlled Light Using Sound Sensor
-  Board: Arduino Uno
-*/
-
-const int SOUND_PIN = 2;
-const int LIGHT_PIN = 9;
-
-bool lightOn = false;
-int lastSoundState = LOW;
-
-unsigned long lastClapTime = 0;
-const unsigned long DEBOUNCE_MS = 300;
+int lightState = 0;
 
 void setup() {
-  pinMode(SOUND_PIN, INPUT);
-  pinMode(LIGHT_PIN, OUTPUT);
+  pinMode(2, INPUT);
+  pinMode(9, OUTPUT);
 }
 
 void loop() {
-  int soundState = digitalRead(SOUND_PIN);
+  if (digitalRead(2) == HIGH) {
+    if (lightState == 0) {
+      lightState = 1;
+      digitalWrite(9, HIGH);
+    } else {
+      lightState = 0;
+      digitalWrite(9, LOW);
+    }
 
-  if (soundState == HIGH &&
-      lastSoundState == LOW &&
-      millis() - lastClapTime > DEBOUNCE_MS) {
-    lightOn = !lightOn;
-    digitalWrite(LIGHT_PIN, lightOn ? HIGH : LOW);
-    lastClapTime = millis();
+    while (digitalRead(2) == HIGH) {
+      delay(10);
+    }
+
+    delay(200);
   }
-
-  lastSoundState = soundState;
 }

@@ -1,79 +1,71 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-/*
-  Visitor Counter Using IR Sensors
-  Board: Arduino Uno
-*/
-
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-const int SENSOR_1 = 2;
-const int SENSOR_2 = 3;
-const int DETECTED_STATE = LOW;
-
 int count = 0;
-int sequenceState = 0;
-
-unsigned long sequenceStart = 0;
-const unsigned long SEQUENCE_TIMEOUT = 2000;
-
-bool active(int pin) {
-  return digitalRead(pin) == DETECTED_STATE;
-}
-
-void showCount() {
-  lcd.setCursor(0, 0);
-  lcd.print("Visitors:       ");
-
-  lcd.setCursor(0, 1);
-  lcd.print(count);
-  lcd.print("               ");
-}
 
 void setup() {
-  pinMode(SENSOR_1, INPUT);
-  pinMode(SENSOR_2, INPUT);
+  pinMode(2, INPUT);
+  pinMode(3, INPUT);
 
   lcd.init();
   lcd.backlight();
-  showCount();
+
+  lcd.setCursor(0, 0);
+  lcd.print("Visitors:");
+  lcd.setCursor(0, 1);
+  lcd.print(count);
 }
 
 void loop() {
-  if (sequenceState == 0) {
-    if (active(SENSOR_1) && !active(SENSOR_2)) {
-      sequenceState = 1;
-      sequenceStart = millis();
-    } else if (active(SENSOR_2) && !active(SENSOR_1)) {
-      sequenceState = 2;
-      sequenceStart = millis();
+  if (digitalRead(2) == LOW && digitalRead(3) == HIGH) {
+    while (digitalRead(2) == LOW) {
+      delay(10);
     }
-  } else if (sequenceState == 1) {
-    if (active(SENSOR_2)) {
+
+    unsigned long start = millis();
+
+    while (digitalRead(3) == HIGH && millis() - start < 2000) {
+      delay(10);
+    }
+
+    if (digitalRead(3) == LOW) {
       count++;
-      showCount();
-      sequenceState = 3;
+
+      lcd.setCursor(0, 1);
+      lcd.print(count);
+      lcd.print("               ");
+
+      while (digitalRead(3) == LOW) {
+        delay(10);
+      }
     }
-  } else if (sequenceState == 2) {
-    if (active(SENSOR_1)) {
+  }
+
+  if (digitalRead(3) == LOW && digitalRead(2) == HIGH) {
+    while (digitalRead(3) == LOW) {
+      delay(10);
+    }
+
+    unsigned long start = millis();
+
+    while (digitalRead(2) == HIGH && millis() - start < 2000) {
+      delay(10);
+    }
+
+    if (digitalRead(2) == LOW) {
       if (count > 0) {
         count--;
       }
 
-      showCount();
-      sequenceState = 3;
-    }
-  } else if (sequenceState == 3) {
-    if (!active(SENSOR_1) && !active(SENSOR_2)) {
-      sequenceState = 0;
+      lcd.setCursor(0, 1);
+      lcd.print(count);
+      lcd.print("               ");
+
+      while (digitalRead(2) == LOW) {
+        delay(10);
+      }
     }
   }
-
-  if ((sequenceState == 1 || sequenceState == 2) &&
-      millis() - sequenceStart > SEQUENCE_TIMEOUT) {
-    sequenceState = 0;
-  }
-
-  delay(20);
 }

@@ -1,39 +1,24 @@
-/*
-  Water Level Indicator Using Water Level Sensor
-  Board: Arduino Uno
-*/
-
-const int LEVEL_PIN = A0;
-
-const int GREEN_LED = 8;
-const int YELLOW_LED = 9;
-const int RED_LED = 10;
-
-const int MEDIUM_LEVEL = 350;
-const int HIGH_LEVEL = 650;
-
 void setup() {
-  pinMode(GREEN_LED, OUTPUT);
-  pinMode(YELLOW_LED, OUTPUT);
-  pinMode(RED_LED, OUTPUT);
-
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
   Serial.begin(9600);
 }
 
 void loop() {
-  int level = analogRead(LEVEL_PIN);
-  Serial.println(level);
+  int water = analogRead(A0);
+  Serial.println(water);
 
-  digitalWrite(GREEN_LED, LOW);
-  digitalWrite(YELLOW_LED, LOW);
-  digitalWrite(RED_LED, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
 
-  if (level >= HIGH_LEVEL) {
-    digitalWrite(RED_LED, HIGH);
-  } else if (level >= MEDIUM_LEVEL) {
-    digitalWrite(YELLOW_LED, HIGH);
+  if (water >= 650) {
+    digitalWrite(10, HIGH);
+  } else if (water >= 350) {
+    digitalWrite(9, HIGH);
   } else {
-    digitalWrite(GREEN_LED, HIGH);
+    digitalWrite(8, HIGH);
   }
 
   delay(200);

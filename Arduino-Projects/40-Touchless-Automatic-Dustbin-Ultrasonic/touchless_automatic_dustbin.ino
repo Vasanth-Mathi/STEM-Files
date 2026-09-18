@@ -1,57 +1,31 @@
 #include <Servo.h>
 
-/*
-  Touchless Automatic Dustbin Using Ultrasonic Sensor
-  Board: Arduino Uno
-*/
-
 Servo lidServo;
 
-const int TRIG_PIN = 2;
-const int ECHO_PIN = 3;
-const int SERVO_PIN = 4;
-
-const int CLOSED_ANGLE = 0;
-const int OPEN_ANGLE = 90;
-const int OPEN_DISTANCE_CM = 20;
-
-long measureDistanceCm();
-
 void setup() {
-  pinMode(TRIG_PIN, OUTPUT);
-  pinMode(ECHO_PIN, INPUT);
+  pinMode(2, OUTPUT);
+  pinMode(3, INPUT);
 
-  lidServo.attach(SERVO_PIN);
-  lidServo.write(CLOSED_ANGLE);
+  lidServo.attach(4);
+  lidServo.write(0);
 }
 
 void loop() {
-  long distance = measureDistanceCm();
+  digitalWrite(2, LOW);
+  delayMicroseconds(2);
+  digitalWrite(2, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(2, LOW);
 
-  if (distance > 0 && distance <= OPEN_DISTANCE_CM) {
-    lidServo.write(OPEN_ANGLE);
+  long duration = pulseIn(3, HIGH, 30000);
+  int distance = duration * 0.0343 / 2;
+
+  if (duration > 0 && distance <= 20) {
+    lidServo.write(90);
     delay(2000);
-
-    lidServo.write(CLOSED_ANGLE);
+    lidServo.write(0);
     delay(700);
   } else {
     delay(100);
   }
-}
-
-long measureDistanceCm() {
-  digitalWrite(TRIG_PIN, LOW);
-  delayMicroseconds(2);
-
-  digitalWrite(TRIG_PIN, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(TRIG_PIN, LOW);
-
-  unsigned long duration = pulseIn(ECHO_PIN, HIGH, 30000UL);
-
-  if (duration == 0) {
-    return -1;
-  }
-
-  return (long)(duration * 0.0343 / 2.0);
 }

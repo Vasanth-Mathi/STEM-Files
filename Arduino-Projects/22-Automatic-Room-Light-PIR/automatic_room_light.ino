@@ -1,32 +1,15 @@
-/*
-  Automatic Room Light Using PIR Sensor
-  Board: Arduino Uno
-*/
-
-const int PIR_PIN = 2;
-const int LIGHT_PIN = 9;
-
-const unsigned long OFF_DELAY_MS = 10000;
-
-unsigned long lastMotionTime = 0;
-bool lightOn = false;
-
 void setup() {
-  pinMode(PIR_PIN, INPUT);
-  pinMode(LIGHT_PIN, OUTPUT);
+  pinMode(2, INPUT);
+  pinMode(9, OUTPUT);
 }
 
 void loop() {
-  if (digitalRead(PIR_PIN) == HIGH) {
-    lastMotionTime = millis();
-    lightOn = true;
+  if (digitalRead(2) == HIGH) {
+    digitalWrite(9, HIGH);
+    delay(10000);
+  } else {
+    digitalWrite(9, LOW);
   }
-
-  if (lightOn && millis() - lastMotionTime >= OFF_DELAY_MS) {
-    lightOn = false;
-  }
-
-  digitalWrite(LIGHT_PIN, lightOn ? HIGH : LOW);
 
   delay(50);
 }

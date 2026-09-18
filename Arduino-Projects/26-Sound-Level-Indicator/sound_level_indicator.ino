@@ -1,37 +1,22 @@
-/*
-  Sound Level Indicator Using Sound Sensor
-  Board: Arduino Uno
-*/
-
-const int SOUND_PIN = A0;
-
-const int GREEN_LED = 8;
-const int YELLOW_LED = 9;
-const int RED_LED = 10;
-
-const int MEDIUM_LEVEL = 80;
-const int HIGH_LEVEL = 180;
-
 void setup() {
-  pinMode(GREEN_LED, OUTPUT);
-  pinMode(YELLOW_LED, OUTPUT);
-  pinMode(RED_LED, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
 }
 
 void loop() {
-  int reading = analogRead(SOUND_PIN);
-  int soundLevel = abs(reading - 512);
+  int sound = abs(analogRead(A0) - 512);
 
-  digitalWrite(GREEN_LED, LOW);
-  digitalWrite(YELLOW_LED, LOW);
-  digitalWrite(RED_LED, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
 
-  if (soundLevel >= HIGH_LEVEL) {
-    digitalWrite(RED_LED, HIGH);
-  } else if (soundLevel >= MEDIUM_LEVEL) {
-    digitalWrite(YELLOW_LED, HIGH);
+  if (sound >= 180) {
+    digitalWrite(10, HIGH);
+  } else if (sound >= 80) {
+    digitalWrite(9, HIGH);
   } else {
-    digitalWrite(GREEN_LED, HIGH);
+    digitalWrite(8, HIGH);
   }
 
   delay(20);

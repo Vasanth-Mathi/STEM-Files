@@ -1,61 +1,65 @@
-/*
-  Quiz Buzzer System Using Push Buttons and LEDs
-  Board: Arduino Uno
-*/
-
-const int playerButtons[4] = {2, 3, 4, 5};
-const int playerLEDs[4] = {6, 7, 8, 9};
-
-const int BUZZER_PIN = 10;
-const int RESET_PIN = 11;
-
-int winner = -1;
-
-void clearRound() {
-  winner = -1;
-
-  for (int i = 0; i < 4; i++) {
-    digitalWrite(playerLEDs[i], LOW);
-  }
-
-  digitalWrite(BUZZER_PIN, LOW);
-}
+int winner = 0;
 
 void setup() {
-  for (int i = 0; i < 4; i++) {
-    pinMode(playerButtons[i], INPUT_PULLUP);
-    pinMode(playerLEDs[i], OUTPUT);
-  }
+  pinMode(2, INPUT_PULLUP);
+  pinMode(3, INPUT_PULLUP);
+  pinMode(4, INPUT_PULLUP);
+  pinMode(5, INPUT_PULLUP);
 
-  pinMode(BUZZER_PIN, OUTPUT);
-  pinMode(RESET_PIN, INPUT_PULLUP);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
 
-  clearRound();
+  pinMode(10, OUTPUT);
+  pinMode(11, INPUT_PULLUP);
 }
 
 void loop() {
-  if (digitalRead(RESET_PIN) == LOW) {
-    clearRound();
+  if (digitalRead(11) == LOW) {
+    winner = 0;
+    digitalWrite(6, LOW);
+    digitalWrite(7, LOW);
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
+    digitalWrite(10, LOW);
 
-    while (digitalRead(RESET_PIN) == LOW) {
+    while (digitalRead(11) == LOW) {
       delay(10);
     }
-
-    delay(100);
   }
 
-  if (winner == -1) {
-    for (int i = 0; i < 4; i++) {
-      if (digitalRead(playerButtons[i]) == LOW) {
-        winner = i;
+  if (winner == 0) {
+    if (digitalRead(2) == LOW) {
+      winner = 1;
+    } else if (digitalRead(3) == LOW) {
+      winner = 2;
+    } else if (digitalRead(4) == LOW) {
+      winner = 3;
+    } else if (digitalRead(5) == LOW) {
+      winner = 4;
+    }
 
-        digitalWrite(playerLEDs[i], HIGH);
-        digitalWrite(BUZZER_PIN, HIGH);
-        delay(300);
-        digitalWrite(BUZZER_PIN, LOW);
+    if (winner == 1) {
+      digitalWrite(6, HIGH);
+    }
 
-        break;
-      }
+    if (winner == 2) {
+      digitalWrite(7, HIGH);
+    }
+
+    if (winner == 3) {
+      digitalWrite(8, HIGH);
+    }
+
+    if (winner == 4) {
+      digitalWrite(9, HIGH);
+    }
+
+    if (winner > 0) {
+      digitalWrite(10, HIGH);
+      delay(300);
+      digitalWrite(10, LOW);
     }
   }
 }

@@ -1,42 +1,64 @@
-/*
-  Digital Dice Using LEDs
-  Board: Arduino Uno
-*/
-
-const int ledPins[7] = {2, 3, 4, 5, 6, 7, 8};
-const int BUTTON_PIN = 9;
-
-const byte patterns[6][7] = {
-  {0, 0, 0, 1, 0, 0, 0},
-  {1, 0, 0, 0, 0, 0, 1},
-  {1, 0, 0, 1, 0, 0, 1},
-  {1, 1, 0, 0, 0, 1, 1},
-  {1, 1, 0, 1, 0, 1, 1},
-  {1, 1, 1, 0, 1, 1, 1}
-};
-
-void showNumber(int number) {
-  for (int i = 0; i < 7; i++) {
-    digitalWrite(ledPins[i], patterns[number - 1][i]);
-  }
-}
-
 void setup() {
-  for (int i = 0; i < 7; i++) {
-    pinMode(ledPins[i], OUTPUT);
-  }
-
-  pinMode(BUTTON_PIN, INPUT_PULLUP);
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, INPUT_PULLUP);
 
   randomSeed(analogRead(A0));
-  showNumber(1);
 }
 
 void loop() {
-  if (digitalRead(BUTTON_PIN) == LOW) {
-    showNumber(random(1, 7));
+  if (digitalRead(9) == LOW) {
+    int number = random(1, 7);
 
-    while (digitalRead(BUTTON_PIN) == LOW) {
+    for (int pin = 2; pin <= 8; pin++) {
+      digitalWrite(pin, LOW);
+    }
+
+    if (number == 1) {
+      digitalWrite(5, HIGH);
+    }
+
+    if (number == 2) {
+      digitalWrite(2, HIGH);
+      digitalWrite(8, HIGH);
+    }
+
+    if (number == 3) {
+      digitalWrite(2, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(8, HIGH);
+    }
+
+    if (number == 4) {
+      digitalWrite(2, HIGH);
+      digitalWrite(3, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(8, HIGH);
+    }
+
+    if (number == 5) {
+      digitalWrite(2, HIGH);
+      digitalWrite(3, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(8, HIGH);
+    }
+
+    if (number == 6) {
+      digitalWrite(2, HIGH);
+      digitalWrite(3, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(6, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(8, HIGH);
+    }
+
+    while (digitalRead(9) == LOW) {
       delay(10);
     }
 

@@ -1,31 +1,22 @@
-/*
-  Arduino Traffic Light Simulator Using LEDs
-  Board: Arduino Uno
-*/
-
-const int RED_LED = 8;
-const int YELLOW_LED = 9;
-const int GREEN_LED = 10;
-
-void setLights(bool redState, bool yellowState, bool greenState) {
-  digitalWrite(RED_LED, redState);
-  digitalWrite(YELLOW_LED, yellowState);
-  digitalWrite(GREEN_LED, greenState);
-}
-
 void setup() {
-  pinMode(RED_LED, OUTPUT);
-  pinMode(YELLOW_LED, OUTPUT);
-  pinMode(GREEN_LED, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
 }
 
 void loop() {
-  setLights(LOW, LOW, HIGH);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, HIGH);
   delay(5000);
 
-  setLights(LOW, HIGH, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, LOW);
   delay(2000);
 
-  setLights(HIGH, LOW, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
   delay(5000);
 }

@@ -1,74 +1,56 @@
 #include <TM1637Display.h>
 
-/*
-  Digital Stopwatch Using TM1637 Display
-  Board: Arduino Uno
-*/
+TM1637Display display(2, 3);
 
-const int CLK_PIN = 2;
-const int DIO_PIN = 3;
-const int START_STOP_PIN = 4;
-const int RESET_PIN = 5;
-
-TM1637Display display(CLK_PIN, DIO_PIN);
-
-bool running = false;
-
-unsigned long accumulatedMs = 0;
-unsigned long runStartMs = 0;
-
-bool lastStartState = HIGH;
-bool lastResetState = HIGH;
-
-void showElapsed(unsigned long milliseconds) {
-  unsigned long seconds = (milliseconds / 1000) % 6000;
-  int displayValue = (seconds / 60) * 100 + (seconds % 60);
-
-  display.showNumberDecEx(displayValue, 0b01000000, true);
-}
+int running = 0;
+unsigned long startTime = 0;
+unsigned long savedTime = 0;
 
 void setup() {
-  pinMode(START_STOP_PIN, INPUT_PULLUP);
-  pinMode(RESET_PIN, INPUT_PULLUP);
+  pinMode(4, INPUT_PULLUP);
+  pinMode(5, INPUT_PULLUP);
 
   display.setBrightness(7);
-  showElapsed(0);
+  display.showNumberDecEx(0, 0b01000000, true);
 }
 
 void loop() {
-  bool startState = digitalRead(START_STOP_PIN);
-  bool resetState = digitalRead(RESET_PIN);
-
-  if (startState == LOW && lastStartState == HIGH) {
-    if (running) {
-      accumulatedMs += millis() - runStartMs;
-      running = false;
+  if (digitalRead(4) == LOW) {
+    if (running == 0) {
+      running = 1;
+      startTime = millis();
     } else {
-      runStartMs = millis();
-      running = true;
+      running = 0;
+      savedTime = savedTime + millis() - startTime;
     }
 
-    delay(30);
+    while (digitalRead(4) == LOW) {
+      delay(10);
+    }
+
+    delay(50);
   }
 
-  if (resetState == LOW && lastResetState == HIGH) {
-    running = false;
-    accumulatedMs = 0;
-    showElapsed(0);
+  if (digitalRead(5) == LOW) {
+    running = 0;
+    savedTime = 0;
 
-    delay(30);
+    while (digitalRead(5) == LOW) {
+      delay(10);
+    }
+
+    delay(50);
   }
 
-  unsigned long elapsed = accumulatedMs;
+  unsigned long totalTime = savedTime;
 
-  if (running) {
-    elapsed += millis() - runStartMs;
+  if (running == 1) {
+    totalTime = savedTime + millis() - startTime;
   }
 
-  showElapsed(elapsed);
+  unsigned long seconds = (totalTime / 1000) % 6000;
+  int value = (seconds / 60) * 100 + (seconds % 60);
 
-  lastStartState = startState;
-  lastResetState = resetState;
-
+  display.showNumberDecEx(value, 0b01000000, true);
   delay(20);
 }

@@ -1,16 +1,7 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-/*
-  Air Quality Monitoring System Using MQ-135 Sensor
-  Board: Arduino Uno
-*/
-
 LiquidCrystal_I2C lcd(0x27, 16, 2);
-
-const int MQ135_PIN = A0;
-const int MEDIUM_THRESHOLD = 350;
-const int HIGH_THRESHOLD = 550;
 
 void setup() {
   lcd.init();
@@ -18,19 +9,19 @@ void setup() {
 }
 
 void loop() {
-  int sensorValue = analogRead(MQ135_PIN);
+  int air = analogRead(A0);
 
   lcd.setCursor(0, 0);
   lcd.print("Raw: ");
-  lcd.print(sensorValue);
+  lcd.print(air);
   lcd.print("       ");
 
   lcd.setCursor(0, 1);
   lcd.print("Level: ");
 
-  if (sensorValue >= HIGH_THRESHOLD) {
+  if (air >= 550) {
     lcd.print("HIGH   ");
-  } else if (sensorValue >= MEDIUM_THRESHOLD) {
+  } else if (air >= 350) {
     lcd.print("MEDIUM ");
   } else {
     lcd.print("LOW    ");

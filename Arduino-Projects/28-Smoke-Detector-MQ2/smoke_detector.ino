@@ -1,28 +1,20 @@
-/*
-  Smoke Detector Using MQ-2 Sensor
-  Board: Arduino Uno
-*/
-
-const int SMOKE_PIN = A0;
-const int LED_PIN = 8;
-const int BUZZER_PIN = 9;
-const int SMOKE_THRESHOLD = 450;
-
 void setup() {
-  pinMode(LED_PIN, OUTPUT);
-  pinMode(BUZZER_PIN, OUTPUT);
-
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
   Serial.begin(9600);
 }
 
 void loop() {
-  int smokeValue = analogRead(SMOKE_PIN);
-  Serial.println(smokeValue);
+  int smoke = analogRead(A0);
+  Serial.println(smoke);
 
-  bool smokeDetected = smokeValue >= SMOKE_THRESHOLD;
-
-  digitalWrite(LED_PIN, smokeDetected ? HIGH : LOW);
-  digitalWrite(BUZZER_PIN, smokeDetected ? HIGH : LOW);
+  if (smoke >= 450) {
+    digitalWrite(8, HIGH);
+    digitalWrite(9, HIGH);
+  } else {
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
+  }
 
   delay(200);
 }

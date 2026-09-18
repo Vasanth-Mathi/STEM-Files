@@ -2,20 +2,11 @@
 #include <LiquidCrystal_I2C.h>
 #include <DHT.h>
 
-/*
-  Temperature and Humidity Monitor Using DHT11 Sensor
-  Board: Arduino Uno
-*/
-
-#define DHTPIN 2
-#define DHTTYPE DHT11
-
-DHT dht(DHTPIN, DHTTYPE);
+DHT dht(2, DHT11);
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 void setup() {
   dht.begin();
-
   lcd.init();
   lcd.backlight();
 }
@@ -27,7 +18,6 @@ void loop() {
   if (isnan(humidity) || isnan(temperature)) {
     lcd.setCursor(0, 0);
     lcd.print("Sensor error    ");
-
     lcd.setCursor(0, 1);
     lcd.print("                ");
   } else {
