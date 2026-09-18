@@ -1,31 +1,14 @@
 #include <SoftwareSerial.h>
 
-/*
-  Bluetooth Controlled 4-Wheel Car Using HC-05
-  Board: Arduino Uno
-*/
-
 SoftwareSerial bluetooth(2, 3);
 
-const int LEFT_IN1 = 8;
-const int LEFT_IN2 = 9;
-const int RIGHT_IN1 = 10;
-const int RIGHT_IN2 = 11;
-
-void stopRobot();
-void moveForward();
-void moveBackward();
-void turnLeft();
-void turnRight();
-
 void setup() {
-  pinMode(LEFT_IN1, OUTPUT);
-  pinMode(LEFT_IN2, OUTPUT);
-  pinMode(RIGHT_IN1, OUTPUT);
-  pinMode(RIGHT_IN2, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
 
   bluetooth.begin(9600);
-  stopRobot();
 }
 
 void loop() {
@@ -33,50 +16,30 @@ void loop() {
     char command = bluetooth.read();
 
     if (command == 'F' || command == 'f') {
-      moveForward();
+      digitalWrite(8, HIGH);
+      digitalWrite(9, LOW);
+      digitalWrite(10, HIGH);
+      digitalWrite(11, LOW);
     } else if (command == 'B' || command == 'b') {
-      moveBackward();
+      digitalWrite(8, LOW);
+      digitalWrite(9, HIGH);
+      digitalWrite(10, LOW);
+      digitalWrite(11, HIGH);
     } else if (command == 'L' || command == 'l') {
-      turnLeft();
+      digitalWrite(8, LOW);
+      digitalWrite(9, LOW);
+      digitalWrite(10, HIGH);
+      digitalWrite(11, LOW);
     } else if (command == 'R' || command == 'r') {
-      turnRight();
+      digitalWrite(8, HIGH);
+      digitalWrite(9, LOW);
+      digitalWrite(10, LOW);
+      digitalWrite(11, LOW);
     } else if (command == 'S' || command == 's') {
-      stopRobot();
+      digitalWrite(8, LOW);
+      digitalWrite(9, LOW);
+      digitalWrite(10, LOW);
+      digitalWrite(11, LOW);
     }
   }
-}
-
-void moveForward() {
-  digitalWrite(LEFT_IN1, HIGH);
-  digitalWrite(LEFT_IN2, LOW);
-  digitalWrite(RIGHT_IN1, HIGH);
-  digitalWrite(RIGHT_IN2, LOW);
-}
-
-void moveBackward() {
-  digitalWrite(LEFT_IN1, LOW);
-  digitalWrite(LEFT_IN2, HIGH);
-  digitalWrite(RIGHT_IN1, LOW);
-  digitalWrite(RIGHT_IN2, HIGH);
-}
-
-void turnLeft() {
-  digitalWrite(LEFT_IN1, LOW);
-  digitalWrite(LEFT_IN2, LOW);
-  digitalWrite(RIGHT_IN1, HIGH);
-  digitalWrite(RIGHT_IN2, LOW);
-}
-
-void turnRight() {
-  digitalWrite(LEFT_IN1, HIGH);
-  digitalWrite(LEFT_IN2, LOW);
-  digitalWrite(RIGHT_IN1, LOW);
-  digitalWrite(RIGHT_IN2, LOW);
-}
-
-void stopRobot() {
-  digitalWrite(LEFT_IN1, LOW);
-  digitalWrite(LEFT_IN2, LOW);
-  digitalWrite(RIGHT_IN1, LOW);
-  digitalWrite(RIGHT_IN2, LOW);
 }

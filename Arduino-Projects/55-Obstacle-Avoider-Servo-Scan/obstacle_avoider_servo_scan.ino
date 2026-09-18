@@ -1,180 +1,114 @@
 #include <Servo.h>
 
-/*
-  Obstacle Avoiding Robot Using Ultrasonic Sensor and Servo Motor
-  Board: Arduino Uno
-  Motors: 4
-  Motor Drivers: 2 x L298N
-
-  Keep ENA and ENB jumpers fitted on both L298N modules.
-*/
-
 Servo scannerServo;
 
-const int trigPin = 2;
-const int echoPin = 3;
-const int servoPin = 4;
-
-const int LEFT_IN1 = 8;
-const int LEFT_IN2 = 9;
-const int RIGHT_IN1 = 10;
-const int RIGHT_IN2 = 11;
-
-const int obstacleDistance = 20; // cm
-
-const int centerAngle = 90;
-const int leftAngle = 150;
-const int rightAngle = 30;
-
 void setup() {
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
+  pinMode(2, OUTPUT);
+  pinMode(3, INPUT);
 
-  pinMode(LEFT_IN1, OUTPUT);
-  pinMode(LEFT_IN2, OUTPUT);
-  pinMode(RIGHT_IN1, OUTPUT);
-  pinMode(RIGHT_IN2, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
 
-  scannerServo.attach(servoPin);
-  scannerServo.write(centerAngle);
+  scannerServo.attach(4);
+  scannerServo.write(90);
   delay(500);
-
-  stopRobot();
 }
 
 void loop() {
-  long frontDistance = measureDistance();
-
-  if (frontDistance < 0) {
-    stopRobot();
-    delay(100);
-    return;
-  }
-
-  if (frontDistance > obstacleDistance) {
-    moveForward();
-    delay(70);
-    return;
-  }
-
-  stopRobot();
-  delay(200);
-
-  moveBackward();
-  delay(400);
-
-  stopRobot();
-  delay(150);
-
-  long leftDistance = lookAndMeasure(leftAngle);
-  long rightDistance = lookAndMeasure(rightAngle);
-
-  scannerServo.write(centerAngle);
-  delay(400);
-
-  if (leftDistance < 0 && rightDistance < 0) {
-    stopRobot();
-    return;
-  }
-
-  if (leftDistance >= 0 && rightDistance < 0) {
-    turnLeft();
-  } else if (rightDistance >= 0 && leftDistance < 0) {
-    turnRight();
-  } else if (leftDistance > rightDistance) {
-    turnLeft();
-  } else {
-    turnRight();
-  }
-
-  delay(650);
-  stopRobot();
-  delay(150);
-}
-
-long lookAndMeasure(int angle) {
-  scannerServo.write(angle);
-  delay(450);
-
-  long distance = measureDistance();
-  delay(70);
-  return distance;
-}
-
-long measureDistance() {
-  digitalWrite(trigPin, LOW);
+  digitalWrite(2, LOW);
   delayMicroseconds(2);
-
-  digitalWrite(trigPin, HIGH);
+  digitalWrite(2, HIGH);
   delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
+  digitalWrite(2, LOW);
 
-  unsigned long duration = pulseIn(echoPin, HIGH, 30000UL);
+  long duration = pulseIn(3, HIGH, 30000);
+  int frontDistance = duration * 0.0343 / 2;
 
   if (duration == 0) {
-    return -1;
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
+    digitalWrite(10, LOW);
+    digitalWrite(11, LOW);
+  } else if (frontDistance > 20) {
+    digitalWrite(8, HIGH);
+    digitalWrite(9, LOW);
+    digitalWrite(10, HIGH);
+    digitalWrite(11, LOW);
+  } else {
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
+    digitalWrite(10, LOW);
+    digitalWrite(11, LOW);
+    delay(200);
+
+    digitalWrite(8, LOW);
+    digitalWrite(9, HIGH);
+    digitalWrite(10, LOW);
+    digitalWrite(11, HIGH);
+    delay(400);
+
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
+    digitalWrite(10, LOW);
+    digitalWrite(11, LOW);
+
+    scannerServo.write(150);
+    delay(450);
+
+    digitalWrite(2, LOW);
+    delayMicroseconds(2);
+    digitalWrite(2, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(2, LOW);
+
+    duration = pulseIn(3, HIGH, 30000);
+    int leftDistance = 0;
+
+    if (duration > 0) {
+      leftDistance = duration * 0.0343 / 2;
+    }
+
+    scannerServo.write(30);
+    delay(450);
+
+    digitalWrite(2, LOW);
+    delayMicroseconds(2);
+    digitalWrite(2, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(2, LOW);
+
+    duration = pulseIn(3, HIGH, 30000);
+    int rightDistance = 0;
+
+    if (duration > 0) {
+      rightDistance = duration * 0.0343 / 2;
+    }
+
+    scannerServo.write(90);
+    delay(400);
+
+    if (leftDistance > rightDistance) {
+      digitalWrite(8, LOW);
+      digitalWrite(9, HIGH);
+      digitalWrite(10, HIGH);
+      digitalWrite(11, LOW);
+    } else {
+      digitalWrite(8, HIGH);
+      digitalWrite(9, LOW);
+      digitalWrite(10, LOW);
+      digitalWrite(11, HIGH);
+    }
+
+    delay(650);
+
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
+    digitalWrite(10, LOW);
+    digitalWrite(11, LOW);
+    delay(150);
   }
 
-  long distance = (long)(duration * 0.0343 / 2.0);
-
-  if (distance < 2 || distance > 400) {
-    return -1;
-  }
-
-  return distance;
-}
-
-void moveForward() {
-  leftForward();
-  rightForward();
-}
-
-void moveBackward() {
-  leftBackward();
-  rightBackward();
-}
-
-void turnLeft() {
-  leftBackward();
-  rightForward();
-}
-
-void turnRight() {
-  leftForward();
-  rightBackward();
-}
-
-void stopRobot() {
-  leftStop();
-  rightStop();
-}
-
-void leftForward() {
-  digitalWrite(LEFT_IN1, HIGH);
-  digitalWrite(LEFT_IN2, LOW);
-}
-
-void leftBackward() {
-  digitalWrite(LEFT_IN1, LOW);
-  digitalWrite(LEFT_IN2, HIGH);
-}
-
-void rightForward() {
-  digitalWrite(RIGHT_IN1, HIGH);
-  digitalWrite(RIGHT_IN2, LOW);
-}
-
-void rightBackward() {
-  digitalWrite(RIGHT_IN1, LOW);
-  digitalWrite(RIGHT_IN2, HIGH);
-}
-
-void leftStop() {
-  digitalWrite(LEFT_IN1, LOW);
-  digitalWrite(LEFT_IN2, LOW);
-}
-
-void rightStop() {
-  digitalWrite(RIGHT_IN1, LOW);
-  digitalWrite(RIGHT_IN2, LOW);
+  delay(70);
 }

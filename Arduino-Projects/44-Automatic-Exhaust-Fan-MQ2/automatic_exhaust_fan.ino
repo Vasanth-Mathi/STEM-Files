@@ -1,43 +1,20 @@
-/*
-  Automatic Exhaust Fan Using MQ-2 Sensor
-  Board: Arduino Uno
-*/
-
-const int MQ2_PIN = A0;
-const int FAN_IN1 = 8;
-const int FAN_IN2 = 9;
-const int FAN_THRESHOLD = 450;
-
-void startFan();
-void stopFan();
-
 void setup() {
-  pinMode(FAN_IN1, OUTPUT);
-  pinMode(FAN_IN2, OUTPUT);
-
-  stopFan();
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
   Serial.begin(9600);
 }
 
 void loop() {
-  int sensorValue = analogRead(MQ2_PIN);
-  Serial.println(sensorValue);
+  int smoke = analogRead(A0);
+  Serial.println(smoke);
 
-  if (sensorValue >= FAN_THRESHOLD) {
-    startFan();
+  if (smoke >= 450) {
+    digitalWrite(8, HIGH);
+    digitalWrite(9, LOW);
   } else {
-    stopFan();
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
   }
 
   delay(200);
-}
-
-void startFan() {
-  digitalWrite(FAN_IN1, HIGH);
-  digitalWrite(FAN_IN2, LOW);
-}
-
-void stopFan() {
-  digitalWrite(FAN_IN1, LOW);
-  digitalWrite(FAN_IN2, LOW);
 }

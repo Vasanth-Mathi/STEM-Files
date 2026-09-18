@@ -2,62 +2,40 @@
 #include <Servo.h>
 #include <string.h>
 
-/*
-  RFID Door Lock Using RDM6300 RFID Reader
-  Board: Arduino Uno
-*/
-
-SoftwareSerial rfidSerial(2, 3);
+SoftwareSerial rfid(2, 3);
 Servo lockServo;
 
-const int SERVO_PIN = 6;
-const int LOCKED_ANGLE = 0;
-const int UNLOCKED_ANGLE = 90;
-
-const char AUTHORIZED_TAG[] = "0000000000";
-char tagData[11];
-
-bool readTag();
+char tag[11];
 
 void setup() {
-  rfidSerial.begin(9600);
+  rfid.begin(9600);
   Serial.begin(9600);
 
-  lockServo.attach(SERVO_PIN);
-  lockServo.write(LOCKED_ANGLE);
+  lockServo.attach(6);
+  lockServo.write(0);
 }
 
 void loop() {
-  if (readTag()) {
-    Serial.println(tagData);
+  if (rfid.available() >= 14) {
+    byte data[14];
 
-    if (strcmp(tagData, AUTHORIZED_TAG) == 0) {
-      lockServo.write(UNLOCKED_ANGLE);
-      delay(3000);
-      lockServo.write(LOCKED_ANGLE);
+    for (int i = 0; i < 14; i++) {
+      data[i] = rfid.read();
+    }
+
+    if (data[0] == 0x02 && data[13] == 0x03) {
+      for (int i = 0; i < 10; i++) {
+        tag[i] = data[i + 1];
+      }
+
+      tag[10] = '\0';
+      Serial.println(tag);
+
+      if (strcmp(tag, "0000000000") == 0) {
+        lockServo.write(90);
+        delay(3000);
+        lockServo.write(0);
+      }
     }
   }
-}
-
-bool readTag() {
-  if (rfidSerial.available() < 14) {
-    return false;
-  }
-
-  byte frame[14];
-
-  for (int i = 0; i < 14; i++) {
-    frame[i] = rfidSerial.read();
-  }
-
-  if (frame[0] != 0x02 || frame[13] != 0x03) {
-    return false;
-  }
-
-  for (int i = 0; i < 10; i++) {
-    tagData[i] = (char)frame[i + 1];
-  }
-
-  tagData[10] = '\0';
-  return true;
 }
