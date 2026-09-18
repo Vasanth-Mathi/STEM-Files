@@ -1,23 +1,17 @@
-/*
-  Tilt Detection Alarm Using Tilt Sensor
-  Board: Arduino Uno
-*/
-
-const int TILT_PIN = 2;
-const int LED_PIN = 8;
-const int BUZZER_PIN = 9;
-
 void setup() {
-  pinMode(TILT_PIN, INPUT_PULLUP);
-  pinMode(LED_PIN, OUTPUT);
-  pinMode(BUZZER_PIN, OUTPUT);
+  pinMode(2, INPUT_PULLUP);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
 }
 
 void loop() {
-  bool tilted = digitalRead(TILT_PIN) == LOW;
-
-  digitalWrite(LED_PIN, tilted ? HIGH : LOW);
-  digitalWrite(BUZZER_PIN, tilted ? HIGH : LOW);
+  if (digitalRead(2) == LOW) {
+    digitalWrite(8, HIGH);
+    digitalWrite(9, HIGH);
+  } else {
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
+  }
 
   delay(50);
 }

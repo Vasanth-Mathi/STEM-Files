@@ -1,23 +1,14 @@
-/*
-  Laser Security Alarm Using LDR Sensor
-  Board: Arduino Uno
-*/
-
-const int LDR_PIN = A0;
-const int BUZZER_PIN = 9;
-const int LASER_THRESHOLD = 600;
-
 void setup() {
-  pinMode(BUZZER_PIN, OUTPUT);
+  pinMode(9, OUTPUT);
 }
 
 void loop() {
-  int lightValue = analogRead(LDR_PIN);
+  int light = analogRead(A0);
 
-  if (lightValue < LASER_THRESHOLD) {
-    digitalWrite(BUZZER_PIN, HIGH);
+  if (light < 600) {
+    digitalWrite(9, HIGH);
   } else {
-    digitalWrite(BUZZER_PIN, LOW);
+    digitalWrite(9, LOW);
   }
 
   delay(50);

@@ -1,28 +1,20 @@
-/*
-  Water Overflow Alarm Using Water Level Sensor
-  Board: Arduino Uno
-*/
-
-const int LEVEL_PIN = A0;
-const int LED_PIN = 8;
-const int BUZZER_PIN = 9;
-const int OVERFLOW_THRESHOLD = 650;
-
 void setup() {
-  pinMode(LED_PIN, OUTPUT);
-  pinMode(BUZZER_PIN, OUTPUT);
-
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
   Serial.begin(9600);
 }
 
 void loop() {
-  int waterLevel = analogRead(LEVEL_PIN);
-  Serial.println(waterLevel);
+  int water = analogRead(A0);
+  Serial.println(water);
 
-  bool overflowDetected = waterLevel >= OVERFLOW_THRESHOLD;
-
-  digitalWrite(LED_PIN, overflowDetected ? HIGH : LOW);
-  digitalWrite(BUZZER_PIN, overflowDetected ? HIGH : LOW);
+  if (water >= 650) {
+    digitalWrite(8, HIGH);
+    digitalWrite(9, HIGH);
+  } else {
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
+  }
 
   delay(200);
 }

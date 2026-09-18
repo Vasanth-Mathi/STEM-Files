@@ -1,23 +1,17 @@
-/*
-  Door Intrusion Alarm Using Magnetic Reed Switch
-  Board: Arduino Uno
-*/
-
-const int REED_PIN = 2;
-const int LED_PIN = 8;
-const int BUZZER_PIN = 9;
-
 void setup() {
-  pinMode(REED_PIN, INPUT_PULLUP);
-  pinMode(LED_PIN, OUTPUT);
-  pinMode(BUZZER_PIN, OUTPUT);
+  pinMode(2, INPUT_PULLUP);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
 }
 
 void loop() {
-  bool doorOpen = digitalRead(REED_PIN) == HIGH;
-
-  digitalWrite(LED_PIN, doorOpen ? HIGH : LOW);
-  digitalWrite(BUZZER_PIN, doorOpen ? HIGH : LOW);
+  if (digitalRead(2) == HIGH) {
+    digitalWrite(8, HIGH);
+    digitalWrite(9, HIGH);
+  } else {
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
+  }
 
   delay(50);
 }

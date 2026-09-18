@@ -1,35 +1,19 @@
-/*
-  High Temperature Alarm Using LM35 and Buzzer
-  LM35 OUT: A0
-  Active buzzer signal: D8
-
-  Assumes approximately 5V ADC reference on Arduino Uno.
-*/
-
-const int LM35_PIN = A0;
-const int BUZZER_PIN = 8;
-const float HIGH_TEMPERATURE_C = 30.0;
-
-float readTemperatureC() {
-  const int rawValue = analogRead(LM35_PIN);
-  const float voltage = rawValue * (5.0 / 1023.0);
-  return voltage * 100.0;
-}
-
 void setup() {
-  pinMode(BUZZER_PIN, OUTPUT);
+  pinMode(8, OUTPUT);
   Serial.begin(9600);
 }
 
 void loop() {
-  const float temperatureC = readTemperatureC();
-  const bool temperatureHigh = temperatureC >= HIGH_TEMPERATURE_C;
+  int reading = analogRead(A0);
+  float temperature = reading * (5.0 / 1023.0) * 100.0;
 
-  digitalWrite(BUZZER_PIN, temperatureHigh ? HIGH : LOW);
+  Serial.println(temperature);
 
-  Serial.print("Temperature: ");
-  Serial.print(temperatureC, 1);
-  Serial.println(" C");
+  if (temperature >= 30) {
+    digitalWrite(8, HIGH);
+  } else {
+    digitalWrite(8, LOW);
+  }
 
   delay(500);
 }
