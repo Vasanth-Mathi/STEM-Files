@@ -30,8 +30,6 @@ This mindset is important because real-world problems rarely belong to a single 
 | **[AI Projects](./AI-Projects/)** | Activities and examples covering AI tools, prompt engineering, automation, responsible AI use, experimentation, and practical AI-based problem-solving. |
 | **[Robotics & Physical Computing](./Robotics-Physical-Computing/)** | Projects combining coding, electronics, sensors, actuators, mechanisms, and engineering concepts to create working prototypes. |
 | **[Design Thinking](./Design-Thinking/)** | Project ideas developed through understanding a need, defining the problem, generating ideas, prototyping, testing, collecting feedback, and improving the solution. |
-| **[STEM / STEAM Activities](./STEM-STEAM-Activities/)** | Activities that connect technical problem-solving with creativity, visual design, communication, and other disciplines where appropriate. |
-| **[Simulations & Coding](./Simulations-Coding/)** | Tinkercad simulations, programming exercises, computational-thinking activities, and digital prototypes used to explore concepts before physical implementation. |
 | **[Teaching & Learning Resources](./Teaching-Learning-Resources/)** | Classroom activities, lesson ideas, project references, worksheets, examples, and resources that support hands-on and project-based STEM learning. |
 
 ## Learning Approach

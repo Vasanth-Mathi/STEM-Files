@@ -1,57 +1,19 @@
 # Teaching & Learning Resources
 
-Teaching and learning resources support hands-on, inquiry-based, project-based, and evidence-based STEM education. This section now acts as a **resource map** connecting materials already available in the repository and curriculum files with reusable planning frameworks for classroom delivery.
+Teaching and learning resources support hands-on, inquiry-based, project-based, evidence-based, and research-informed education.
 
-## What Is Already Available
+This section combines **repository resources** with **external libraries, free/open textbooks, research databases, subject tools, simulations, and teacher platforms**.
 
-The current working resource set includes:
+## Resources Already Built in This Repository
 
 - 59 Arduino project guides
 - 31 ESP32 & IoT project folders
-- 12 detailed AI student prompt projects
-- a Robotics & Physical Computing handbook covering 82 listed components
-- the uploaded Microcontroller Boards Reference
-- the STREAM.AI Curriculum Framework Draft
-- the STREAM.AI School Proposal
-- curriculum content covering coding, apps, circuits, AI/data literacy, robotics, IoT, design thinking, testing, evidence, and presentation
+- 32 detailed AI student prompt projects
+- Robotics & Physical Computing handbook covering 82 listed components
+- Design Thinking learning pathway and problem bank
+- lesson-planning, assessment, portfolio, presentation, and workshop frameworks
 
-## What Is Not Yet Claimed as a Finished Library
-
-Detailed final:
-- lesson plans,
-- bootcamp instruction packs,
-- guided worksheets,
-- capstone briefs,
-- final assessment rubrics,
-- student portfolio templates,
-
-should be developed and reviewed for the actual school timetable, grade level, equipment, and policy before being described as completed classroom resources.
-
-## Teaching-Learning Cycle
-
-```text
-Learning Goal
-     |
-     v
-Resource / Demonstration
-     |
-     v
-Student Practice
-     |
-     v
-Project / Investigation
-     |
-     v
-Evidence + Testing
-     |
-     v
-Feedback + Improvement
-     |
-     v
-Reflection / Presentation
-```
-
-## Resource Sections
+## Internal Teaching Frameworks
 
 1. [Available Resource Index](./01-Available-Resource-Index/)
 2. [Lesson Planning Framework](./02-Lesson-Planning-Framework/)
@@ -64,4 +26,33 @@ Reflection / Presentation
 9. [Teacher Training and Workshop Planning](./09-Teacher-Training-and-Workshop-Planning/)
 10. [Digital Tools and Platforms](./10-Digital-Tools-and-Platforms/)
 
-<!-- Add only resource titles here whenever new folders are created. -->
+## External Libraries and Subject Resource Indexes
+
+11. [Research Libraries and Academic Search](./11-Research-Libraries-and-Academic-Search/)
+12. [Free Textbooks, E-Books and OER](./12-Free-Textbooks-and-OER/)
+13. [Mathematics Tools and Resources](./13-Mathematics-Tools-and-Resources/)
+14. [Physics and Astronomy Tools](./14-Physics-and-Astronomy-Tools/)
+15. [Chemistry Tools and Virtual Labs](./15-Chemistry-Tools-and-Virtual-Labs/)
+16. [Biology, Earth and Environmental Resources](./16-Biology-Earth-and-Environmental-Resources/)
+17. [Electronics, Engineering and Coding Tools](./17-Electronics-Engineering-and-Coding-Tools/)
+18. [India School and Teacher Platforms](./18-India-School-and-Teacher-Platforms/)
+19. [Teacher Curriculum and Professional Learning Libraries](./19-Teacher-Curriculum-and-Professional-Learning/)
+
+## Resource Selection Rule
+
+A useful website is not automatically a useful lesson.
+
+Before using an external resource, check:
+
+- learning objective,
+- grade suitability,
+- accuracy,
+- date/update status,
+- login requirements,
+- accessibility,
+- privacy,
+- school-device compatibility,
+- licensing/reuse conditions,
+- what evidence students will produce.
+
+> Online services and licensing can change. Teachers should re-check access conditions before planning a lesson around a platform.

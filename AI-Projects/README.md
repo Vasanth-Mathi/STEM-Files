@@ -1,55 +1,85 @@
 # AI Projects
 
-Artificial Intelligence can be useful in education when students use it to **question, investigate, practise, create, verify, and reflect** rather than simply asking for finished answers.
+Artificial Intelligence can support learning when students use it to **question, investigate, practise, create, verify, revise, and reflect** rather than simply requesting finished answers.
 
-This section is a student prompt library. Each project contains a detailed reusable prompt designed to make the learner do part of the thinking. Prompts ask the AI to provide hints, questions, checks, alternative explanations, and reflection instead of replacing student effort.
+This section contains **32 detailed student prompt projects**. Each prompt gives the AI a defined teaching role, requires student participation, and includes checks against fabricated facts, fake sources, passive copying, or unsupported conclusions.
 
 ## How AI-Assisted Learning Works
 
 ```text
-Student Question
-      |
-      v
-Clear Prompt ---> AI Response ---> Student Checks / Tests / Verifies
-                                      |
-                                      v
-                              Improved Understanding
-                                      |
-                                      v
-                                 Reflection
+Student Goal
+    |
+    v
+Detailed Prompt
+    |
+    v
+AI Questions / Guidance
+    |
+    v
+Student Attempts / Evidence
+    |
+    v
+Verification + Revision
+    |
+    v
+Reflection
 ```
-
-A useful AI learning workflow includes five habits:
-
-1. **Give context** - grade, subject, topic, goal, and what is already understood.
-2. **Ask for a process** - hints, questions, examples, checks, and feedback.
-3. **Do the thinking** - answer questions, make predictions, solve steps, and explain decisions.
-4. **Verify important claims** - compare with textbooks, teachers, experiments, official documentation, or trusted sources.
-5. **Reflect** - record what changed, what remains uncertain, and what was learned.
 
 ## Student Rules for Using AI
 
-- Do not enter passwords, private records, personal contact details, or confidential information.
-- Do not submit AI-generated work as personal work when school rules require original work.
-- Never invent test data, research participants, observations, sources, quotations, or citations.
-- Treat confident-sounding answers as claims that may still need checking.
-- Keep important prompts and revisions so the learning process is visible.
+- Protect personal, confidential, school, account, and contact information.
+- Do not submit AI-generated work as personal work where original work is required.
+- Never invent test data, interviews, sources, quotations, measurements, or citations.
+- Verify important factual claims using reliable sources.
+- Keep prompt and revision evidence when AI use forms part of the learning process.
 - Be able to explain anything you finally submit.
-- Follow school rules, age requirements, and teacher guidance for AI access.
+- Follow school rules, teacher guidance, platform age requirements, and privacy requirements.
 
-## Projects
+## Learning and Understanding
 
-1. [AI Personal Tutor Prompt](./01-AI-Personal-Tutor/)
-2. [Socratic Questioning Coach Prompt](./02-Socratic-Questioning-Coach/)
-3. [Concept Explainer and Analogy Builder Prompt](./03-Concept-Explainer-and-Analogy-Builder/)
-4. [Research and Source-Checking Coach Prompt](./04-Research-and-Source-Checking-Coach/)
-5. [Mathematics Problem-Solving Coach Prompt](./05-Mathematics-Problem-Solving-Coach/)
-6. [Science Investigation Planner Prompt](./06-Science-Investigation-Planner/)
-7. [Coding and Debugging Coach Prompt](./07-Coding-and-Debugging-Coach/)
-8. [Design Thinking Problem Coach Prompt](./08-Design-Thinking-Problem-Coach/)
-9. [Project Idea and Planning Coach Prompt](./09-Project-Idea-and-Planning-Coach/)
-10. [Presentation and Viva Coach Prompt](./10-Presentation-and-Viva-Coach/)
-11. [Responsible AI, Bias and Hallucination Lab Prompt](./11-Responsible-AI-Bias-and-Hallucination-Lab/)
-12. [Study, Revision and Self-Testing Coach Prompt](./12-Study-Revision-and-Self-Testing-Coach/)
+1. [AI Personal Tutor](./01-AI-Personal-Tutor/)
+2. [Socratic Questioning Coach](./02-Socratic-Questioning-Coach/)
+3. [Concept Explainer and Analogy Builder](./03-Concept-Explainer-and-Analogy-Builder/)
+12. [Study, Revision and Self-Testing Coach](./12-Study-Revision-and-Self-Testing-Coach/)
+13. [Reading Comprehension Coach](./13-Reading-Comprehension-Coach/)
+14. [Vocabulary and Terminology Coach](./14-Vocabulary-and-Terminology-Coach/)
+15. [Concept Map Builder](./15-Concept-Map-Builder/)
 
-<!-- Add only project titles here whenever new project folders are created. -->
+## Research, Evidence and Critical Thinking
+
+4. [Research and Source-Checking Coach](./04-Research-and-Source-Checking-Coach/)
+11. [Responsible AI, Bias and Hallucination Lab](./11-Responsible-AI-Bias-and-Hallucination-Lab/)
+16. [Evidence and Argument Coach](./16-Evidence-and-Argument-Coach/)
+17. [Source Comparison and Triangulation](./17-Source-Comparison-and-Triangulation/)
+18. [Media and Misinformation Analysis](./18-Media-and-Misinformation-Analysis/)
+19. [Historical Source Analysis](./19-Historical-Source-Analysis/)
+
+## STEM, Data and Design
+
+5. [Mathematics Problem-Solving Coach](./05-Mathematics-Problem-Solving-Coach/)
+6. [Science Investigation Planner](./06-Science-Investigation-Planner/)
+7. [Coding and Debugging Coach](./07-Coding-and-Debugging-Coach/)
+8. [Design Thinking Problem Coach](./08-Design-Thinking-Problem-Coach/)
+9. [Project Idea and Planning Coach](./09-Project-Idea-and-Planning-Coach/)
+20. [Data Analysis and Interpretation](./20-Data-Analysis-and-Interpretation/)
+21. [Graph and Chart Reading Coach](./21-Graph-and-Chart-Reading-Coach/)
+22. [Spreadsheet and Formula Coach](./22-Spreadsheet-and-Formula-Coach/)
+23. [Lab Report Writing Coach](./23-Lab-Report-Writing-Coach/)
+24. [Engineering Design Review Coach](./24-Engineering-Design-Review-Coach/)
+
+## Writing, Communication and Languages
+
+10. [Presentation and Viva Coach](./10-Presentation-and-Viva-Coach/)
+25. [Academic Writing Feedback Coach](./25-Academic-Writing-Feedback-Coach/)
+26. [Paraphrasing, Citation and Attribution Coach](./26-Paraphrasing-Citation-and-Attribution-Coach/)
+27. [Literature and Text Analysis Coach](./27-Literature-and-Text-Analysis-Coach/)
+28. [Language Learning Conversation Coach](./28-Language-Learning-Conversation-Coach/)
+
+## Assessment, Planning and Feedback
+
+29. [Exam Practice and Question Generator](./29-Exam-Practice-and-Question-Generator/)
+30. [Rubric Self-Assessment Coach](./30-Rubric-Self-Assessment-Coach/)
+31. [Study Planning and Time Management Coach](./31-Study-Planning-and-Time-Management/)
+32. [Peer Feedback and Revision Coach](./32-Peer-Feedback-and-Revision-Coach/)
+
+<!-- Add only genuinely distinct prompt projects. Avoid creating duplicate prompts with only a different subject name. -->
