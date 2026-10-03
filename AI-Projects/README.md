@@ -1,33 +1,55 @@
 # AI Projects
 
-Artificial Intelligence projects explore how computers can perform tasks that normally require human-like reasoning, pattern recognition, language understanding, prediction, generation, and decision support. This section focuses on practical AI use in education, automation, experimentation, and problem-solving.
+Artificial Intelligence can be useful in education when students use it to **question, investigate, practise, create, verify, and reflect** rather than simply asking for finished answers.
 
-## How AI Projects Work
+This section is a student prompt library. Each project contains a detailed reusable prompt designed to make the learner do part of the thinking. Prompts ask the AI to provide hints, questions, checks, alternative explanations, and reflection instead of replacing student effort.
 
-AI systems typically receive information, process it using rules or trained models, and produce an output such as a prediction, response, recommendation, classification, or generated result.
+## How AI-Assisted Learning Works
 
 ```text
-Input / Data ---> AI Model or Logic ---> Processing ---> Output / Decision / Generation
+Student Question
+      |
+      v
+Clear Prompt ---> AI Response ---> Student Checks / Tests / Verifies
+                                      |
+                                      v
+                              Improved Understanding
+                                      |
+                                      v
+                                 Reflection
 ```
 
-Projects may use prompt engineering, machine learning models, computer vision, natural language processing, automation tools, APIs, or responsible-AI workflows depending on the problem being solved.
+A useful AI learning workflow includes five habits:
 
-## Common Use Cases
+1. **Give context** - grade, subject, topic, goal, and what is already understood.
+2. **Ask for a process** - hints, questions, examples, checks, and feedback.
+3. **Do the thinking** - answer questions, make predictions, solve steps, and explain decisions.
+4. **Verify important claims** - compare with textbooks, teachers, experiments, official documentation, or trusted sources.
+5. **Reflect** - record what changed, what remains uncertain, and what was learned.
 
-- Prompt engineering
-- Educational AI tools
-- Content generation
-- Data classification
-- Image recognition
-- Natural language processing
-- AI-assisted automation
-- Chatbots and assistants
-- Responsible AI experiments
-- Research and idea generation
-- Student problem-solving activities
-- Teacher productivity workflows
+## Student Rules for Using AI
+
+- Do not enter passwords, private records, personal contact details, or confidential information.
+- Do not submit AI-generated work as personal work when school rules require original work.
+- Never invent test data, research participants, observations, sources, quotations, or citations.
+- Treat confident-sounding answers as claims that may still need checking.
+- Keep important prompts and revisions so the learning process is visible.
+- Be able to explain anything you finally submit.
+- Follow school rules, age requirements, and teacher guidance for AI access.
 
 ## Projects
-<img width="2172" height="724" alt="ChatGPT Image Sep 8, 2026 at 10_09_18 AM" src="https://github.com/user-attachments/assets/f4cf791c-9c3b-4f83-951b-2899f657ffa4" />
-<!-- Add only project titles here whenever new project folders are created. -->
 
+1. [AI Personal Tutor Prompt](./01-AI-Personal-Tutor/)
+2. [Socratic Questioning Coach Prompt](./02-Socratic-Questioning-Coach/)
+3. [Concept Explainer and Analogy Builder Prompt](./03-Concept-Explainer-and-Analogy-Builder/)
+4. [Research and Source-Checking Coach Prompt](./04-Research-and-Source-Checking-Coach/)
+5. [Mathematics Problem-Solving Coach Prompt](./05-Mathematics-Problem-Solving-Coach/)
+6. [Science Investigation Planner Prompt](./06-Science-Investigation-Planner/)
+7. [Coding and Debugging Coach Prompt](./07-Coding-and-Debugging-Coach/)
+8. [Design Thinking Problem Coach Prompt](./08-Design-Thinking-Problem-Coach/)
+9. [Project Idea and Planning Coach Prompt](./09-Project-Idea-and-Planning-Coach/)
+10. [Presentation and Viva Coach Prompt](./10-Presentation-and-Viva-Coach/)
+11. [Responsible AI, Bias and Hallucination Lab Prompt](./11-Responsible-AI-Bias-and-Hallucination-Lab/)
+12. [Study, Revision and Self-Testing Coach Prompt](./12-Study-Revision-and-Self-Testing-Coach/)
+
+<!-- Add only project titles here whenever new project folders are created. -->
