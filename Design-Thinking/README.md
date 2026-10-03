@@ -17,7 +17,7 @@ They begin with:
 For this repository, the cycle is organised into five connected stages:
 
 ```text
-Empathise + Define
+Define Empathy
         |
         v
       Ideate
@@ -40,7 +40,7 @@ when new evidence changes understanding
 
 Design Thinking is not a rigid five-step recipe. Evaluation or reflection may show that the original problem was misunderstood, which means the team may need to return to empathy or redefine the problem.
 
-## 1. Empathise + Define
+## 1. Define Empathy
 
 Understand the people, context, difficulties, needs, and emotions involved.
 
@@ -114,12 +114,12 @@ The second statement allows investigation. The third has already chosen a soluti
 
 ## Design Thinking Learning Path
 
-1. [Empathise and Define](./01-Empathise-and-Define/)
-2. [Ideate](./02-Ideate/)
-3. [Prototype](./03-Prototype/)
-4. [Evaluate](./04-Evaluate/)
-5. [Reflect](./05-Reflect/)
-6. [100 Design Thinking Problem Statements](./06-100-Design-Thinking-Problem-Statements/)
+1. [Define Empathy](./Define-Empathy/)
+2. [Ideate](./Ideate/)
+3. [Prototype](./Prototype/)
+4. [Evaluate](./Evaluate/)
+5. [Reflect](./Reflect/)
+6. [100 Designing Problem Statements](./100-Designing-Problem-Statements/)
 
 ## Student Evidence Across the Cycle
 

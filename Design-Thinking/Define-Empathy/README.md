@@ -1,8 +1,8 @@
-# Empathise and Define
+# Define Empathy
 
 ## What This Stage Means
 
-The first stage of Design Thinking begins with **people, not solutions**.
+The first stage of Design Thinking begins with **people, not solutions**. In this repository, **Define Empathy** combines understanding the user with clearly defining the problem that emerges from that understanding.
 
 **Empathise** means understanding what people experience, feel, need, struggle with, and do in a real situation.
 
