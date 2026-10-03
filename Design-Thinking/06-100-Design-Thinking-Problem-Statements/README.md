@@ -1,20 +1,36 @@
 # 100 Design Thinking Problem Statements
 
-## Purpose
-
-This bank contains **100 grounded, human-centred problem situations** that students can use to practise Design Thinking.
+> A browsable bank of **100 grounded, human-centred problem situations** for Design Thinking practice.
 
 These are intentionally **problems only**. No solutions, product ideas, app ideas, inventions, or preferred technologies are suggested.
 
-Each entry contains:
+Each problem is organised using three simple lenses:
 
-- **Problem Statement** - the real situation,
-- **Core Problem** - what is actually making the situation difficult,
-- **Empathy Factor** - how the situation may affect the people involved.
+> 🔴 `PROBLEM STATEMENT` — the real situation people experience  
+> 🟠 `CORE PROBLEM` — what is actually making the situation difficult  
+> 🔵 `EMPATHY FACTOR` — how the situation may affect the people involved
 
-Students should still investigate the situation before treating any statement as fully understood.
+---
 
-## Important Rule
+## Quick Browse
+
+| Range | Category |
+|---:|---|
+| 1–10 | 🔵 **Accessibility and Mobility** |
+| 11–20 | 🟢 **School and Student Experience** |
+| 21–30 | 🟣 **Home, Family and Caregiving** |
+| 31–40 | 🟠 **Public Spaces and Services** |
+| 41–50 | 🟡 **Transport and Movement** |
+| 51–60 | 🔴 **Health and Care Experiences** |
+| 61–70 | 🟤 **Disasters and Emergency Situations** |
+| 71–80 | ⚫ **Work, Small Business and Community Services** |
+| 81–90 | 🟩 **Local Environment and Everyday Sustainability** |
+| 91–100 | 🟦 **Digital Access and Information** |
+
+> [!IMPORTANT]
+> A problem statement is only a starting point. Students should still observe, ask questions, and check assumptions before moving to ideas.
+
+### Design Thinking Rule
 
 ```text
 Problem first.
@@ -23,835 +39,1893 @@ Evidence first.
 Solutions later.
 ```
 
+---
 
-## Accessibility and Mobility
+## Browse the Problem Bank
 
-### 1. A student with limited leg movement finds it difficult to reach a classroom located above a staircase when the lift is unavailable
+Click a **category heading** to expand it. Inside each category, click an individual **problem heading** to view its core problem and empathy factor.
 
-**Problem Statement:** A student with limited leg movement finds it difficult to reach a classroom located above a staircase when the lift is unavailable.
 
-**Core Problem:** Access to the classroom depends on climbing stairs.
+<details>
+<summary><strong>🔵 Accessibility and Mobility · Problems 1–10</strong></summary>
 
-**Empathy Factor:** The student may experience pain, fatigue, dependence on others, embarrassment, or missed learning time.
+<br>
 
-### 2. Older adults find it difficult to enter a neighbourhood clinic that has a high entrance step and no level approach
+<details>
+<summary><strong>001. A student with limited leg movement finds it difficult to reach a classroom located above a staircase when the lift is unavailable</strong></summary>
 
-**Problem Statement:** Older adults find it difficult to enter a neighbourhood clinic that has a high entrance step and no level approach.
+<br>
 
-**Core Problem:** The physical entrance is difficult for people with reduced mobility.
+> 🔴 `PROBLEM STATEMENT`  
+> A student with limited leg movement finds it difficult to reach a classroom located above a staircase when the lift is unavailable.
 
-**Empathy Factor:** Users may feel unsafe, dependent, or discouraged from visiting the clinic.
+> 🟠 `CORE PROBLEM`  
+> Access to the classroom depends on climbing stairs.
 
-### 3. A person using crutches struggles to carry books and open a heavy school door at the same time
+> 🔵 `EMPATHY FACTOR`  
+> The student may experience pain, fatigue, dependence on others, embarrassment, or missed learning time.
 
-**Problem Statement:** A person using crutches struggles to carry books and open a heavy school door at the same time.
+</details>
 
-**Core Problem:** The task requires both hands and stable balance.
+---
 
-**Empathy Factor:** The person may feel frustrated, unsafe, or dependent on someone nearby.
+<details>
+<summary><strong>002. Older adults find it difficult to enter a neighbourhood clinic that has a high entrance step and no level approach</strong></summary>
 
-### 4. Students carrying heavy school bags find it difficult to move through a crowded staircase during class changes
+<br>
 
-**Problem Statement:** Students carrying heavy school bags find it difficult to move through a crowded staircase during class changes.
+> 🔴 `PROBLEM STATEMENT`  
+> Older adults find it difficult to enter a neighbourhood clinic that has a high entrance step and no level approach.
 
-**Core Problem:** Crowding and load make movement slow and uncomfortable.
+> 🟠 `CORE PROBLEM`  
+> The physical entrance is difficult for people with reduced mobility.
 
-**Empathy Factor:** Students may feel physical strain, anxiety, or fear of being pushed.
+> 🔵 `EMPATHY FACTOR`  
+> Users may feel unsafe, dependent, or discouraged from visiting the clinic.
 
-### 5. A wheelchair user cannot comfortably use a classroom desk because the knee space is too narrow
+</details>
 
-**Problem Statement:** A wheelchair user cannot comfortably use a classroom desk because the knee space is too narrow.
+---
 
-**Core Problem:** The furniture does not fit the user's body and mobility device.
+<details>
+<summary><strong>003. A person using crutches struggles to carry books and open a heavy school door at the same time</strong></summary>
 
-**Empathy Factor:** The student may feel excluded or forced to use an uncomfortable position.
+<br>
 
-### 6. Shorter children cannot easily reach drinking-water taps installed too high from the floor
+> 🔴 `PROBLEM STATEMENT`  
+> A person using crutches struggles to carry books and open a heavy school door at the same time.
 
-**Problem Statement:** Shorter children cannot easily reach drinking-water taps installed too high from the floor.
+> 🟠 `CORE PROBLEM`  
+> The task requires both hands and stable balance.
 
-**Core Problem:** The tap height does not match all users.
+> 🔵 `EMPATHY FACTOR`  
+> The person may feel frustrated, unsafe, or dependent on someone nearby.
 
-**Empathy Factor:** Children may depend on others, spill water, or avoid using the facility.
+</details>
 
-### 7. Students with temporary injuries find it difficult to move between widely separated classrooms within short break times
+---
 
-**Problem Statement:** Students with temporary injuries find it difficult to move between widely separated classrooms within short break times.
+<details>
+<summary><strong>004. Students carrying heavy school bags find it difficult to move through a crowded staircase during class changes</strong></summary>
 
-**Core Problem:** Travel time and distance do not match their current mobility.
+<br>
 
-**Empathy Factor:** They may arrive late, feel rushed, or experience additional pain.
+> 🔴 `PROBLEM STATEMENT`  
+> Students carrying heavy school bags find it difficult to move through a crowded staircase during class changes.
 
-### 8. People with low vision find it difficult to identify room numbers when signs are small and poorly contrasted
+> 🟠 `CORE PROBLEM`  
+> Crowding and load make movement slow and uncomfortable.
 
-**Problem Statement:** People with low vision find it difficult to identify room numbers when signs are small and poorly contrasted.
+> 🔵 `EMPATHY FACTOR`  
+> Students may feel physical strain, anxiety, or fear of being pushed.
 
-**Core Problem:** Important location information is hard to see.
+</details>
 
-**Empathy Factor:** Users may feel confused, lose time, or repeatedly ask others for help.
+---
 
-### 9. Visitors who cannot read the local language struggle to find departments inside a public building
+<details>
+<summary><strong>005. A wheelchair user cannot comfortably use a classroom desk because the knee space is too narrow</strong></summary>
 
-**Problem Statement:** Visitors who cannot read the local language struggle to find departments inside a public building.
+<br>
 
-**Core Problem:** Wayfinding depends heavily on unfamiliar written language.
+> 🔴 `PROBLEM STATEMENT`  
+> A wheelchair user cannot comfortably use a classroom desk because the knee space is too narrow.
 
-**Empathy Factor:** Visitors may feel lost, anxious, or embarrassed.
+> 🟠 `CORE PROBLEM`  
+> The furniture does not fit the user's body and mobility device.
 
-### 10. Children with sensory sensitivity become overwhelmed in school corridors when bells, shouting, and crowding happen together
+> 🔵 `EMPATHY FACTOR`  
+> The student may feel excluded or forced to use an uncomfortable position.
 
-**Problem Statement:** Children with sensory sensitivity become overwhelmed in school corridors when bells, shouting, and crowding happen together.
+</details>
 
-**Core Problem:** The environment produces intense sensory stimulation.
+---
 
-**Empathy Factor:** The child may feel distressed, unable to focus, or reluctant to move through the area.
+<details>
+<summary><strong>006. Shorter children cannot easily reach drinking-water taps installed too high from the floor</strong></summary>
 
+<br>
 
-## School and Student Experience
+> 🔴 `PROBLEM STATEMENT`  
+> Shorter children cannot easily reach drinking-water taps installed too high from the floor.
 
-### 11. Students forget which books or materials are required when different subjects need different items each day
+> 🟠 `CORE PROBLEM`  
+> The tap height does not match all users.
 
-**Problem Statement:** Students forget which books or materials are required when different subjects need different items each day.
+> 🔵 `EMPATHY FACTOR`  
+> Children may depend on others, spill water, or avoid using the facility.
 
-**Core Problem:** Daily preparation requires remembering changing requirements.
+</details>
 
-**Empathy Factor:** Students may feel anxious, be blamed for forgetting, or lose learning time.
+---
 
-### 12. Students struggle to find a quiet place for reading when the school library is crowded during common break periods
+<details>
+<summary><strong>007. Students with temporary injuries find it difficult to move between widely separated classrooms within short break times</strong></summary>
 
-**Problem Statement:** Students struggle to find a quiet place for reading when the school library is crowded during common break periods.
+<br>
 
-**Core Problem:** The available quiet space is insufficient at peak time.
+> 🔴 `PROBLEM STATEMENT`  
+> Students with temporary injuries find it difficult to move between widely separated classrooms within short break times.
 
-**Empathy Factor:** Learners may become distracted or give up on reading.
+> 🟠 `CORE PROBLEM`  
+> Travel time and distance do not match their current mobility.
 
-### 13. New students find it difficult to understand where classrooms, labs, toilets, offices, and activity spaces are located
+> 🔵 `EMPATHY FACTOR`  
+> They may arrive late, feel rushed, or experience additional pain.
 
-**Problem Statement:** New students find it difficult to understand where classrooms, labs, toilets, offices, and activity spaces are located.
+</details>
 
-**Core Problem:** School layout is unfamiliar and information is scattered.
+---
 
-**Empathy Factor:** New students may feel nervous, dependent, or afraid of being late.
+<details>
+<summary><strong>008. People with low vision find it difficult to identify room numbers when signs are small and poorly contrasted</strong></summary>
 
-### 14. Students waiting to ask a teacher a doubt often do not know whose turn it is in a crowded classroom
+<br>
 
-**Problem Statement:** Students waiting to ask a teacher a doubt often do not know whose turn it is in a crowded classroom.
+> 🔴 `PROBLEM STATEMENT`  
+> People with low vision find it difficult to identify room numbers when signs are small and poorly contrasted.
 
-**Core Problem:** The request order is unclear.
+> 🟠 `CORE PROBLEM`  
+> Important location information is hard to see.
 
-**Empathy Factor:** Some students may feel ignored while quieter students may stop asking for help.
+> 🔵 `EMPATHY FACTOR`  
+> Users may feel confused, lose time, or repeatedly ask others for help.
 
-### 15. Students working in groups struggle when one shared component must be used by several teams at the same time
+</details>
 
-**Problem Statement:** Students working in groups struggle when one shared component must be used by several teams at the same time.
+---
 
-**Core Problem:** Access to limited equipment creates waiting and unequal participation.
+<details>
+<summary><strong>009. Visitors who cannot read the local language struggle to find departments inside a public building</strong></summary>
 
-**Empathy Factor:** Students may feel left out, rushed, or unable to complete their role.
+<br>
 
-### 16. Students cannot easily compare their first and improved project versions because testing notes are kept in different places
+> 🔴 `PROBLEM STATEMENT`  
+> Visitors who cannot read the local language struggle to find departments inside a public building.
 
-**Problem Statement:** Students cannot easily compare their first and improved project versions because testing notes are kept in different places.
+> 🟠 `CORE PROBLEM`  
+> Wayfinding depends heavily on unfamiliar written language.
 
-**Core Problem:** Evidence of changes is fragmented.
+> 🔵 `EMPATHY FACTOR`  
+> Visitors may feel lost, anxious, or embarrassed.
 
-**Empathy Factor:** Students may forget why changes were made and struggle to explain learning.
+</details>
 
-### 17. Learners become confused when project instructions use technical words before those words are introduced
+---
 
-**Problem Statement:** Learners become confused when project instructions use technical words before those words are introduced.
+<details>
+<summary><strong>010. Children with sensory sensitivity become overwhelmed in school corridors when bells, shouting, and crowding happen together</strong></summary>
 
-**Core Problem:** Instructions assume vocabulary students do not yet understand.
+<br>
 
-**Empathy Factor:** Students may feel incapable even when the task itself is manageable.
+> 🔴 `PROBLEM STATEMENT`  
+> Children with sensory sensitivity become overwhelmed in school corridors when bells, shouting, and crowding happen together.
 
-### 18. Students struggle to hear instructions during practical sessions when fans, tools, conversations, and movement create high background noise
+> 🟠 `CORE PROBLEM`  
+> The environment produces intense sensory stimulation.
 
-**Problem Statement:** Students struggle to hear instructions during practical sessions when fans, tools, conversations, and movement create high background noise.
+> 🔵 `EMPATHY FACTOR`  
+> The child may feel distressed, unable to focus, or reluctant to move through the area.
 
-**Core Problem:** Important verbal information is difficult to distinguish.
+</details>
 
-**Empathy Factor:** Students may miss safety steps or repeatedly ask for clarification.
+---
 
-### 19. Students sharing a computer find it difficult to ensure each team member gets meaningful hands-on time
+</details>
 
-**Problem Statement:** Students sharing a computer find it difficult to ensure each team member gets meaningful hands-on time.
 
-**Core Problem:** One device must support several learners.
+<details>
+<summary><strong>🟢 School and Student Experience · Problems 11–20</strong></summary>
 
-**Empathy Factor:** Some students may become passive observers and feel less confident.
+<br>
 
-### 20. Students hesitate to report a project failure because they think only successful final models receive appreciation
+<details>
+<summary><strong>011. Students forget which books or materials are required when different subjects need different items each day</strong></summary>
 
-**Problem Statement:** Students hesitate to report a project failure because they think only successful final models receive appreciation.
+<br>
 
-**Core Problem:** The learning culture may make failure feel embarrassing.
+> 🔴 `PROBLEM STATEMENT`  
+> Students forget which books or materials are required when different subjects need different items each day.
 
-**Empathy Factor:** Students may hide useful evidence and become afraid to experiment.
+> 🟠 `CORE PROBLEM`  
+> Daily preparation requires remembering changing requirements.
 
+> 🔵 `EMPATHY FACTOR`  
+> Students may feel anxious, be blamed for forgetting, or lose learning time.
 
-## Home, Family and Caregiving
+</details>
 
-### 21. An older person living alone has difficulty remembering whether a routine household task has already been completed
+---
 
-**Problem Statement:** An older person living alone has difficulty remembering whether a routine household task has already been completed.
+<details>
+<summary><strong>012. Students struggle to find a quiet place for reading when the school library is crowded during common break periods</strong></summary>
 
-**Core Problem:** Repeated daily tasks are hard to recall accurately.
+<br>
 
-**Empathy Factor:** The person may feel worried, lose confidence, or repeatedly check the same thing.
+> 🔴 `PROBLEM STATEMENT`  
+> Students struggle to find a quiet place for reading when the school library is crowded during common break periods.
 
-### 22. A caregiver finds it difficult to manage several small daily items needed for an older family member when moving between rooms
+> 🟠 `CORE PROBLEM`  
+> The available quiet space is insufficient at peak time.
 
-**Problem Statement:** A caregiver finds it difficult to manage several small daily items needed for an older family member when moving between rooms.
+> 🔵 `EMPATHY FACTOR`  
+> Learners may become distracted or give up on reading.
 
-**Core Problem:** Essential items are scattered and must be carried repeatedly.
+</details>
 
-**Empathy Factor:** The caregiver may feel rushed, tired, or worried about forgetting something.
+---
 
-### 23. People with weak grip strength find tightly sealed household containers difficult to open
+<details>
+<summary><strong>013. New students find it difficult to understand where classrooms, labs, toilets, offices, and activity spaces are located</strong></summary>
 
-**Problem Statement:** People with weak grip strength find tightly sealed household containers difficult to open.
+<br>
 
-**Core Problem:** The required twisting force is too high.
+> 🔴 `PROBLEM STATEMENT`  
+> New students find it difficult to understand where classrooms, labs, toilets, offices, and activity spaces are located.
 
-**Empathy Factor:** Users may experience pain, frustration, or dependence.
+> 🟠 `CORE PROBLEM`  
+> School layout is unfamiliar and information is scattered.
 
-### 24. A person with arthritis finds small electrical switches difficult to press or rotate
+> 🔵 `EMPATHY FACTOR`  
+> New students may feel nervous, dependent, or afraid of being late.
 
-**Problem Statement:** A person with arthritis finds small electrical switches difficult to press or rotate.
+</details>
 
-**Core Problem:** Control size and resistance do not suit reduced hand strength.
+---
 
-**Empathy Factor:** The user may feel discomfort or avoid using the device independently.
+<details>
+<summary><strong>014. Students waiting to ask a teacher a doubt often do not know whose turn it is in a crowded classroom</strong></summary>
 
-### 25. Family members often leave commonly used objects in different places, making them difficult to find when needed quickly
+<br>
 
-**Problem Statement:** Family members often leave commonly used objects in different places, making them difficult to find when needed quickly.
+> 🔴 `PROBLEM STATEMENT`  
+> Students waiting to ask a teacher a doubt often do not know whose turn it is in a crowded classroom.
 
-**Core Problem:** Shared storage habits are inconsistent.
+> 🟠 `CORE PROBLEM`  
+> The request order is unclear.
 
-**Empathy Factor:** People may waste time, become irritated, or blame one another.
+> 🔵 `EMPATHY FACTOR`  
+> Some students may feel ignored while quieter students may stop asking for help.
 
-### 26. Children cannot easily tell which household waste goes into which bin when labels rely only on text
+</details>
 
-**Problem Statement:** Children cannot easily tell which household waste goes into which bin when labels rely only on text.
+---
 
-**Core Problem:** Waste instructions are not immediately understandable to every child.
+<details>
+<summary><strong>015. Students working in groups struggle when one shared component must be used by several teams at the same time</strong></summary>
 
-**Empathy Factor:** Children may feel uncertain and stop trying to sort correctly.
+<br>
 
-### 27. People carrying groceries struggle to unlock and open a door without putting bags on the ground
+> 🔴 `PROBLEM STATEMENT`  
+> Students working in groups struggle when one shared component must be used by several teams at the same time.
 
-**Problem Statement:** People carrying groceries struggle to unlock and open a door without putting bags on the ground.
+> 🟠 `CORE PROBLEM`  
+> Access to limited equipment creates waiting and unequal participation.
 
-**Core Problem:** The task needs free hands while the user's hands are occupied.
+> 🔵 `EMPATHY FACTOR`  
+> Students may feel left out, rushed, or unable to complete their role.
 
-**Empathy Factor:** Users may feel awkward, unsafe, or frustrated.
+</details>
 
-### 28. Residents in shared housing are uncertain whether a common appliance is currently in use by someone else
+---
 
-**Problem Statement:** Residents in shared housing are uncertain whether a common appliance is currently in use by someone else.
+<details>
+<summary><strong>016. Students cannot easily compare their first and improved project versions because testing notes are kept in different places</strong></summary>
 
-**Core Problem:** Usage status is not visible before they approach the appliance.
+<br>
 
-**Empathy Factor:** People may waste time or interrupt others.
+> 🔴 `PROBLEM STATEMENT`  
+> Students cannot easily compare their first and improved project versions because testing notes are kept in different places.
 
-### 29. A person recovering from surgery finds bending down to pick up frequently used household items painful
+> 🟠 `CORE PROBLEM`  
+> Evidence of changes is fragmented.
 
-**Problem Statement:** A person recovering from surgery finds bending down to pick up frequently used household items painful.
+> 🔵 `EMPATHY FACTOR`  
+> Students may forget why changes were made and struggle to explain learning.
 
-**Core Problem:** Storage height requires uncomfortable body movement.
+</details>
 
-**Empathy Factor:** The person may feel dependent and lose some independence during recovery.
+---
 
-### 30. Parents preparing young children for school struggle to track several small morning tasks within a short time
+<details>
+<summary><strong>017. Learners become confused when project instructions use technical words before those words are introduced</strong></summary>
 
-**Problem Statement:** Parents preparing young children for school struggle to track several small morning tasks within a short time.
+<br>
 
-**Core Problem:** Many dependent tasks must happen in sequence under time pressure.
+> 🔴 `PROBLEM STATEMENT`  
+> Learners become confused when project instructions use technical words before those words are introduced.
 
-**Empathy Factor:** Parents and children may feel stressed before the day begins.
+> 🟠 `CORE PROBLEM`  
+> Instructions assume vocabulary students do not yet understand.
 
+> 🔵 `EMPATHY FACTOR`  
+> Students may feel incapable even when the task itself is manageable.
 
-## Public Spaces and Services
+</details>
 
-### 31. People waiting at a public office often do not know how long the queue may take
+---
 
-**Problem Statement:** People waiting at a public office often do not know how long the queue may take.
+<details>
+<summary><strong>018. Students struggle to hear instructions during practical sessions when fans, tools, conversations, and movement create high background noise</strong></summary>
 
-**Core Problem:** Waiting progress is unclear.
+<br>
 
-**Empathy Factor:** Users may feel uncertain, frustrated, or unable to plan other responsibilities.
+> 🔴 `PROBLEM STATEMENT`  
+> Students struggle to hear instructions during practical sessions when fans, tools, conversations, and movement create high background noise.
 
-### 32. Visitors at a hospital reception struggle to know which counter handles their particular request
+> 🟠 `CORE PROBLEM`  
+> Important verbal information is difficult to distinguish.
 
-**Problem Statement:** Visitors at a hospital reception struggle to know which counter handles their particular request.
+> 🔵 `EMPATHY FACTOR`  
+> Students may miss safety steps or repeatedly ask for clarification.
 
-**Core Problem:** Service responsibilities are unclear from the visitor's point of view.
+</details>
 
-**Empathy Factor:** People may queue in the wrong place and feel anxious.
+---
 
-### 33. Public toilet users sometimes discover only after entering that water, soap, or tissue is unavailable
+<details>
+<summary><strong>019. Students sharing a computer find it difficult to ensure each team member gets meaningful hands-on time</strong></summary>
 
-**Problem Statement:** Public toilet users sometimes discover only after entering that water, soap, or tissue is unavailable.
+<br>
 
-**Core Problem:** Essential facility status is not known before use.
+> 🔴 `PROBLEM STATEMENT`  
+> Students sharing a computer find it difficult to ensure each team member gets meaningful hands-on time.
 
-**Empathy Factor:** Users may feel uncomfortable, inconvenienced, or unable to maintain hygiene.
+> 🟠 `CORE PROBLEM`  
+> One device must support several learners.
 
-### 34. People carrying luggage find it difficult to sit at bus terminals when seating has no nearby space for bags
+> 🔵 `EMPATHY FACTOR`  
+> Some students may become passive observers and feel less confident.
 
-**Problem Statement:** People carrying luggage find it difficult to sit at bus terminals when seating has no nearby space for bags.
+</details>
 
-**Core Problem:** Seating does not account for personal belongings.
+---
 
-**Empathy Factor:** Travellers may block walkways or worry about losing items.
+<details>
+<summary><strong>020. Students hesitate to report a project failure because they think only successful final models receive appreciation</strong></summary>
 
-### 35. Parents with small children struggle to complete forms at service counters while also supervising the child
+<br>
 
-**Problem Statement:** Parents with small children struggle to complete forms at service counters while also supervising the child.
+> 🔴 `PROBLEM STATEMENT`  
+> Students hesitate to report a project failure because they think only successful final models receive appreciation.
 
-**Core Problem:** The service process assumes both hands and uninterrupted attention.
+> 🟠 `CORE PROBLEM`  
+> The learning culture may make failure feel embarrassing.
 
-**Empathy Factor:** Parents may feel rushed, distracted, or judged.
+> 🔵 `EMPATHY FACTOR`  
+> Students may hide useful evidence and become afraid to experiment.
 
-### 36. People standing in long outdoor queues have little information about where the queue begins or how it moves
+</details>
 
-**Problem Statement:** People standing in long outdoor queues have little information about where the queue begins or how it moves.
+---
 
-**Core Problem:** Queue structure is visually unclear.
+</details>
 
-**Empathy Factor:** Users may become frustrated, accidentally skip others, or stand in the wrong place.
 
-### 37. Visitors to large public events struggle to identify the nearest drinking-water point
+<details>
+<summary><strong>🟣 Home, Family and Caregiving · Problems 21–30</strong></summary>
 
-**Problem Statement:** Visitors to large public events struggle to identify the nearest drinking-water point.
+<br>
 
-**Core Problem:** Essential facility locations are hard to find in a crowded environment.
+<details>
+<summary><strong>021. An older person living alone has difficulty remembering whether a routine household task has already been completed</strong></summary>
 
-**Empathy Factor:** People may feel tired, dehydrated, or dependent on staff directions.
+<br>
 
-### 38. Users find public dustbins difficult to use when the opening is dirty or requires hand contact
+> 🔴 `PROBLEM STATEMENT`  
+> An older person living alone has difficulty remembering whether a routine household task has already been completed.
 
-**Problem Statement:** Users find public dustbins difficult to use when the opening is dirty or requires hand contact.
+> 🟠 `CORE PROBLEM`  
+> Repeated daily tasks are hard to recall accurately.
 
-**Core Problem:** The interaction creates a hygiene concern.
+> 🔵 `EMPATHY FACTOR`  
+> The person may feel worried, lose confidence, or repeatedly check the same thing.
 
-**Empathy Factor:** People may avoid the bin even when they want to dispose of waste properly.
+</details>
 
-### 39. People with hearing difficulty miss spoken announcements at stations or public halls
+---
 
-**Problem Statement:** People with hearing difficulty miss spoken announcements at stations or public halls.
+<details>
+<summary><strong>022. A caregiver finds it difficult to manage several small daily items needed for an older family member when moving between rooms</strong></summary>
 
-**Core Problem:** Important information is delivered mainly through audio.
+<br>
 
-**Empathy Factor:** Users may miss changes, departures, or safety information.
+> 🔴 `PROBLEM STATEMENT`  
+> A caregiver finds it difficult to manage several small daily items needed for an older family member when moving between rooms.
 
-### 40. People with low literacy struggle to complete service forms filled with unfamiliar official terms
+> 🟠 `CORE PROBLEM`  
+> Essential items are scattered and must be carried repeatedly.
 
-**Problem Statement:** People with low literacy struggle to complete service forms filled with unfamiliar official terms.
+> 🔵 `EMPATHY FACTOR`  
+> The caregiver may feel rushed, tired, or worried about forgetting something.
 
-**Core Problem:** The form language is harder than the task being requested.
+</details>
 
-**Empathy Factor:** Users may feel embarrassed and depend on others for private information.
+---
 
+<details>
+<summary><strong>023. People with weak grip strength find tightly sealed household containers difficult to open</strong></summary>
 
-## Transport and Movement
+<br>
 
-### 41. Bus passengers do not know whether an approaching bus will stop at their required location until it comes very close
+> 🔴 `PROBLEM STATEMENT`  
+> People with weak grip strength find tightly sealed household containers difficult to open.
 
-**Problem Statement:** Bus passengers do not know whether an approaching bus will stop at their required location until it comes very close.
+> 🟠 `CORE PROBLEM`  
+> The required twisting force is too high.
 
-**Core Problem:** Route information is difficult to identify early enough.
+> 🔵 `EMPATHY FACTOR`  
+> Users may experience pain, frustration, or dependence.
 
-**Empathy Factor:** Passengers may feel anxious or miss the correct bus.
+</details>
 
-### 42. People waiting at an unsheltered bus stop struggle during heavy rain
+---
 
-**Problem Statement:** People waiting at an unsheltered bus stop struggle during heavy rain.
+<details>
+<summary><strong>024. A person with arthritis finds small electrical switches difficult to press or rotate</strong></summary>
 
-**Core Problem:** The waiting environment does not protect users from weather.
+<br>
 
-**Empathy Factor:** Passengers may become wet, uncomfortable, or avoid public transport.
+> 🔴 `PROBLEM STATEMENT`  
+> A person with arthritis finds small electrical switches difficult to press or rotate.
 
-### 43. Elderly passengers find it difficult to board buses when the first step is high and boarding time is short
+> 🟠 `CORE PROBLEM`  
+> Control size and resistance do not suit reduced hand strength.
 
-**Problem Statement:** Elderly passengers find it difficult to board buses when the first step is high and boarding time is short.
+> 🔵 `EMPATHY FACTOR`  
+> The user may feel discomfort or avoid using the device independently.
 
-**Core Problem:** Boarding requires quick, large physical movement.
+</details>
 
-**Empathy Factor:** Passengers may fear falling or feel pressured by people waiting behind them.
+---
 
-### 44. Passengers carrying school bags or luggage struggle when bus aisles are crowded
+<details>
+<summary><strong>025. Family members often leave commonly used objects in different places, making them difficult to find when needed quickly</strong></summary>
 
-**Problem Statement:** Passengers carrying school bags or luggage struggle when bus aisles are crowded.
+<br>
 
-**Core Problem:** Movement and storage space are limited.
+> 🔴 `PROBLEM STATEMENT`  
+> Family members often leave commonly used objects in different places, making them difficult to find when needed quickly.
 
-**Empathy Factor:** Users may feel unstable, block others, or worry about belongings.
+> 🟠 `CORE PROBLEM`  
+> Shared storage habits are inconsistent.
 
-### 45. Cyclists find it difficult to know where they can safely park near a crowded market
+> 🔵 `EMPATHY FACTOR`  
+> People may waste time, become irritated, or blame one another.
 
-**Problem Statement:** Cyclists find it difficult to know where they can safely park near a crowded market.
+</details>
 
-**Core Problem:** Suitable parking locations are unclear or unavailable.
+---
 
-**Empathy Factor:** Cyclists may worry about theft or leave cycles in unsafe locations.
+<details>
+<summary><strong>026. Children cannot easily tell which household waste goes into which bin when labels rely only on text</strong></summary>
 
-### 46. Pedestrians struggle to cross wide roads when the signal time feels too short for slower walkers
+<br>
 
-**Problem Statement:** Pedestrians struggle to cross wide roads when the signal time feels too short for slower walkers.
+> 🔴 `PROBLEM STATEMENT`  
+> Children cannot easily tell which household waste goes into which bin when labels rely only on text.
 
-**Core Problem:** Crossing time does not match every user's walking speed.
+> 🟠 `CORE PROBLEM`  
+> Waste instructions are not immediately understandable to every child.
 
-**Empathy Factor:** Older adults and people with limited mobility may feel unsafe.
+> 🔵 `EMPATHY FACTOR`  
+> Children may feel uncertain and stop trying to sort correctly.
 
-### 47. People waiting for shared transport at night cannot easily tell which arriving vehicle is theirs from a distance
+</details>
 
-**Problem Statement:** People waiting for shared transport at night cannot easily tell which arriving vehicle is theirs from a distance.
+---
 
-**Core Problem:** Vehicle identification is difficult in low light.
+<details>
+<summary><strong>027. People carrying groceries struggle to unlock and open a door without putting bags on the ground</strong></summary>
 
-**Empathy Factor:** Passengers may feel anxious or approach the wrong vehicle.
+<br>
 
-### 48. School children crossing near parked vehicles have difficulty seeing moving traffic
+> 🔴 `PROBLEM STATEMENT`  
+> People carrying groceries struggle to unlock and open a door without putting bags on the ground.
 
-**Problem Statement:** School children crossing near parked vehicles have difficulty seeing moving traffic.
+> 🟠 `CORE PROBLEM`  
+> The task needs free hands while the user's hands are occupied.
 
-**Core Problem:** Their line of sight is blocked.
+> 🔵 `EMPATHY FACTOR`  
+> Users may feel awkward, unsafe, or frustrated.
 
-**Empathy Factor:** Children may be unable to judge when it is safe to cross.
+</details>
 
-### 49. Passengers unfamiliar with a route struggle to know when their stop is approaching
+---
 
-**Problem Statement:** Passengers unfamiliar with a route struggle to know when their stop is approaching.
+<details>
+<summary><strong>028. Residents in shared housing are uncertain whether a common appliance is currently in use by someone else</strong></summary>
 
-**Core Problem:** Location information is not easy for first-time users to follow.
+<br>
 
-**Empathy Factor:** Users may feel nervous and repeatedly ask others.
+> 🔴 `PROBLEM STATEMENT`  
+> Residents in shared housing are uncertain whether a common appliance is currently in use by someone else.
 
-### 50. People changing between two transport services struggle when the walking route between stops is poorly marked
+> 🟠 `CORE PROBLEM`  
+> Usage status is not visible before they approach the appliance.
 
-**Problem Statement:** People changing between two transport services struggle when the walking route between stops is poorly marked.
+> 🔵 `EMPATHY FACTOR`  
+> People may waste time or interrupt others.
 
-**Core Problem:** Transfer paths are unclear.
+</details>
 
-**Empathy Factor:** Travellers may lose time, miss connections, or feel lost.
+---
 
+<details>
+<summary><strong>029. A person recovering from surgery finds bending down to pick up frequently used household items painful</strong></summary>
 
-## Health and Care Experiences
+<br>
 
-### 51. Patients in a clinic waiting area are unsure whether their name has already been called when announcements are difficult to hear
+> 🔴 `PROBLEM STATEMENT`  
+> A person recovering from surgery finds bending down to pick up frequently used household items painful.
 
-**Problem Statement:** Patients in a clinic waiting area are unsure whether their name has already been called when announcements are difficult to hear.
+> 🟠 `CORE PROBLEM`  
+> Storage height requires uncomfortable body movement.
 
-**Core Problem:** Queue status depends on hearing a brief spoken call.
+> 🔵 `EMPATHY FACTOR`  
+> The person may feel dependent and lose some independence during recovery.
 
-**Empathy Factor:** Patients may become anxious or lose their turn.
+</details>
 
-### 52. People taking several daily medicines find it difficult to remember which dose belongs to which time of day
+---
 
-**Problem Statement:** People taking several daily medicines find it difficult to remember which dose belongs to which time of day.
+<details>
+<summary><strong>030. Parents preparing young children for school struggle to track several small morning tasks within a short time</strong></summary>
 
-**Core Problem:** Medication routines involve multiple similar items and times.
+<br>
 
-**Empathy Factor:** Users may feel worried about making a mistake and depend on caregivers.
+> 🔴 `PROBLEM STATEMENT`  
+> Parents preparing young children for school struggle to track several small morning tasks within a short time.
 
-### 53. Patients carrying test reports between departments struggle to keep papers organised and easy to retrieve
+> 🟠 `CORE PROBLEM`  
+> Many dependent tasks must happen in sequence under time pressure.
 
-**Problem Statement:** Patients carrying test reports between departments struggle to keep papers organised and easy to retrieve.
+> 🔵 `EMPATHY FACTOR`  
+> Parents and children may feel stressed before the day begins.
 
-**Core Problem:** Several documents must remain together through multiple steps.
+</details>
 
-**Empathy Factor:** People may lose papers, become stressed, or repeat tests/information.
+---
 
-### 54. Caregivers waiting outside treatment rooms receive little information about how long the process may take
+</details>
 
-**Problem Statement:** Caregivers waiting outside treatment rooms receive little information about how long the process may take.
 
-**Core Problem:** Progress is invisible to waiting family members.
+<details>
+<summary><strong>🟠 Public Spaces and Services · Problems 31–40</strong></summary>
 
-**Empathy Factor:** Caregivers may feel anxious and unable to plan food, work, or transport.
+<br>
 
-### 55. People with hand tremors find small medicine packaging difficult to open without spilling contents
+<details>
+<summary><strong>031. People waiting at a public office often do not know how long the queue may take</strong></summary>
 
-**Problem Statement:** People with hand tremors find small medicine packaging difficult to open without spilling contents.
+<br>
 
-**Core Problem:** Packaging requires fine motor control.
+> 🔴 `PROBLEM STATEMENT`  
+> People waiting at a public office often do not know how long the queue may take.
 
-**Empathy Factor:** Users may feel frustrated or dependent on assistance.
+> 🟠 `CORE PROBLEM`  
+> Waiting progress is unclear.
 
-### 56. Patients who speak a different language struggle to describe simple symptoms at registration
+> 🔵 `EMPATHY FACTOR`  
+> Users may feel uncertain, frustrated, or unable to plan other responsibilities.
 
-**Problem Statement:** Patients who speak a different language struggle to describe simple symptoms at registration.
+</details>
 
-**Core Problem:** The communication process assumes shared language.
+---
 
-**Empathy Factor:** Patients may feel misunderstood or anxious.
+<details>
+<summary><strong>032. Visitors at a hospital reception struggle to know which counter handles their particular request</strong></summary>
 
-### 57. People using walking aids struggle when clinic corridors have temporary obstacles such as chairs, boxes, or queues
+<br>
 
-**Problem Statement:** People using walking aids struggle when clinic corridors have temporary obstacles such as chairs, boxes, or queues.
+> 🔴 `PROBLEM STATEMENT`  
+> Visitors at a hospital reception struggle to know which counter handles their particular request.
 
-**Core Problem:** Movement paths become too narrow or unpredictable.
+> 🟠 `CORE PROBLEM`  
+> Service responsibilities are unclear from the visitor's point of view.
 
-**Empathy Factor:** Users may feel unsafe and require help.
+> 🔵 `EMPATHY FACTOR`  
+> People may queue in the wrong place and feel anxious.
 
-### 58. Parents waiting with a sick child find it difficult to complete registration while the child needs continuous attention
+</details>
 
-**Problem Statement:** Parents waiting with a sick child find it difficult to complete registration while the child needs continuous attention.
+---
 
-**Core Problem:** The process divides attention at a stressful moment.
+<details>
+<summary><strong>033. Public toilet users sometimes discover only after entering that water, soap, or tissue is unavailable</strong></summary>
 
-**Empathy Factor:** Parents may make errors or feel overwhelmed.
+<br>
 
-### 59. People leaving a clinic forget verbal follow-up instructions given quickly at the end of a visit
+> 🔴 `PROBLEM STATEMENT`  
+> Public toilet users sometimes discover only after entering that water, soap, or tissue is unavailable.
 
-**Problem Statement:** People leaving a clinic forget verbal follow-up instructions given quickly at the end of a visit.
+> 🟠 `CORE PROBLEM`  
+> Essential facility status is not known before use.
 
-**Core Problem:** Important information is delivered when the person may be tired or distracted.
+> 🔵 `EMPATHY FACTOR`  
+> Users may feel uncomfortable, inconvenienced, or unable to maintain hygiene.
 
-**Empathy Factor:** Patients may feel uncertain about what to do next.
+</details>
 
-### 60. People collecting regular prescriptions spend time repeating the same identification and request information on every visit
+---
 
-**Problem Statement:** People collecting regular prescriptions spend time repeating the same identification and request information on every visit.
+<details>
+<summary><strong>034. People carrying luggage find it difficult to sit at bus terminals when seating has no nearby space for bags</strong></summary>
 
-**Core Problem:** A repeated service requires repeated explanation.
+<br>
 
-**Empathy Factor:** Users may feel the process is tiring and inefficient.
+> 🔴 `PROBLEM STATEMENT`  
+> People carrying luggage find it difficult to sit at bus terminals when seating has no nearby space for bags.
 
+> 🟠 `CORE PROBLEM`  
+> Seating does not account for personal belongings.
 
-## Disasters and Emergency Situations
+> 🔵 `EMPATHY FACTOR`  
+> Travellers may block walkways or worry about losing items.
 
-### 61. Families in hill areas affected by landslides may not know whether a familiar road is safe to use after heavy rain
+</details>
 
-**Problem Statement:** Families in hill areas affected by landslides may not know whether a familiar road is safe to use after heavy rain.
+---
 
-**Core Problem:** Road conditions can change suddenly and local information may be delayed.
+<details>
+<summary><strong>035. Parents with small children struggle to complete forms at service counters while also supervising the child</strong></summary>
 
-**Empathy Factor:** Residents may feel fear, uncertainty, and pressure when deciding whether to travel.
+<br>
 
-### 62. Residents in low-lying streets struggle to judge how quickly water is rising during intense local rainfall
+> 🔴 `PROBLEM STATEMENT`  
+> Parents with small children struggle to complete forms at service counters while also supervising the child.
 
-**Problem Statement:** Residents in low-lying streets struggle to judge how quickly water is rising during intense local rainfall.
+> 🟠 `CORE PROBLEM`  
+> The service process assumes both hands and uninterrupted attention.
 
-**Core Problem:** Flood depth and rate of change are difficult to assess safely.
+> 🔵 `EMPATHY FACTOR`  
+> Parents may feel rushed, distracted, or judged.
 
-**Empathy Factor:** Families may feel unsure about when to move belongings or leave.
+</details>
 
-### 63. People evacuated during a flood find it difficult to keep essential documents dry and together
+---
 
-**Problem Statement:** People evacuated during a flood find it difficult to keep essential documents dry and together.
+<details>
+<summary><strong>036. People standing in long outdoor queues have little information about where the queue begins or how it moves</strong></summary>
 
-**Core Problem:** Emergency movement happens quickly and personal records are vulnerable to water.
+<br>
 
-**Empathy Factor:** Families may fear losing documents needed after the disaster.
+> 🔴 `PROBLEM STATEMENT`  
+> People standing in long outdoor queues have little information about where the queue begins or how it moves.
 
-### 64. Families reaching an emergency shelter struggle to identify where drinking water, toilets, sleeping areas, and medical help are located
+> 🟠 `CORE PROBLEM`  
+> Queue structure is visually unclear.
 
-**Problem Statement:** Families reaching an emergency shelter struggle to identify where drinking water, toilets, sleeping areas, and medical help are located.
+> 🔵 `EMPATHY FACTOR`  
+> Users may become frustrated, accidentally skip others, or stand in the wrong place.
 
-**Core Problem:** An unfamiliar crowded shelter contains many services but little orientation.
+</details>
 
-**Empathy Factor:** Displaced people may feel confused, exhausted, or anxious.
+---
 
-### 65. Older adults in an evacuation area may not hear or understand rapidly delivered emergency instructions
+<details>
+<summary><strong>037. Visitors to large public events struggle to identify the nearest drinking-water point</strong></summary>
 
-**Problem Statement:** Older adults in an evacuation area may not hear or understand rapidly delivered emergency instructions.
+<br>
 
-**Core Problem:** Warnings may be fast, noisy, or delivered through only one channel.
+> 🔴 `PROBLEM STATEMENT`  
+> Visitors to large public events struggle to identify the nearest drinking-water point.
 
-**Empathy Factor:** People may feel frightened and be unsure what action to take.
+> 🟠 `CORE PROBLEM`  
+> Essential facility locations are hard to find in a crowded environment.
 
-### 66. People separated from family members during an evacuation struggle to know whether relatives reached a safe location
+> 🔵 `EMPATHY FACTOR`  
+> People may feel tired, dehydrated, or dependent on staff directions.
 
-**Problem Statement:** People separated from family members during an evacuation struggle to know whether relatives reached a safe location.
+</details>
 
-**Core Problem:** Family status information is uncertain during disrupted communication.
+---
 
-**Empathy Factor:** People may experience intense anxiety and repeatedly search for information.
+<details>
+<summary><strong>038. Users find public dustbins difficult to use when the opening is dirty or requires hand contact</strong></summary>
 
-### 67. Residents returning after a storm find it difficult to distinguish safe electrical areas from places where water may have damaged wiring
+<br>
 
-**Problem Statement:** Residents returning after a storm find it difficult to distinguish safe electrical areas from places where water may have damaged wiring.
+> 🔴 `PROBLEM STATEMENT`  
+> Users find public dustbins difficult to use when the opening is dirty or requires hand contact.
 
-**Core Problem:** Hazards are not always visible after flooding or rain.
+> 🟠 `CORE PROBLEM`  
+> The interaction creates a hygiene concern.
 
-**Empathy Factor:** People may unknowingly approach dangerous equipment.
+> 🔵 `EMPATHY FACTOR`  
+> People may avoid the bin even when they want to dispose of waste properly.
 
-### 68. People in temporary shelters struggle to charge essential phones when many residents depend on a small number of power points
+</details>
 
-**Problem Statement:** People in temporary shelters struggle to charge essential phones when many residents depend on a small number of power points.
+---
 
-**Core Problem:** Limited charging access is shared by many people.
+<details>
+<summary><strong>039. People with hearing difficulty miss spoken announcements at stations or public halls</strong></summary>
 
-**Empathy Factor:** Residents may fear losing communication with family or emergency services.
+<br>
 
-### 69. Volunteers distributing relief materials struggle when they cannot easily tell which families have already received specific items
+> 🔴 `PROBLEM STATEMENT`  
+> People with hearing difficulty miss spoken announcements at stations or public halls.
 
-**Problem Statement:** Volunteers distributing relief materials struggle when they cannot easily tell which families have already received specific items.
+> 🟠 `CORE PROBLEM`  
+> Important information is delivered mainly through audio.
 
-**Core Problem:** Distribution records become difficult in crowded, rapidly changing conditions.
+> 🔵 `EMPATHY FACTOR`  
+> Users may miss changes, departures, or safety information.
 
-**Empathy Factor:** Families may be missed while others unintentionally receive duplicates.
+</details>
 
-### 70. Residents in disaster-prone villages may know general warnings but not the safest route from their own house to the nearest shelter
+---
 
-**Problem Statement:** Residents in disaster-prone villages may know general warnings but not the safest route from their own house to the nearest shelter.
+<details>
+<summary><strong>040. People with low literacy struggle to complete service forms filled with unfamiliar official terms</strong></summary>
 
-**Core Problem:** General emergency advice does not always translate into a personal route.
+<br>
 
-**Empathy Factor:** Families may hesitate or choose unsafe paths during urgent evacuation.
+> 🔴 `PROBLEM STATEMENT`  
+> People with low literacy struggle to complete service forms filled with unfamiliar official terms.
 
+> 🟠 `CORE PROBLEM`  
+> The form language is harder than the task being requested.
 
-## Work, Small Business and Community Services
+> 🔵 `EMPATHY FACTOR`  
+> Users may feel embarrassed and depend on others for private information.
 
-### 71. Street vendors struggle to protect paper currency and small goods during sudden rain
+</details>
 
-**Problem Statement:** Street vendors struggle to protect paper currency and small goods during sudden rain.
+---
 
-**Core Problem:** Work materials are exposed while the vendor must continue serving customers.
+</details>
 
-**Empathy Factor:** Vendors may lose income, damage goods, or work under stress.
 
-### 72. Small shopkeepers find it difficult to notice when commonly requested low-cost items run out during busy periods
+<details>
+<summary><strong>🟡 Transport and Movement · Problems 41–50</strong></summary>
 
-**Problem Statement:** Small shopkeepers find it difficult to notice when commonly requested low-cost items run out during busy periods.
+<br>
 
-**Core Problem:** Stock changes quickly and is checked manually.
+<details>
+<summary><strong>041. Bus passengers do not know whether an approaching bus will stop at their required location until it comes very close</strong></summary>
 
-**Empathy Factor:** Owners may lose sales and frustrate customers.
+<br>
 
-### 73. Workers wearing gloves find small touch controls difficult to operate
+> 🔴 `PROBLEM STATEMENT`  
+> Bus passengers do not know whether an approaching bus will stop at their required location until it comes very close.
 
-**Problem Statement:** Workers wearing gloves find small touch controls difficult to operate.
+> 🟠 `CORE PROBLEM`  
+> Route information is difficult to identify early enough.
 
-**Core Problem:** Controls require precise bare-finger interaction.
+> 🔵 `EMPATHY FACTOR`  
+> Passengers may feel anxious or miss the correct bus.
 
-**Empathy Factor:** Workers may remove protective equipment or lose time.
+</details>
 
-### 74. Cleaning staff carrying tools between floors struggle when storage is far from the places they repeatedly service
+---
 
-**Problem Statement:** Cleaning staff carrying tools between floors struggle when storage is far from the places they repeatedly service.
+<details>
+<summary><strong>042. People waiting at an unsheltered bus stop struggle during heavy rain</strong></summary>
 
-**Core Problem:** Frequently used equipment must be transported long distances.
+<br>
 
-**Empathy Factor:** Workers may experience fatigue and reduced efficiency.
+> 🔴 `PROBLEM STATEMENT`  
+> People waiting at an unsheltered bus stop struggle during heavy rain.
 
-### 75. Delivery workers in large apartment complexes struggle to identify the correct building entrance when numbering is inconsistent
+> 🟠 `CORE PROBLEM`  
+> The waiting environment does not protect users from weather.
 
-**Problem Statement:** Delivery workers in large apartment complexes struggle to identify the correct building entrance when numbering is inconsistent.
+> 🔵 `EMPATHY FACTOR`  
+> Passengers may become wet, uncomfortable, or avoid public transport.
 
-**Core Problem:** Location information does not match what workers see on arrival.
+</details>
 
-**Empathy Factor:** Workers may waste time and repeatedly call residents.
+---
 
-### 76. Security staff monitoring several entry points struggle to record visitor information while also watching the entrance
+<details>
+<summary><strong>043. Elderly passengers find it difficult to board buses when the first step is high and boarding time is short</strong></summary>
 
-**Problem Statement:** Security staff monitoring several entry points struggle to record visitor information while also watching the entrance.
+<br>
 
-**Core Problem:** Documentation competes with attention needed for observation.
+> 🔴 `PROBLEM STATEMENT`  
+> Elderly passengers find it difficult to board buses when the first step is high and boarding time is short.
 
-**Empathy Factor:** Staff may feel rushed and records may become incomplete.
+> 🟠 `CORE PROBLEM`  
+> Boarding requires quick, large physical movement.
 
-### 77. Canteen workers serving many students struggle when customers cannot quickly identify available food items before reaching the counter
+> 🔵 `EMPATHY FACTOR`  
+> Passengers may fear falling or feel pressured by people waiting behind them.
 
-**Problem Statement:** Canteen workers serving many students struggle when customers cannot quickly identify available food items before reaching the counter.
+</details>
 
-**Core Problem:** Choices are discovered only at the point of service.
+---
 
-**Empathy Factor:** Queues may slow and students may feel pressured to decide quickly.
+<details>
+<summary><strong>044. Passengers carrying school bags or luggage struggle when bus aisles are crowded</strong></summary>
 
-### 78. School maintenance staff receive verbal reports of faults but often lack exact location details
+<br>
 
-**Problem Statement:** School maintenance staff receive verbal reports of faults but often lack exact location details.
+> 🔴 `PROBLEM STATEMENT`  
+> Passengers carrying school bags or luggage struggle when bus aisles are crowded.
 
-**Core Problem:** Problem reports do not consistently identify where the fault is.
+> 🟠 `CORE PROBLEM`  
+> Movement and storage space are limited.
 
-**Empathy Factor:** Workers may spend time searching or return for clarification.
+> 🔵 `EMPATHY FACTOR`  
+> Users may feel unstable, block others, or worry about belongings.
 
-### 79. Small tailoring shops struggle to keep customer measurements and garment details easy to match with the correct order
+</details>
 
-**Problem Statement:** Small tailoring shops struggle to keep customer measurements and garment details easy to match with the correct order.
+---
 
-**Core Problem:** Several similar records must remain linked to physical items.
+<details>
+<summary><strong>045. Cyclists find it difficult to know where they can safely park near a crowded market</strong></summary>
 
-**Empathy Factor:** Workers may fear mixing orders and customers may need to repeat information.
+<br>
 
-### 80. Community workers visiting many households struggle to remember which follow-up action belongs to which family
+> 🔴 `PROBLEM STATEMENT`  
+> Cyclists find it difficult to know where they can safely park near a crowded market.
 
-**Problem Statement:** Community workers visiting many households struggle to remember which follow-up action belongs to which family.
+> 🟠 `CORE PROBLEM`  
+> Suitable parking locations are unclear or unavailable.
 
-**Core Problem:** Multiple similar cases require accurate tracking over time.
+> 🔵 `EMPATHY FACTOR`  
+> Cyclists may worry about theft or leave cycles in unsafe locations.
 
-**Empathy Factor:** Workers may feel overloaded and residents may experience missed follow-up.
+</details>
 
+---
 
-## Local Environment and Everyday Sustainability
+<details>
+<summary><strong>046. Pedestrians struggle to cross wide roads when the signal time feels too short for slower walkers</strong></summary>
 
-### 81. Residents struggle to dispose of batteries, bulbs, or small electronic waste because they do not know where nearby collection points are
+<br>
 
-**Problem Statement:** Residents struggle to dispose of batteries, bulbs, or small electronic waste because they do not know where nearby collection points are.
+> 🔴 `PROBLEM STATEMENT`  
+> Pedestrians struggle to cross wide roads when the signal time feels too short for slower walkers.
 
-**Core Problem:** Special waste needs a different disposal route from normal household waste.
+> 🟠 `CORE PROBLEM`  
+> Crossing time does not match every user's walking speed.
 
-**Empathy Factor:** People may keep unwanted items indefinitely or discard them incorrectly.
+> 🔵 `EMPATHY FACTOR`  
+> Older adults and people with limited mobility may feel unsafe.
 
-### 82. People using public parks find drinking-water areas surrounded by puddles after repeated use
+</details>
 
-**Problem Statement:** People using public parks find drinking-water areas surrounded by puddles after repeated use.
+---
 
-**Core Problem:** Water spills collect where drainage is poor.
+<details>
+<summary><strong>047. People waiting for shared transport at night cannot easily tell which arriving vehicle is theirs from a distance</strong></summary>
 
-**Empathy Factor:** Users may avoid the area or risk slipping.
+<br>
 
-### 83. Residents near shared waste bins experience overflow before the regular collection time on some days
+> 🔴 `PROBLEM STATEMENT`  
+> People waiting for shared transport at night cannot easily tell which arriving vehicle is theirs from a distance.
 
-**Problem Statement:** Residents near shared waste bins experience overflow before the regular collection time on some days.
+> 🟠 `CORE PROBLEM`  
+> Vehicle identification is difficult in low light.
 
-**Core Problem:** Waste volume changes but collection timing remains fixed.
+> 🔵 `EMPATHY FACTOR`  
+> Passengers may feel anxious or approach the wrong vehicle.
 
-**Empathy Factor:** People may face smell, insects, scattered waste, and frustration.
+</details>
 
-### 84. Students want to refill water bottles but sometimes avoid taps that appear dirty around the outlet
+---
 
-**Problem Statement:** Students want to refill water bottles but sometimes avoid taps that appear dirty around the outlet.
+<details>
+<summary><strong>048. School children crossing near parked vehicles have difficulty seeing moving traffic</strong></summary>
 
-**Core Problem:** Visible cleanliness affects trust in the facility.
+<br>
 
-**Empathy Factor:** Students may buy disposable bottles or drink less water.
+> 🔴 `PROBLEM STATEMENT`  
+> School children crossing near parked vehicles have difficulty seeing moving traffic.
 
-### 85. People walking after rain struggle where broken pavement holds deep puddles that hide the walking surface
+> 🟠 `CORE PROBLEM`  
+> Their line of sight is blocked.
 
-**Problem Statement:** People walking after rain struggle where broken pavement holds deep puddles that hide the walking surface.
+> 🔵 `EMPATHY FACTOR`  
+> Children may be unable to judge when it is safe to cross.
 
-**Core Problem:** Water makes the condition of the path difficult to judge.
+</details>
 
-**Empathy Factor:** Pedestrians may get wet, slip, or step into holes.
+---
 
-### 86. Residents in apartment buildings are unsure which common-area lights have been left on unnecessarily during daylight
+<details>
+<summary><strong>049. Passengers unfamiliar with a route struggle to know when their stop is approaching</strong></summary>
 
-**Problem Statement:** Residents in apartment buildings are unsure which common-area lights have been left on unnecessarily during daylight.
+<br>
 
-**Core Problem:** Energy use is not obvious from where residents spend time.
+> 🔴 `PROBLEM STATEMENT`  
+> Passengers unfamiliar with a route struggle to know when their stop is approaching.
 
-**Empathy Factor:** People may feel waste is happening but not know when or where.
+> 🟠 `CORE PROBLEM`  
+> Location information is not easy for first-time users to follow.
 
-### 87. Market users struggle to separate food waste from plastic when disposal points are crowded and poorly labelled
+> 🔵 `EMPATHY FACTOR`  
+> Users may feel nervous and repeatedly ask others.
 
-**Problem Statement:** Market users struggle to separate food waste from plastic when disposal points are crowded and poorly labelled.
+</details>
 
-**Core Problem:** Sorting must happen quickly in a busy setting with unclear cues.
+---
 
-**Empathy Factor:** People may choose the nearest bin regardless of waste type.
+<details>
+<summary><strong>050. People changing between two transport services struggle when the walking route between stops is poorly marked</strong></summary>
 
-### 88. People at beaches or picnic areas often carry waste for long distances because bins are difficult to locate
+<br>
 
-**Problem Statement:** People at beaches or picnic areas often carry waste for long distances because bins are difficult to locate.
+> 🔴 `PROBLEM STATEMENT`  
+> People changing between two transport services struggle when the walking route between stops is poorly marked.
 
-**Core Problem:** Disposal points are not visible from where waste is created.
+> 🟠 `CORE PROBLEM`  
+> Transfer paths are unclear.
 
-**Empathy Factor:** Users may feel inconvenienced and some may leave waste behind.
+> 🔵 `EMPATHY FACTOR`  
+> Travellers may lose time, miss connections, or feel lost.
 
-### 89. Residents living near open drains struggle with unpleasant odour and insects, especially after waste collects in the channel
+</details>
 
-**Problem Statement:** Residents living near open drains struggle with unpleasant odour and insects, especially after waste collects in the channel.
+---
 
-**Core Problem:** Local drainage is obstructed by accumulated material.
+</details>
 
-**Empathy Factor:** People may feel discomfort and concern about hygiene.
 
-### 90. Households trying to reduce water use find it difficult to notice which everyday activity consumes the most water
+<details>
+<summary><strong>🔴 Health and Care Experiences · Problems 51–60</strong></summary>
 
-**Problem Statement:** Households trying to reduce water use find it difficult to notice which everyday activity consumes the most water.
+<br>
 
-**Core Problem:** Water consumption is largely invisible during routine tasks.
+<details>
+<summary><strong>051. Patients in a clinic waiting area are unsure whether their name has already been called when announcements are difficult to hear</strong></summary>
 
-**Empathy Factor:** People may want to conserve water but lack feedback about their own habits.
+<br>
 
+> 🔴 `PROBLEM STATEMENT`  
+> Patients in a clinic waiting area are unsure whether their name has already been called when announcements are difficult to hear.
 
-## Digital Access and Information
+> 🟠 `CORE PROBLEM`  
+> Queue status depends on hearing a brief spoken call.
 
-### 91. Parents receive several school messages across different channels and sometimes miss which message requires action
+> 🔵 `EMPATHY FACTOR`  
+> Patients may become anxious or lose their turn.
 
-**Problem Statement:** Parents receive several school messages across different channels and sometimes miss which message requires action.
+</details>
 
-**Core Problem:** Important information is fragmented across platforms.
+---
 
-**Empathy Factor:** Parents may feel overwhelmed and children may miss deadlines or materials.
+<details>
+<summary><strong>052. People taking several daily medicines find it difficult to remember which dose belongs to which time of day</strong></summary>
 
-### 92. Students opening a school portal on a phone struggle when important buttons or text are too small
+<br>
 
-**Problem Statement:** Students opening a school portal on a phone struggle when important buttons or text are too small.
+> 🔴 `PROBLEM STATEMENT`  
+> People taking several daily medicines find it difficult to remember which dose belongs to which time of day.
 
-**Core Problem:** The interface is difficult to use on a small screen.
+> 🟠 `CORE PROBLEM`  
+> Medication routines involve multiple similar items and times.
 
-**Empathy Factor:** Students may make mistakes or avoid using the portal independently.
+> 🔵 `EMPATHY FACTOR`  
+> Users may feel worried about making a mistake and depend on caregivers.
 
-### 93. People with slow internet connections struggle to access information pages that depend on large images or videos
+</details>
 
-**Problem Statement:** People with slow internet connections struggle to access information pages that depend on large images or videos.
+---
 
-**Core Problem:** Essential information requires more data and bandwidth than some users have.
+<details>
+<summary><strong>053. Patients carrying test reports between departments struggle to keep papers organised and easy to retrieve</strong></summary>
 
-**Empathy Factor:** Users may wait, give up, or spend more mobile data.
+<br>
 
-### 94. Older adults struggle to identify whether an unfamiliar message requesting urgent action is genuine or a scam
+> 🔴 `PROBLEM STATEMENT`  
+> Patients carrying test reports between departments struggle to keep papers organised and easy to retrieve.
 
-**Problem Statement:** Older adults struggle to identify whether an unfamiliar message requesting urgent action is genuine or a scam.
+> 🟠 `CORE PROBLEM`  
+> Several documents must remain together through multiple steps.
 
-**Core Problem:** The message uses pressure and may imitate trusted organisations.
+> 🔵 `EMPATHY FACTOR`  
+> People may lose papers, become stressed, or repeat tests/information.
 
-**Empathy Factor:** Users may feel fear and make decisions before checking.
+</details>
 
-### 95. Students researching online struggle to distinguish advertisements, opinion pages, and evidence-based information
+---
 
-**Problem Statement:** Students researching online struggle to distinguish advertisements, opinion pages, and evidence-based information.
+<details>
+<summary><strong>054. Caregivers waiting outside treatment rooms receive little information about how long the process may take</strong></summary>
 
-**Core Problem:** Different information types can look equally authoritative.
+<br>
 
-**Empathy Factor:** Students may trust weak sources without realising it.
+> 🔴 `PROBLEM STATEMENT`  
+> Caregivers waiting outside treatment rooms receive little information about how long the process may take.
 
-### 96. Users forget passwords when different school or service platforms require different rules
+> 🟠 `CORE PROBLEM`  
+> Progress is invisible to waiting family members.
 
-**Problem Statement:** Users forget passwords when different school or service platforms require different rules.
+> 🔵 `EMPATHY FACTOR`  
+> Caregivers may feel anxious and unable to plan food, work, or transport.
 
-**Core Problem:** Access depends on remembering several credential formats.
+</details>
 
-**Empathy Factor:** People may repeatedly reset accounts and feel frustrated.
+---
 
-### 97. People filling long online forms lose entered information when the page refreshes or the connection drops
+<details>
+<summary><strong>055. People with hand tremors find small medicine packaging difficult to open without spilling contents</strong></summary>
 
-**Problem Statement:** People filling long online forms lose entered information when the page refreshes or the connection drops.
+<br>
 
-**Core Problem:** Progress is fragile during unstable connectivity.
+> 🔴 `PROBLEM STATEMENT`  
+> People with hand tremors find small medicine packaging difficult to open without spilling contents.
 
-**Empathy Factor:** Users may feel angry and have to repeat time-consuming work.
+> 🟠 `CORE PROBLEM`  
+> Packaging requires fine motor control.
 
-### 98. People with colour-vision differences struggle when an interface uses only red and green to show status
+> 🔵 `EMPATHY FACTOR`  
+> Users may feel frustrated or dependent on assistance.
 
-**Problem Statement:** People with colour-vision differences struggle when an interface uses only red and green to show status.
+</details>
 
-**Core Problem:** Meaning depends on colours that some users cannot reliably distinguish.
+---
 
-**Empathy Factor:** Users may misread important information.
+<details>
+<summary><strong>056. Patients who speak a different language struggle to describe simple symptoms at registration</strong></summary>
 
-### 99. Users receive error messages that say something failed but do not explain what they can correct
+<br>
 
-**Problem Statement:** Users receive error messages that say something failed but do not explain what they can correct.
+> 🔴 `PROBLEM STATEMENT`  
+> Patients who speak a different language struggle to describe simple symptoms at registration.
 
-**Core Problem:** The system reports a problem without useful next-step information.
+> 🟠 `CORE PROBLEM`  
+> The communication process assumes shared language.
 
-**Empathy Factor:** People may feel stuck and repeatedly try the same action.
+> 🔵 `EMPATHY FACTOR`  
+> Patients may feel misunderstood or anxious.
 
-### 100. Students using AI tools may accept confident answers without noticing unsupported facts or invented references
+</details>
 
-**Problem Statement:** Students using AI tools may accept confident answers without noticing unsupported facts or invented references.
+---
 
-**Core Problem:** Fluent language can make uncertain information appear trustworthy.
+<details>
+<summary><strong>057. People using walking aids struggle when clinic corridors have temporary obstacles such as chairs, boxes, or queues</strong></summary>
 
-**Empathy Factor:** Students may unknowingly learn or submit incorrect information.
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> People using walking aids struggle when clinic corridors have temporary obstacles such as chairs, boxes, or queues.
+
+> 🟠 `CORE PROBLEM`  
+> Movement paths become too narrow or unpredictable.
+
+> 🔵 `EMPATHY FACTOR`  
+> Users may feel unsafe and require help.
+
+</details>
+
+---
+
+<details>
+<summary><strong>058. Parents waiting with a sick child find it difficult to complete registration while the child needs continuous attention</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Parents waiting with a sick child find it difficult to complete registration while the child needs continuous attention.
+
+> 🟠 `CORE PROBLEM`  
+> The process divides attention at a stressful moment.
+
+> 🔵 `EMPATHY FACTOR`  
+> Parents may make errors or feel overwhelmed.
+
+</details>
+
+---
+
+<details>
+<summary><strong>059. People leaving a clinic forget verbal follow-up instructions given quickly at the end of a visit</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> People leaving a clinic forget verbal follow-up instructions given quickly at the end of a visit.
+
+> 🟠 `CORE PROBLEM`  
+> Important information is delivered when the person may be tired or distracted.
+
+> 🔵 `EMPATHY FACTOR`  
+> Patients may feel uncertain about what to do next.
+
+</details>
+
+---
+
+<details>
+<summary><strong>060. People collecting regular prescriptions spend time repeating the same identification and request information on every visit</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> People collecting regular prescriptions spend time repeating the same identification and request information on every visit.
+
+> 🟠 `CORE PROBLEM`  
+> A repeated service requires repeated explanation.
+
+> 🔵 `EMPATHY FACTOR`  
+> Users may feel the process is tiring and inefficient.
+
+</details>
+
+---
+
+</details>
+
+
+<details>
+<summary><strong>🟤 Disasters and Emergency Situations · Problems 61–70</strong></summary>
+
+<br>
+
+<details>
+<summary><strong>061. Families in hill areas affected by landslides may not know whether a familiar road is safe to use after heavy rain</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Families in hill areas affected by landslides may not know whether a familiar road is safe to use after heavy rain.
+
+> 🟠 `CORE PROBLEM`  
+> Road conditions can change suddenly and local information may be delayed.
+
+> 🔵 `EMPATHY FACTOR`  
+> Residents may feel fear, uncertainty, and pressure when deciding whether to travel.
+
+</details>
+
+---
+
+<details>
+<summary><strong>062. Residents in low-lying streets struggle to judge how quickly water is rising during intense local rainfall</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Residents in low-lying streets struggle to judge how quickly water is rising during intense local rainfall.
+
+> 🟠 `CORE PROBLEM`  
+> Flood depth and rate of change are difficult to assess safely.
+
+> 🔵 `EMPATHY FACTOR`  
+> Families may feel unsure about when to move belongings or leave.
+
+</details>
+
+---
+
+<details>
+<summary><strong>063. People evacuated during a flood find it difficult to keep essential documents dry and together</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> People evacuated during a flood find it difficult to keep essential documents dry and together.
+
+> 🟠 `CORE PROBLEM`  
+> Emergency movement happens quickly and personal records are vulnerable to water.
+
+> 🔵 `EMPATHY FACTOR`  
+> Families may fear losing documents needed after the disaster.
+
+</details>
+
+---
+
+<details>
+<summary><strong>064. Families reaching an emergency shelter struggle to identify where drinking water, toilets, sleeping areas, and medical help are located</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Families reaching an emergency shelter struggle to identify where drinking water, toilets, sleeping areas, and medical help are located.
+
+> 🟠 `CORE PROBLEM`  
+> An unfamiliar crowded shelter contains many services but little orientation.
+
+> 🔵 `EMPATHY FACTOR`  
+> Displaced people may feel confused, exhausted, or anxious.
+
+</details>
+
+---
+
+<details>
+<summary><strong>065. Older adults in an evacuation area may not hear or understand rapidly delivered emergency instructions</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Older adults in an evacuation area may not hear or understand rapidly delivered emergency instructions.
+
+> 🟠 `CORE PROBLEM`  
+> Warnings may be fast, noisy, or delivered through only one channel.
+
+> 🔵 `EMPATHY FACTOR`  
+> People may feel frightened and be unsure what action to take.
+
+</details>
+
+---
+
+<details>
+<summary><strong>066. People separated from family members during an evacuation struggle to know whether relatives reached a safe location</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> People separated from family members during an evacuation struggle to know whether relatives reached a safe location.
+
+> 🟠 `CORE PROBLEM`  
+> Family status information is uncertain during disrupted communication.
+
+> 🔵 `EMPATHY FACTOR`  
+> People may experience intense anxiety and repeatedly search for information.
+
+</details>
+
+---
+
+<details>
+<summary><strong>067. Residents returning after a storm find it difficult to distinguish safe electrical areas from places where water may have damaged wiring</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Residents returning after a storm find it difficult to distinguish safe electrical areas from places where water may have damaged wiring.
+
+> 🟠 `CORE PROBLEM`  
+> Hazards are not always visible after flooding or rain.
+
+> 🔵 `EMPATHY FACTOR`  
+> People may unknowingly approach dangerous equipment.
+
+</details>
+
+---
+
+<details>
+<summary><strong>068. People in temporary shelters struggle to charge essential phones when many residents depend on a small number of power points</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> People in temporary shelters struggle to charge essential phones when many residents depend on a small number of power points.
+
+> 🟠 `CORE PROBLEM`  
+> Limited charging access is shared by many people.
+
+> 🔵 `EMPATHY FACTOR`  
+> Residents may fear losing communication with family or emergency services.
+
+</details>
+
+---
+
+<details>
+<summary><strong>069. Volunteers distributing relief materials struggle when they cannot easily tell which families have already received specific items</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Volunteers distributing relief materials struggle when they cannot easily tell which families have already received specific items.
+
+> 🟠 `CORE PROBLEM`  
+> Distribution records become difficult in crowded, rapidly changing conditions.
+
+> 🔵 `EMPATHY FACTOR`  
+> Families may be missed while others unintentionally receive duplicates.
+
+</details>
+
+---
+
+<details>
+<summary><strong>070. Residents in disaster-prone villages may know general warnings but not the safest route from their own house to the nearest shelter</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Residents in disaster-prone villages may know general warnings but not the safest route from their own house to the nearest shelter.
+
+> 🟠 `CORE PROBLEM`  
+> General emergency advice does not always translate into a personal route.
+
+> 🔵 `EMPATHY FACTOR`  
+> Families may hesitate or choose unsafe paths during urgent evacuation.
+
+</details>
+
+---
+
+</details>
+
+
+<details>
+<summary><strong>⚫ Work, Small Business and Community Services · Problems 71–80</strong></summary>
+
+<br>
+
+<details>
+<summary><strong>071. Street vendors struggle to protect paper currency and small goods during sudden rain</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Street vendors struggle to protect paper currency and small goods during sudden rain.
+
+> 🟠 `CORE PROBLEM`  
+> Work materials are exposed while the vendor must continue serving customers.
+
+> 🔵 `EMPATHY FACTOR`  
+> Vendors may lose income, damage goods, or work under stress.
+
+</details>
+
+---
+
+<details>
+<summary><strong>072. Small shopkeepers find it difficult to notice when commonly requested low-cost items run out during busy periods</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Small shopkeepers find it difficult to notice when commonly requested low-cost items run out during busy periods.
+
+> 🟠 `CORE PROBLEM`  
+> Stock changes quickly and is checked manually.
+
+> 🔵 `EMPATHY FACTOR`  
+> Owners may lose sales and frustrate customers.
+
+</details>
+
+---
+
+<details>
+<summary><strong>073. Workers wearing gloves find small touch controls difficult to operate</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Workers wearing gloves find small touch controls difficult to operate.
+
+> 🟠 `CORE PROBLEM`  
+> Controls require precise bare-finger interaction.
+
+> 🔵 `EMPATHY FACTOR`  
+> Workers may remove protective equipment or lose time.
+
+</details>
+
+---
+
+<details>
+<summary><strong>074. Cleaning staff carrying tools between floors struggle when storage is far from the places they repeatedly service</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Cleaning staff carrying tools between floors struggle when storage is far from the places they repeatedly service.
+
+> 🟠 `CORE PROBLEM`  
+> Frequently used equipment must be transported long distances.
+
+> 🔵 `EMPATHY FACTOR`  
+> Workers may experience fatigue and reduced efficiency.
+
+</details>
+
+---
+
+<details>
+<summary><strong>075. Delivery workers in large apartment complexes struggle to identify the correct building entrance when numbering is inconsistent</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Delivery workers in large apartment complexes struggle to identify the correct building entrance when numbering is inconsistent.
+
+> 🟠 `CORE PROBLEM`  
+> Location information does not match what workers see on arrival.
+
+> 🔵 `EMPATHY FACTOR`  
+> Workers may waste time and repeatedly call residents.
+
+</details>
+
+---
+
+<details>
+<summary><strong>076. Security staff monitoring several entry points struggle to record visitor information while also watching the entrance</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Security staff monitoring several entry points struggle to record visitor information while also watching the entrance.
+
+> 🟠 `CORE PROBLEM`  
+> Documentation competes with attention needed for observation.
+
+> 🔵 `EMPATHY FACTOR`  
+> Staff may feel rushed and records may become incomplete.
+
+</details>
+
+---
+
+<details>
+<summary><strong>077. Canteen workers serving many students struggle when customers cannot quickly identify available food items before reaching the counter</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Canteen workers serving many students struggle when customers cannot quickly identify available food items before reaching the counter.
+
+> 🟠 `CORE PROBLEM`  
+> Choices are discovered only at the point of service.
+
+> 🔵 `EMPATHY FACTOR`  
+> Queues may slow and students may feel pressured to decide quickly.
+
+</details>
+
+---
+
+<details>
+<summary><strong>078. School maintenance staff receive verbal reports of faults but often lack exact location details</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> School maintenance staff receive verbal reports of faults but often lack exact location details.
+
+> 🟠 `CORE PROBLEM`  
+> Problem reports do not consistently identify where the fault is.
+
+> 🔵 `EMPATHY FACTOR`  
+> Workers may spend time searching or return for clarification.
+
+</details>
+
+---
+
+<details>
+<summary><strong>079. Small tailoring shops struggle to keep customer measurements and garment details easy to match with the correct order</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Small tailoring shops struggle to keep customer measurements and garment details easy to match with the correct order.
+
+> 🟠 `CORE PROBLEM`  
+> Several similar records must remain linked to physical items.
+
+> 🔵 `EMPATHY FACTOR`  
+> Workers may fear mixing orders and customers may need to repeat information.
+
+</details>
+
+---
+
+<details>
+<summary><strong>080. Community workers visiting many households struggle to remember which follow-up action belongs to which family</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Community workers visiting many households struggle to remember which follow-up action belongs to which family.
+
+> 🟠 `CORE PROBLEM`  
+> Multiple similar cases require accurate tracking over time.
+
+> 🔵 `EMPATHY FACTOR`  
+> Workers may feel overloaded and residents may experience missed follow-up.
+
+</details>
+
+---
+
+</details>
+
+
+<details>
+<summary><strong>🟩 Local Environment and Everyday Sustainability · Problems 81–90</strong></summary>
+
+<br>
+
+<details>
+<summary><strong>081. Residents struggle to dispose of batteries, bulbs, or small electronic waste because they do not know where nearby collection points are</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Residents struggle to dispose of batteries, bulbs, or small electronic waste because they do not know where nearby collection points are.
+
+> 🟠 `CORE PROBLEM`  
+> Special waste needs a different disposal route from normal household waste.
+
+> 🔵 `EMPATHY FACTOR`  
+> People may keep unwanted items indefinitely or discard them incorrectly.
+
+</details>
+
+---
+
+<details>
+<summary><strong>082. People using public parks find drinking-water areas surrounded by puddles after repeated use</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> People using public parks find drinking-water areas surrounded by puddles after repeated use.
+
+> 🟠 `CORE PROBLEM`  
+> Water spills collect where drainage is poor.
+
+> 🔵 `EMPATHY FACTOR`  
+> Users may avoid the area or risk slipping.
+
+</details>
+
+---
+
+<details>
+<summary><strong>083. Residents near shared waste bins experience overflow before the regular collection time on some days</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Residents near shared waste bins experience overflow before the regular collection time on some days.
+
+> 🟠 `CORE PROBLEM`  
+> Waste volume changes but collection timing remains fixed.
+
+> 🔵 `EMPATHY FACTOR`  
+> People may face smell, insects, scattered waste, and frustration.
+
+</details>
+
+---
+
+<details>
+<summary><strong>084. Students want to refill water bottles but sometimes avoid taps that appear dirty around the outlet</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Students want to refill water bottles but sometimes avoid taps that appear dirty around the outlet.
+
+> 🟠 `CORE PROBLEM`  
+> Visible cleanliness affects trust in the facility.
+
+> 🔵 `EMPATHY FACTOR`  
+> Students may buy disposable bottles or drink less water.
+
+</details>
+
+---
+
+<details>
+<summary><strong>085. People walking after rain struggle where broken pavement holds deep puddles that hide the walking surface</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> People walking after rain struggle where broken pavement holds deep puddles that hide the walking surface.
+
+> 🟠 `CORE PROBLEM`  
+> Water makes the condition of the path difficult to judge.
+
+> 🔵 `EMPATHY FACTOR`  
+> Pedestrians may get wet, slip, or step into holes.
+
+</details>
+
+---
+
+<details>
+<summary><strong>086. Residents in apartment buildings are unsure which common-area lights have been left on unnecessarily during daylight</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Residents in apartment buildings are unsure which common-area lights have been left on unnecessarily during daylight.
+
+> 🟠 `CORE PROBLEM`  
+> Energy use is not obvious from where residents spend time.
+
+> 🔵 `EMPATHY FACTOR`  
+> People may feel waste is happening but not know when or where.
+
+</details>
+
+---
+
+<details>
+<summary><strong>087. Market users struggle to separate food waste from plastic when disposal points are crowded and poorly labelled</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Market users struggle to separate food waste from plastic when disposal points are crowded and poorly labelled.
+
+> 🟠 `CORE PROBLEM`  
+> Sorting must happen quickly in a busy setting with unclear cues.
+
+> 🔵 `EMPATHY FACTOR`  
+> People may choose the nearest bin regardless of waste type.
+
+</details>
+
+---
+
+<details>
+<summary><strong>088. People at beaches or picnic areas often carry waste for long distances because bins are difficult to locate</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> People at beaches or picnic areas often carry waste for long distances because bins are difficult to locate.
+
+> 🟠 `CORE PROBLEM`  
+> Disposal points are not visible from where waste is created.
+
+> 🔵 `EMPATHY FACTOR`  
+> Users may feel inconvenienced and some may leave waste behind.
+
+</details>
+
+---
+
+<details>
+<summary><strong>089. Residents living near open drains struggle with unpleasant odour and insects, especially after waste collects in the channel</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Residents living near open drains struggle with unpleasant odour and insects, especially after waste collects in the channel.
+
+> 🟠 `CORE PROBLEM`  
+> Local drainage is obstructed by accumulated material.
+
+> 🔵 `EMPATHY FACTOR`  
+> People may feel discomfort and concern about hygiene.
+
+</details>
+
+---
+
+<details>
+<summary><strong>090. Households trying to reduce water use find it difficult to notice which everyday activity consumes the most water</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Households trying to reduce water use find it difficult to notice which everyday activity consumes the most water.
+
+> 🟠 `CORE PROBLEM`  
+> Water consumption is largely invisible during routine tasks.
+
+> 🔵 `EMPATHY FACTOR`  
+> People may want to conserve water but lack feedback about their own habits.
+
+</details>
+
+---
+
+</details>
+
+
+<details>
+<summary><strong>🟦 Digital Access and Information · Problems 91–100</strong></summary>
+
+<br>
+
+<details>
+<summary><strong>091. Parents receive several school messages across different channels and sometimes miss which message requires action</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Parents receive several school messages across different channels and sometimes miss which message requires action.
+
+> 🟠 `CORE PROBLEM`  
+> Important information is fragmented across platforms.
+
+> 🔵 `EMPATHY FACTOR`  
+> Parents may feel overwhelmed and children may miss deadlines or materials.
+
+</details>
+
+---
+
+<details>
+<summary><strong>092. Students opening a school portal on a phone struggle when important buttons or text are too small</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Students opening a school portal on a phone struggle when important buttons or text are too small.
+
+> 🟠 `CORE PROBLEM`  
+> The interface is difficult to use on a small screen.
+
+> 🔵 `EMPATHY FACTOR`  
+> Students may make mistakes or avoid using the portal independently.
+
+</details>
+
+---
+
+<details>
+<summary><strong>093. People with slow internet connections struggle to access information pages that depend on large images or videos</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> People with slow internet connections struggle to access information pages that depend on large images or videos.
+
+> 🟠 `CORE PROBLEM`  
+> Essential information requires more data and bandwidth than some users have.
+
+> 🔵 `EMPATHY FACTOR`  
+> Users may wait, give up, or spend more mobile data.
+
+</details>
+
+---
+
+<details>
+<summary><strong>094. Older adults struggle to identify whether an unfamiliar message requesting urgent action is genuine or a scam</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Older adults struggle to identify whether an unfamiliar message requesting urgent action is genuine or a scam.
+
+> 🟠 `CORE PROBLEM`  
+> The message uses pressure and may imitate trusted organisations.
+
+> 🔵 `EMPATHY FACTOR`  
+> Users may feel fear and make decisions before checking.
+
+</details>
+
+---
+
+<details>
+<summary><strong>095. Students researching online struggle to distinguish advertisements, opinion pages, and evidence-based information</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Students researching online struggle to distinguish advertisements, opinion pages, and evidence-based information.
+
+> 🟠 `CORE PROBLEM`  
+> Different information types can look equally authoritative.
+
+> 🔵 `EMPATHY FACTOR`  
+> Students may trust weak sources without realising it.
+
+</details>
+
+---
+
+<details>
+<summary><strong>096. Users forget passwords when different school or service platforms require different rules</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Users forget passwords when different school or service platforms require different rules.
+
+> 🟠 `CORE PROBLEM`  
+> Access depends on remembering several credential formats.
+
+> 🔵 `EMPATHY FACTOR`  
+> People may repeatedly reset accounts and feel frustrated.
+
+</details>
+
+---
+
+<details>
+<summary><strong>097. People filling long online forms lose entered information when the page refreshes or the connection drops</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> People filling long online forms lose entered information when the page refreshes or the connection drops.
+
+> 🟠 `CORE PROBLEM`  
+> Progress is fragile during unstable connectivity.
+
+> 🔵 `EMPATHY FACTOR`  
+> Users may feel angry and have to repeat time-consuming work.
+
+</details>
+
+---
+
+<details>
+<summary><strong>098. People with colour-vision differences struggle when an interface uses only red and green to show status</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> People with colour-vision differences struggle when an interface uses only red and green to show status.
+
+> 🟠 `CORE PROBLEM`  
+> Meaning depends on colours that some users cannot reliably distinguish.
+
+> 🔵 `EMPATHY FACTOR`  
+> Users may misread important information.
+
+</details>
+
+---
+
+<details>
+<summary><strong>099. Users receive error messages that say something failed but do not explain what they can correct</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Users receive error messages that say something failed but do not explain what they can correct.
+
+> 🟠 `CORE PROBLEM`  
+> The system reports a problem without useful next-step information.
+
+> 🔵 `EMPATHY FACTOR`  
+> People may feel stuck and repeatedly try the same action.
+
+</details>
+
+---
+
+<details>
+<summary><strong>100. Students using AI tools may accept confident answers without noticing unsupported facts or invented references</strong></summary>
+
+<br>
+
+> 🔴 `PROBLEM STATEMENT`  
+> Students using AI tools may accept confident answers without noticing unsupported facts or invented references.
+
+> 🟠 `CORE PROBLEM`  
+> Fluent language can make uncertain information appear trustworthy.
+
+> 🔵 `EMPATHY FACTOR`  
+> Students may unknowingly learn or submit incorrect information.
+
+</details>
+
+---
+
+</details>
+
+---
 
 ## How Students Should Use This Bank
 
@@ -859,13 +1933,12 @@ Choose one statement and investigate it further.
 
 Do not assume the statement tells the whole story.
 
-Students should:
+1. Identify the people affected.
+2. Observe the context where appropriate.
+3. Ask neutral questions.
+4. Separate evidence from assumptions.
+5. Rewrite the problem statement after learning more.
+6. Move to ideation only after the need is reasonably understood.
 
-1. identify the people affected,
-2. observe the context where appropriate,
-3. ask neutral questions,
-4. separate evidence from assumptions,
-5. rewrite the problem statement after learning more,
-6. move to ideation only after the need is reasonably understood.
-
-A problem statement is a starting point for inquiry, not permission to skip empathy.
+> [!NOTE]
+> The goal is not to pick the fastest solution. The goal is to understand the person and the problem well enough that later ideas respond to a real need.
